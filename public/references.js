@@ -186,12 +186,12 @@ export const institutionalReferences = {
   'loi-1962': {
     title: 'Loi n° 62-1292 du 6 novembre 1962, notamment article 3', publisher: 'Légifrance — version consolidée',
     url: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037',
-    contribution: 'Présentations par les élus, répartition territoriale, publication des parrainages et règles audiovisuelles de campagne.',
+    contribution: 'Parrainages par les élus, répartition territoriale, publication des parrainages et règles audiovisuelles de campagne.',
   },
   parrainages: {
     title: 'Parrainages : les règles', publisher: 'Conseil constitutionnel — site de l’élection de 2022',
     url: 'https://presidentielle2022.conseil-constitutionnel.fr/les-parrainages/parrainages-les-regles.html',
-    contribution: 'Explication des 500 présentations, des 30 départements ou collectivités et du maximum de 50 pour un même territoire parmi les 500 nécessaires. Archive pédagogique, à lire avec la loi en vigueur.',
+    contribution: 'Explication des 500 parrainages, des 30 départements ou collectivités et du maximum de 50 pour un même territoire parmi les 500 nécessaires. Archive pédagogique, à lire avec la loi en vigueur.',
   },
   candidature: {
     title: 'Être candidat', publisher: 'Conseil constitutionnel — site de l’élection de 2022',
