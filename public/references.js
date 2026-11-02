@@ -1,5 +1,72 @@
 // Les références éclairent des concepts ; elles ne classent pas les candidats de 2027.
 export const academicReferences = {
+  'julliard-gauches': {
+    authors: 'Jacques Julliard', year: '2012',
+    title: 'Les Gauches françaises, 1762–2012. Histoire, politique et imaginaire',
+    publication: 'Flammarion. Synthèse historique.',
+    url: 'https://search.worldcat.org/search?q=Jacques+Julliard+Les+Gauches+francaises+1762+2012',
+    contribution: 'Une référence centrale de nos dossiers : les traditions libérale, jacobine, collectiviste et libertaire éclairent les tensions entre liberté, égalité, État et mouvement social. Ces quatre traditions traversent les organisations et ne se superposent pas aux partis de 2026.',
+  },
+  'julliard-pelloutier': {
+    authors: 'Jacques Julliard', year: '1971', title: 'Fernand Pelloutier et les origines du syndicalisme d’action directe',
+    publication: 'Seuil, collection « L’Univers historique ». Histoire du mouvement ouvrier.',
+    url: 'https://search.worldcat.org/search?q=Jacques+Julliard+Fernand+Pelloutier+1971',
+    contribution: 'Éclaire le syndicalisme d’action directe, les Bourses du travail et une tradition d’émancipation ouvrière qui ne se confond pas avec la seule conquête de l’État ou du pouvoir électoral.',
+  },
+  'remond-actuel': {
+    authors: 'René Rémond', year: '2005', title: 'Les Droites aujourd’hui',
+    publication: 'Louis Audibert. Prolongement et discussion de sa typologie historique.',
+    url: 'https://search.worldcat.org/search?q=Rene+Remond+Les+Droites+aujourd%27hui+2005',
+    contribution: 'Complète Les Droites en France : les recompositions et les limites de la continuité entre traditions historiques et droites contemporaines doivent être discutées, et non traitées comme une filiation automatique.',
+  },
+  sternhell: {
+    authors: 'Zeev Sternhell', year: '1978', title: 'La Droite révolutionnaire, 1885–1914. Les origines françaises du fascisme',
+    publication: 'Seuil. Histoire intellectuelle ; interprétation historiographique discutée.',
+    url: 'https://search.worldcat.org/search?q=Zeev+Sternhell+La+Droite+revolutionnaire+1978',
+    contribution: 'Une lecture concurrente de certains classements des droites, notamment des rapports entre nationalisme et contestation de la démocratie libérale. Cette référence signale un débat historiographique, pas un consensus sur toutes les filiations.',
+  },
+  'sep-liberalism': {
+    authors: 'Shane D. Courtland, Gerald Gaus et David Schmidtz', year: 'Révision 2026', title: 'Liberalism',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/liberalism/',
+    contribution: 'Situe les débats entre liberté, autorité et égalité chez les penseurs libéraux ; le libéralisme politique ne se confond pas avec une seule politique économique ou un seul parti.',
+  },
+  'sep-conservatism': {
+    authors: 'Andy Hamilton', year: 'Révision 2025', title: 'Conservatism',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/conservatism/',
+    contribution: 'Explique la prudence envers les reconstructions abstraites, le rôle de la tradition et les différences entre conservatisme, réaction et libéralisme, notamment à partir de Burke.',
+  },
+  'sep-socialism': {
+    authors: 'Pablo Gilabert et Martin O’Neill', year: 'Révision 2024', title: 'Socialism',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/socialism/',
+    contribution: 'Présente les critiques du capitalisme et les débats socialistes sur la propriété, le marché, la liberté et la démocratie. Elle permet de distinguer des héritages théoriques différents.',
+  },
+  'sep-sovereignty': {
+    authors: 'Daniel Philpott', year: 'Révision 2024', title: 'Sovereignty',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/sovereignty/',
+    contribution: 'Retrace les conceptions de la souveraineté et les différences entre autorité de l’État et souveraineté du peuple, notamment chez Bodin, Hobbes et Rousseau.',
+  },
+  'sep-environment': {
+    authors: 'Andrew Brennan et Yeuk-Sze Lo', year: 'Notice et bibliographie en ligne', title: 'Environmental Ethics',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/ethics-environmental/',
+    contribution: 'Éclaire les débats sur l’anthropocentrisme, la valeur de la nature et les différentes philosophies écologiques ; complète Dobson sur les fondements éthiques.',
+  },
+  'sep-animals': {
+    authors: 'Lori Gruen et Susana Monsó', year: 'Révision 2024', title: 'The Moral Status of Animals',
+    publication: 'Stanford Encyclopedia of Philosophy. Notice universitaire.',
+    url: 'https://plato.stanford.edu/entries/moral-animal/',
+    contribution: 'Compare notamment les approches de Peter Singer et de Tom Regan : considération des intérêts, souffrance et droits des animaux ne reposent pas sur les mêmes arguments.',
+  },
+  castoriadis: {
+    authors: 'Cornelius Castoriadis', year: '1975', title: 'L’Institution imaginaire de la société',
+    publication: 'Seuil. Ouvrage de philosophie politique.',
+    url: 'https://search.worldcat.org/search?q=Castoriadis+Institution+imaginaire+societe+1975',
+    contribution: 'La notion d’autonomie aide à interroger la capacité d’une société à discuter et transformer ses propres institutions, sans se réduire à une procédure électorale particulière.',
+  },
   'lipset-rokkan': {
     authors: 'Seymour Martin Lipset et Stein Rokkan (dir.)', year: '1967',
     title: 'Party Systems and Voter Alignments: Cross-National Perspectives',
@@ -104,6 +171,12 @@ export const academicReferences = {
 };
 
 export const institutionalReferences = {
+  assemblee: {
+    title: 'Effectif des groupes politiques — XVIIe législature',
+    publisher: 'Assemblée nationale — tableau officiel',
+    url: 'https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif',
+    contribution: 'Distingue membres, apparentés, non-inscrits et sièges vacants. Les groupes ne sont pas des partis ; leurs effectifs ne constituent pas des décomptes d’adhésion partisane. La rubrique Partis indique la date du relevé utilisé.',
+  },
   constitution: {
     title: 'Constitution du 4 octobre 1958, articles 6, 7 et 58',
     publisher: 'Conseil constitutionnel — texte en vigueur',

@@ -4,11 +4,13 @@ import { server } from './server.js';
 import { families } from './public/families.js';
 import { academicReferences, institutionalReferences } from './public/references.js';
 import { execFileSync } from 'node:child_process';
+import { readFile } from 'node:fs/promises';
+import { parties, partyTopics } from './public/parties.js';
 
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
 after(() => server.close());
-const pages = ['index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', ...Object.keys(families).map(key => `famille-${key}.html`)];
+const pages = ['index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', 'partis.html', ...parties.map(p => `parti-${p.id}.html`), ...Object.keys(families).map(key => `famille-${key}.html`)];
 
 test('les pages sont générées de façon reproductible sans dépendance', () => {
   const result = execFileSync(process.execPath, ['scripts/build-pages.mjs', '--check'], { cwd: new URL('.', import.meta.url), encoding: 'utf8' });
@@ -22,7 +24,7 @@ test('chaque rubrique est une vraie page HTML avec sa navigation', async () => {
     assert.equal((html.match(/<h1(?:\s[^>]*)?>/g) || []).length, 1, path);
     const nav = html.match(/<nav aria-label="Navigation principale">([\s\S]*?)<\/nav>/)?.[1];
     assert.ok(nav, path);
-    for (const file of ['candidats.html','familles.html','election.html','sources.html']) assert.ok(nav.includes(`href="./${file}"`), path);
+    for (const file of ['candidats.html','partis.html','familles.html','election.html','sources.html']) assert.ok(nav.includes(`href="./${file}"`), path);
     if (path !== 'index.html') assert.match(nav, /aria-current="(?:page|location)"/);
   }
   const home = await (await fetch(base)).text();
@@ -65,12 +67,12 @@ test('les dossiers développent les familles et renvoient aux références scien
 test('la page électorale explique les seuils, les deux tours et cite les textes officiels', async () => {
   const html = await (await fetch(base + '/election.html')).text();
   for (const term of ['500', '30 départements', '50', 'quatorze jours', 'majorité absolue', 'votes blancs', 'Conseil constitutionnel', 'CNCCFP']) assert.ok(html.includes(term), term);
-  for (const id of Object.keys(institutionalReferences)) assert.ok(html.includes(`./sources.html#institution-${id}`), id);
+  for (const id of ['constitution','loi-1962','parrainages','candidature','vote','cnccfp']) assert.ok(html.includes(`./sources.html#institution-${id}`), id);
   assert.match(html, /archives/);
   assert.doesNotMatch(html, /avril 2022|avril 2027/);
 });
 test('les ressources locales sont servies avec le bon type', async () => {
-  for (const [path, type] of [['/app.js','javascript'], ['/families.js','javascript'], ['/references.js','javascript'], ['/navigation.js','javascript'], ['/style.css','css'], ['/data.json','json']]) {
+  for (const [path, type] of [['/app.js','javascript'], ['/parties-app.js','javascript'], ['/parties.js','javascript'], ['/parliament.json','json'], ['/families.js','javascript'], ['/references.js','javascript'], ['/navigation.js','javascript'], ['/style.css','css'], ['/data.json','json']]) {
     const res = await fetch(base + path); assert.equal(res.status,200); assert.ok(res.headers.get('content-type').includes(type));
   }
 });
@@ -124,4 +126,56 @@ test('fichiers privés et chemins hors du site restent inaccessibles', async () 
   assert.equal((await fetch(base + '/package.json')).status,404);
   assert.equal((await fetch(base + '/..%2fpackage.json')).status,403);
   assert.equal((await fetch(base + '/absent')).status,404);
+});
+
+test('les partis ont une histoire, quatre thèmes sourcés et des lectures historiques', async () => {
+  const chamber = JSON.parse(await readFile(new URL('./public/parliament.json', import.meta.url), 'utf8'));
+  const ids = new Set();
+  assert.equal(parties.length, 25);
+  for (const party of parties) {
+    assert.ok(!ids.has(party.id)); ids.add(party.id);
+    assert.ok(families[party.family]);
+    assert.ok(party.history.length >= 2 && party.ideology.length > 100);
+    assert.ok(party.academicRefs.length >= 2);
+    for (const id of party.academicRefs) assert.ok(academicReferences[id], `${party.id}/${id}`);
+    assert.ok(!Object.hasOwn(party, 'seats'), 'Ne pas assimiler un total de groupe à un effectif de parti');
+    for (const group of party.assemblyGroups) assert.ok(chamber.groups.some(g => g.id === group));
+    for (const source of party.sources) assert.equal(new URL(source.url).protocol, 'https:');
+    for (const key of Object.keys(partyTopics)) {
+      assert.ok(party.issues[key].text.length > 50);
+      for (const sourceId of party.issues[key].sourceIds) assert.ok(party.sources.some(s => s.id === sourceId));
+    }
+    const html = await (await fetch(base + `/parti-${party.id}.html`)).text();
+    for (const id of ['positions','representation','sources-parti']) assert.ok(html.includes(`id="${id}"`));
+    for (const label of Object.values(partyTopics)) assert.ok(html.includes(label));
+  }
+});
+test('le relevé parlementaire et le schéma comptent chaque siège une seule fois', async () => {
+  const chamber = await (await fetch(base + '/parliament.json')).json();
+  assert.equal(chamber.capacity, 577); assert.equal(chamber.occupied, 574); assert.equal(chamber.vacant, 3);
+  assert.equal(chamber.groups.length, 11);
+  assert.equal(new Set(chamber.groups.map(g => g.id)).size, chamber.groups.length);
+  for (const group of chamber.groups) assert.equal(group.members + group.associated, group.seats);
+  assert.equal(chamber.groups.reduce((n, g) => n + g.seats, 0) + chamber.nonAttached, chamber.occupied);
+  assert.equal(chamber.occupied + chamber.vacant, chamber.capacity);
+  assert.equal(new URL(chamber.source.url).hostname, 'www2.assemblee-nationale.fr');
+  const html = await (await fetch(base + '/partis.html')).text();
+  assert.equal((html.match(/<circle /g) || []).length, chamber.capacity);
+  assert.equal((html.match(/class="party-card"/g) || []).length, parties.length);
+  assert.ok(html.includes('Un parti n’est pas un groupe parlementaire'));
+  assert.ok(html.includes('2 novembre 2026'));
+});
+test('chaque courant présente ses influences sans inventer une filiation personnelle', async () => {
+  for (const [key, family] of Object.entries(families)) {
+    const philosophy = family.philosophy;
+    assert.ok(philosophy.frame && philosophy.caution && philosophy.references.length >= 2);
+    for (const id of philosophy.references) assert.ok(academicReferences[id]);
+    if (key === 'personal') assert.equal(philosophy.thinkers.length, 0);
+    else assert.ok(philosophy.thinkers.length >= 2);
+    const html = await (await fetch(base + `/famille-${key}.html`)).text();
+    assert.ok(html.includes('Influences philosophiques et grands penseurs'));
+    for (const [name] of philosophy.thinkers) assert.ok(html.includes(name));
+  }
+  const sources = await (await fetch(base + '/sources.html')).text();
+  for (const key of ['remond','remond-actuel','julliard-gauches']) assert.ok(sources.includes(`id="ref-${key}"`));
 });

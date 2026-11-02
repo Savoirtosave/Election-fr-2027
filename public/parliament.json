@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-11-02",
+  "legislature": 17,
+  "chamber": "Assemblée nationale",
+  "capacity": 577,
+  "occupied": 574,
+  "vacant": 3,
+  "nonAttached": 11,
+  "source": {
+    "label": "Assemblée nationale — Effectif des groupes politiques, XVIIe législature",
+    "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif"
+  },
+  "groups": [
+    {
+      "id": "rn",
+      "name": "Rassemblement National",
+      "members": 118,
+      "associated": 3,
+      "seats": 121,
+      "color": "#514a91"
+    },
+    {
+      "id": "epr",
+      "name": "Ensemble pour la République",
+      "members": 74,
+      "associated": 16,
+      "seats": 90,
+      "color": "#bd8b1f"
+    },
+    {
+      "id": "lfi",
+      "name": "La France insoumise - Nouveau Front Populaire",
+      "members": 68,
+      "associated": 2,
+      "seats": 70,
+      "color": "#a92b57"
+    },
+    {
+      "id": "soc",
+      "name": "Socialistes et apparentés",
+      "members": 60,
+      "associated": 8,
+      "seats": 68,
+      "color": "#cd6484"
+    },
+    {
+      "id": "dr",
+      "name": "Droite Républicaine",
+      "members": 40,
+      "associated": 6,
+      "seats": 46,
+      "color": "#3566ba"
+    },
+    {
+      "id": "ecos",
+      "name": "Écologiste et Social",
+      "members": 38,
+      "associated": 0,
+      "seats": 38,
+      "color": "#21765f"
+    },
+    {
+      "id": "dem",
+      "name": "Les Démocrates",
+      "members": 35,
+      "associated": 2,
+      "seats": 37,
+      "color": "#d47828"
+    },
+    {
+      "id": "hor",
+      "name": "Horizons & Indépendants",
+      "members": 29,
+      "associated": 6,
+      "seats": 35,
+      "color": "#4495b5"
+    },
+    {
+      "id": "liot",
+      "name": "Libertés, Indépendants, Outre-mer et Territoires",
+      "members": 24,
+      "associated": 0,
+      "seats": 24,
+      "color": "#347d81"
+    },
+    {
+      "id": "gdr",
+      "name": "Gauche Démocrate et Républicaine",
+      "members": 17,
+      "associated": 0,
+      "seats": 17,
+      "color": "#b23b3b"
+    },
+    {
+      "id": "udr",
+      "name": "Union des droites pour la République",
+      "members": 17,
+      "associated": 0,
+      "seats": 17,
+      "color": "#626b8c"
+    }
+  ],
+  "note": "Effectifs des groupes, membres et apparentés compris. Un groupe peut réunir plusieurs partis ; son total ne constitue pas un décompte des députés d’un seul parti."
+}

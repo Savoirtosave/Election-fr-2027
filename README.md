@@ -17,12 +17,13 @@ Le serveur utilise le port 3000 (`PORT` permet de le modifier). `npm test` lance
 
 - `public/index.html` : accueil, avec des liens vers les rubriques.
 - `public/candidats.html` : annuaire et filtres ; les explications ouvrent aussi les dossiers de lecture.
+- `public/partis.html` et `public/parti-*.html` : annuaire de 25 formations et fiches détaillées (histoire, fondements, quatre thèmes, sources et contexte parlementaire).
 - `public/familles.html` : panorama des six familles et des courants transversaux.
 - `public/famille-*.html` : dix dossiers autonomes (origines, dimensions, débats et références), dont un dossier explicitement consacré aux limites de la catégorie personnelle hors axe.
 - `public/election.html` : fonctionnement du scrutin, présentations d’élus, deux tours, suffrages exprimés, campagne et contrôles.
-- `public/sources.html` : méthode, seize références scientifiques ou de recherche et six sources institutionnelles.
+- `public/sources.html` : méthode, 27 références scientifiques ou de recherche et sept sources institutionnelles.
 
-Les contenus des dossiers sont dans `public/families.js`, la bibliographie et les références officielles dans `public/references.js`, les fragments éditoriaux dans `site/`. Le gabarit commun et la génération des quinze pages sont dans `scripts/build-pages.mjs`. Après modification de ces sources ou du nombre de candidatures :
+Les contenus des dossiers sont dans `public/families.js`, la bibliographie et les références officielles dans `public/references.js`, les fragments éditoriaux dans `site/`. Les fiches des partis sont décrites dans `public/parties.js` et l’instantané officiel des groupes dans `public/parliament.json`. Le gabarit commun et la génération des 41 pages sont dans `scripts/build-pages.mjs` et `scripts/render-parties.mjs`. Après modification de ces sources ou du nombre de candidatures :
 
 ```sh
 npm run build
@@ -63,3 +64,15 @@ Les 31 portraits sont servis depuis `public/portraits/` : aucune requête vers u
 Une partie des images provient de Wikimedia Commons sous la licence indiquée ; d’autres proviennent de sites de campagne ou d’articles de presse et restent sous droits réservés. Un crédit ne les place pas sous licence libre. Les images de presse ne doivent pas être présumées librement réutilisables pour d’autres usages. Les portraits sont redimensionnés pour l’affichage ; les cadrages de Selma Labib et Benoît Mathieu sont réalisés en CSS à partir du visuel source identifié. Les originaux sont référencés pour conserver la provenance et les conditions applicables.
 
 La date de contrôle documentaire reste dans les données ; elle n’est plus affichée au bas de chaque fiche. `npm test` vérifie notamment les portraits servis et les définitions de classification, en plus des contrôles HTTP et documentaires.
+
+## Partis, groupes et courants intellectuels
+
+L’annuaire des partis reprend les principes de mise en page du modèle indiqué (recherche, indicateurs, onglets, tri, cartes et liste), avec des sigles éditoriaux et les couleurs du site ; il ne réutilise pas ses logos, ses données brésiliennes ou ses numéros de partis. La sélection de 25 formations françaises est un panorama non exhaustif. Les sources officielles des partis décrivent leurs propres orientations et sont distinguées des ouvrages de recherche et des articles de presse. Les quatre thèmes ne sont pas complétés par des mesures inventées lorsqu’un document ne les précise pas.
+
+Les effectifs parlementaires proviennent du tableau officiel de l’Assemblée nationale, relevé le **2 novembre 2026** : **574 sièges pourvus**, dont **563 dans 11 groupes** et **11 non-inscrits**, plus **3 sièges vacants**, soit **577 sièges au total**. Les membres et apparentés sont conservés séparément. Les 577 points du schéma comptent chaque siège une fois ; ce dessin ne reproduit pas le plan exact des places.
+
+Un groupe peut accueillir plusieurs partis : les effectifs de groupe affichés sur les fiches ne sont pas des effectifs propres aux partis et ne doivent pas être additionnés entre fiches. Le tableau officiel ne permet pas de déduire partout les adhésions individuelles ; une absence de groupe propre n’est donc jamais automatiquement convertie en zéro député. Le périmètre est l’Assemblée nationale, pas l’ensemble des mandats électifs. Pour actualiser le relevé, vérifier le tableau source, la date et chaque effectif dans `public/parliament.json`, puis régénérer les pages et exécuter les tests.
+
+Les influences philosophiques et les penseurs sont décrits dans `families[key].philosophy`. Les lectures centrales sont **Les Droites en France** (1982) et **Les Droites aujourd’hui** (2005) de René Rémond, **Les Gauches françaises, 1762–2012** (2012) et **Fernand Pelloutier et les origines du syndicalisme d’action directe** (1971) de Jacques Julliard. Les typologies historiques et les références philosophiques ne sont pas transposées mécaniquement aux partis contemporains. Le repère personnel hors axe n’est doté d’aucune généalogie philosophique inventée.
+
+L’annuaire et le tableau parlementaire sont disponibles sans JavaScript. `parties-app.js` ajoute la recherche, les filtres par famille et groupe, les tris, les vues cartes/liste et les onglets utilisables au clavier. Les profils détaillés et les dossiers de courants restent statiques.
