@@ -9046,7 +9046,7 @@
       "title": "Dépenses de pensions des régimes de protection sociale",
       "period": "2024",
       "unit": "% du PIB",
-      "definition": "Total des prestations de pensions recensées par ESSPROS : vieillesse, réversion, invalidité et autres catégories, régimes publics et privés de protection sociale couverts par le système statistique.",
+      "definition": "Total des prestations de pensions recensées par ESSPROS : vieillesse, soutien aux proches après un décès, invalidité et autres catégories, régimes publics et privés de protection sociale couverts par le système statistique.",
       "reading": "Ce total n’est pas une dépense exclusivement publique. Les régimes professionnels capitalisés peuvent compter dans ESSPROS alors qu’ils ne figurent pas dans les dépenses des administrations publiques.",
       "decimals": 1,
       "sourceIds": [
@@ -9553,7 +9553,7 @@
     {
       "id": "public-oldage-gdp",
       "group": "retirement",
-      "title": "Dépenses publiques de vieillesse et de réversion",
+      "title": "Dépenses publiques de vieillesse et de soutien aux proches après un décès",
       "period": "2024",
       "unit": "% du PIB",
       "decimals": 1,
@@ -10011,7 +10011,7 @@
     {
       "id": "public-oldage-share",
       "group": "retirement",
-      "title": "Vieillesse et réversion dans les dépenses publiques",
+      "title": "Vieillesse et soutien aux proches après un décès dans les dépenses publiques",
       "period": "2024",
       "unit": "% des dépenses publiques",
       "decimals": 1,
@@ -10934,7 +10934,7 @@
       "isProjection": true,
       "projectionPublished": 2024,
       "definition": "Dépenses publiques brutes de pensions selon le scénario de référence du 2024 Ageing Report, base 2022, tableau I.1.6. Hypothèses démographiques, économiques et législation retenues pour ce rapport.",
-      "reading": "Projection conditionnelle, pas prévision actualisée de 2026. Les réformes ultérieures ne sont pas automatiquement intégrées. Le périmètre diffère de COFOG vieillesse/réversion et des pensions publiques et privées ESSPROS.",
+      "reading": "Projection conditionnelle, pas prévision actualisée de 2026. Les réformes ultérieures ne sont pas automatiquement intégrées. Le périmètre diffère de COFOG vieillesse/soutien aux proches après un décès et des pensions publiques et privées ESSPROS.",
       "sourceIds": [
         "ageing-report"
       ],
@@ -11142,7 +11142,7 @@
       "isProjection": true,
       "projectionPublished": 2024,
       "definition": "Dépenses publiques brutes de pensions selon le scénario de référence du 2024 Ageing Report, base 2022, tableau I.1.6. Hypothèses démographiques, économiques et législation retenues pour ce rapport.",
-      "reading": "Projection conditionnelle, pas prévision actualisée de 2026. Les réformes ultérieures ne sont pas automatiquement intégrées. Le périmètre diffère de COFOG vieillesse/réversion et des pensions publiques et privées ESSPROS.",
+      "reading": "Projection conditionnelle, pas prévision actualisée de 2026. Les réformes ultérieures ne sont pas automatiquement intégrées. Le périmètre diffère de COFOG vieillesse/soutien aux proches après un décès et des pensions publiques et privées ESSPROS.",
       "sourceIds": [
         "ageing-report"
       ],

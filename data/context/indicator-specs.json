@@ -402,7 +402,7 @@
       "spdepb": "TOTAL",
       "spdepm": "TOTAL"
     },
-    "definition": "Total des prestations de pensions recensées par ESSPROS : vieillesse, réversion, invalidité et autres catégories, régimes publics et privés de protection sociale couverts par le système statistique.",
+    "definition": "Total des prestations de pensions recensées par ESSPROS : vieillesse, soutien aux proches après un décès, invalidité et autres catégories, régimes publics et privés de protection sociale couverts par le système statistique.",
     "reading": "Ce total n’est pas une dépense exclusivement publique. Les régimes professionnels capitalisés peuvent compter dans ESSPROS alors qu’ils ne figurent pas dans les dépenses des administrations publiques.",
     "decimals": 1
   }
