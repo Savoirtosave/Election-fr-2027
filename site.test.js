@@ -20,7 +20,8 @@ test('les ressources locales sont servies avec le bon type', async () => {
 test('aucune candidature fictive ni fiche sans preuve publiée', async () => {
   const data = await (await fetch(base + '/data.json')).json();
   for (const c of data.candidates) {
-    assert.ok(c.name && c.party && c.rationale && c.verifiedAt);
+    assert.ok(c.name && c.party && c.rationale && c.verifiedAt && c.biography && c.declaredAt);
+    assert.ok(Number.isFinite(Date.parse(c.declaredAt)));
     assert.ok(Number.isFinite(Date.parse(c.verifiedAt)));
     assert.ok(c.sources.length >= 2);
     for (const source of c.sources) assert.equal(new URL(source.url).protocol, 'https:');

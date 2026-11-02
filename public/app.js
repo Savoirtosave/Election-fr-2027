@@ -5,6 +5,13 @@ const list = document.querySelector('#candidate-list');
 const count = document.querySelector('#result-count');
 const empty = document.querySelector('#empty');
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const formatDate = value => new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(value));
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  node.className = className;
+  if (text) node.textContent = text;
+  return node;
+}
 let candidates = [];
 const navLinks = [...document.querySelectorAll('header nav a')];
 const observer = new IntersectionObserver(entries => {
@@ -23,17 +30,28 @@ function render() {
   list.replaceChildren();
   for (const c of matches) {
     const article = document.createElement('article'); article.className = 'candidate-card';
+    article.dataset.family = c.family;
+    const portrait = element('div', 'candidate-initials', c.name.split(' ').map(part => part[0]).slice(0, 2).join(''));
+    portrait.setAttribute('aria-hidden', 'true');
+    const badge = element('span', 'candidate-status', 'Candidature déclarée');
+    const top = element('div', 'candidate-top'); top.append(portrait, badge);
     const heading = document.createElement('h3'); heading.textContent = c.name;
-    const party = document.createElement('p'); party.textContent = c.party;
-    const classification = document.createElement('p'); classification.textContent = labels[c.family] || labels.unclassified;
+    const party = element('p', 'candidate-party', c.party);
+    const classification = element('p', 'candidate-family', labels[c.family] || labels.unclassified);
+    const biography = element('p', 'candidate-biography', c.biography);
+    const declaration = element('p', 'candidate-declaration', `Déclaration : ${formatDate(c.declaredAt)}`);
+    const details = document.createElement('details');
+    details.className = 'candidate-evidence';
+    const summary = document.createElement('summary'); summary.textContent = 'Classement et sources';
     const reason = document.createElement('p'); reason.textContent = c.rationale;
-    const date = document.createElement('p'); date.textContent = `Vérifié le ${new Intl.DateTimeFormat('fr-FR', {dateStyle: 'long', timeZone: 'UTC'}).format(new Date(c.verifiedAt))}`;
-    article.append(heading, party, classification, reason, date);
+    const date = element('p', 'candidate-verification', `Fiche vérifiée le ${formatDate(c.verifiedAt)}`);
+    details.append(summary, reason);
     for (const s of c.sources) {
       const url = new URL(s.url); if (url.protocol !== 'https:') continue;
-      const link = document.createElement('a'); link.href = url.href; link.textContent = `${s.label} ↗`; link.target = '_blank'; link.rel = 'noopener noreferrer';
-      const p = document.createElement('p'); p.append(link); article.append(p);
+      const link = document.createElement('a'); link.href = url.href; link.textContent = s.label; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      const p = document.createElement('p'); p.append(link); details.append(p);
     }
+    article.append(top, heading, party, classification, biography, declaration, details, date);
     list.append(article);
   }
   empty.hidden = matches.length > 0;

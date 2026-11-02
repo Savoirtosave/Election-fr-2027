@@ -25,6 +25,8 @@ Modifier `public/data.json`. `verifiedAt` global est la date du dernier contrôl
 
 - `name`, `party`, `family` : l’une de `radical`, `left`, `green`, `centre`, `right`, `far-right`, `unclassified` ;
 - `rationale` : justification spécifique, nuancée et sourcée du classement ;
+- `biography` : présentation factuelle de quelques lignes (parcours et fonctions, sans argumentaire électoral), étayée par les sources ;
+- `declaredAt` : date ISO de l’annonce explicite de candidature, et non celle de la publication de la fiche ;
 - `verifiedAt` : date ISO du contrôle ;
 - `sources` : objets `{ "label": "Titre, éditeur et date", "url": "https://…" }`, incluant annonce explicite, confirmation journalistique et références du classement.
 
