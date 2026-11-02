@@ -712,3 +712,47 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
   .nemo-reading { padding: 20px; }
   .chapter-list { overflow-wrap: anywhere; }
 }
+
+/* Clear pictograms with their meaning written underneath. */
+.family-symbol { width: 86px; height: 96px; padding: 12px 6px 8px; grid-template-rows: 49px auto; gap: 8px; border-radius: 13px; }
+.family-symbol svg { width: 48px; height: 48px; }
+.family-symbol-label { font-size: 10px; font-weight: 750; line-height: 1.1; text-align: center; letter-spacing: 0; }
+.family-browser-card { grid-template-columns: 86px minmax(0,1fr); }
+.family-browser-grid.is-list .family-browser-card { grid-template-columns: 86px minmax(0,2fr) minmax(0,1fr); }
+.family-dossier-identity .family-symbol-label { display: block; }
+
+/* One photographic direction for every thinker, across every political family. */
+.thinker-portraits { display: flex; gap: 15px; align-items: start; margin-bottom: 23px; }
+.thinker-portraits figure { margin: 0; flex: 1 1 0; min-width: 0; max-width: 160px; }
+.thinker-photo-frame { aspect-ratio: 4 / 5; overflow: hidden; background: #e7e6e2; border: 1px solid #d7d6d2; border-radius: 4px; }
+.thinker-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--portrait-position,50% 25%); filter: grayscale(1) contrast(1.05); transform: scale(var(--portrait-zoom,1)); transform-origin: 50% 25%; }
+.thinker-portraits figcaption { margin-top: 8px; font-size: 11px; line-height: 1.5; color: var(--navy); font-weight: 650; }
+.thinker-portraits figcaption span { display: block; color: var(--muted); font-size: 10px; font-weight: 400; }
+.thinker-credits { font-size: 11px; color: var(--muted); margin-top: 20px; border-top: 1px solid var(--line); padding-top: 13px; }
+.thinker-credits summary { cursor: pointer; color: var(--blue); font-weight: 650; }
+.thinker-credits p { font-size: 11px; margin-top: 12px; }
+.thinker-credits ul { padding-left: 15px; overflow-wrap: anywhere; }
+.thinker-credits li { margin-top: 10px; }
+
+/* Bibliographical breadth is stated prominently before any highlighted authors. */
+.bibliography-scope { max-width: 1240px; margin: 30px auto 45px; padding: 34px 38px; border-radius: 15px; background: var(--navy); color: white; border-left: 6px solid #9bb6ff; }
+.bibliography-scope .eyebrow { color: #b9cbff; font-size: 11px; }
+.bibliography-scope h2 { max-width: 1000px; font-size: clamp(25px,3vw,35px); line-height: 1.2; margin-bottom: 20px; letter-spacing: -.5px; }
+.bibliography-scope p { max-width: 1000px; font-size: 16px; line-height: 1.8; color: #e2e8fa; }
+.bibliography-scope .bibliography-examples { font-size: 14px; font-weight: 650; color: #d0dcff; }
+.bibliography-scope a { color: white; font-size: 14px; font-weight: 700; }
+.bibliography-scope.is-compact { padding: 27px 32px; }
+.bibliography-scope.is-compact h2 { font-size: 26px; }
+.bibliography-scope.is-compact p { font-size: 14px; }
+@media(max-width:1365px) { .bibliography-scope { margin-left: 5vw; margin-right: 5vw; } }
+@media(max-width:600px) {
+  .family-browser-card, .family-browser-grid.is-list .family-browser-card { grid-template-columns: 76px minmax(0,1fr); }
+  .family-symbol { width: 76px; height: 92px; }
+  .family-symbol svg { width: 44px; height: 44px; }
+  .family-symbol-label { font-size: 9px; }
+  .thinker-portraits { gap: 12px; }
+  .bibliography-scope, .bibliography-scope.is-compact { padding: 25px 22px; margin: 24px 5vw 32px; }
+  .bibliography-scope h2, .bibliography-scope.is-compact h2 { font-size: 25px; }
+  .bibliography-scope p { font-size: 14px; }
+}
+.bibliography-scope h2 { color: #fff; }

@@ -100,10 +100,19 @@ Le classement PISA est également limité explicitement au panel de quatre pays.
 
 ## Familles politiques et Philippe Nemo
 
-L’annuaire `public/familles.html` reprend les outils de celui des partis : recherche par famille, penseur, idée, parti ou candidat ; filtre par type de dossier ; tri ; vues en cartes et en liste. Les six familles, trois courants transversaux et la limite du classement personnel restent explicitement distingués. Les symboles originaux de `public/family-visuals.js` sont éditoriaux, sans valeur d’emblèmes officiels.
+L’annuaire `public/familles.html` reprend les outils de celui des partis : recherche par famille, penseur, idée, parti ou candidat ; filtre par type de dossier ; tri ; vues en cartes et en liste. Les six familles, trois courants transversaux et la limite du classement personnel restent explicitement distingués. Les pictogrammes de `public/family-visuals.js` sont issus de Lucide (licence ISC conservée dans `public/icons/families/LICENSE.txt`), accompagnés de libellés explicites. Ce sont des repères éditoriaux, sans valeur d’emblèmes officiels.
 
 Les dix dossiers relient trois dimensions d’analyse à l’histoire, aux penseurs, aux partis (avec logos), aux candidats et aux sources. `scripts/render-families.mjs` génère ces pages ; `public/families-app.js` améliore les filtres sans empêcher la lecture statique avec Go Live ou sans JavaScript.
 
 Philippe Nemo, *Histoire des idées politiques aux Temps modernes et contemporains*, PUF, « Quadrige », édition 2013 [première édition 2002], ISBN 9782130627333, DOI 10.3917/puf.nemo.2013.01, figure dans `public/references.js`. `public/nemo-readings.js` indique les chapitres pertinents et leur pagination vérifiée dans le sommaire. La notice, la présentation, le sommaire et les extraits accessibles de huit chapitres ont été consultés ; cela ne constitue pas une lecture intégrale de l’ouvrage en accès conditionnel. Les autres liens de chapitres sont des pistes de lecture identifiées dans le sommaire.
 
 La perspective libérale de Nemo est mise en regard des autres historiens et des travaux contemporains. Elle éclaire notamment souveraineté, État de droit, libertés, socialismes et justice ; elle n’est pas une grille automatique de classement des partis. Ses repères sont ajoutés aux familles et aux fiches partisanes pertinentes. L’écologie, l’animalisme et le repère personnel conservent leurs sources spécifiques ; une filiation avec Nemo n’est pas inventée pour remplir une rubrique.
+
+
+### Portraits des penseurs et visibilité de la bibliographie
+
+Les 38 personnes citées dans les cartes de penseurs ont un portrait local dans `public/thinkers/`. Le registre `public/thinker-portraits.js` associe chaque personne au fichier, à la source, au crédit, à la licence et au cadrage. Les fiches réunissant deux auteurs montrent deux portraits avec deux noms. Les photographies et les portraits peints ou gravés sont identifiés et traités avec le même cadre neutre, le même ratio et le même filtre CSS noir et blanc, sans couleur liée au courant politique. Les fichiers téléchargés restent inchangés ; les crédits indiquent le traitement d’affichage.
+
+Les images proviennent de Wikimedia Commons, sauf le portrait de Sue Donaldson, identifié sur son profil de The Writers’ Union of Canada, avec la mention de droits réservés. Il ne faut pas le remplacer par le portrait de son homonyme politique de Seattle. Les attributions requises sont conservées, notamment celles des archives fédérales allemandes pour Rosa Luxemburg et de Regina Kühne / Universitätsarchiv St.Gallen pour Hans Jonas. Les sources et licences sont accessibles dans chaque carte et dans la page Sources ; `public/thinkers/CREDITS.md` en conserve une copie.
+
+`scripts/render-bibliography-scope.mjs` produit l’encart commun, volontairement visible, indiquant que Nemo, Julliard et Rémond ne sont qu’une partie des auteurs mobilisés. Il est affiché sur l’annuaire, les dix dossiers de familles et la page Sources, avec le nombre réel de références et un lien vers la bibliographie complète.

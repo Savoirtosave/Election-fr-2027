@@ -370,3 +370,42 @@ test('Nemo est cité lorsque ses repères sont utilisés, sans attribution autom
   }
   assert.ok(!nemoReadings.personal && !nemoReadings.animalist && !nemoReadings.green);
 });
+
+test('tous les penseurs ont des portraits identifiés, locaux et crédités',async()=>{
+  const {thinkerPortraits,thinkerPortraitGroups}=await import('./public/thinker-portraits.js');
+  assert.equal(Object.keys(thinkerPortraits).length,38);
+  for(const family of Object.values(families)) for(const [name]of family.philosophy.thinkers){
+    const group=thinkerPortraitGroups[name];assert.ok(group?.length,name);
+    for(const person of group)assert.ok(thinkerPortraits[person],person);
+  }
+  for(const p of Object.values(thinkerPortraits)){
+    assert.ok(p.credit&&p.license&&p.kind,p.name);
+    assert.equal(new URL(p.source).protocol,'https:');
+    if(p.license.startsWith('CC '))assert.match(p.licenseUrl,/^https:\/\//);
+    const response=await fetch(base+'/'+p.src.slice(2));assert.equal(response.status,200,p.name);
+    const bytes=Buffer.from(await response.arrayBuffer());
+    if(p.src.endsWith('.png'))assert.equal(bytes.subarray(1,4).toString(),'PNG');
+    else assert.equal(bytes.readUInt16BE(0),0xffd8,p.name);
+  }
+  const source=thinkerPortraits['Sue Donaldson'].source;
+  assert.ok(source.includes('writersunion.ca'),'Ne pas confondre l’autrice avec l’élue de Seattle');
+  const rosa=thinkerPortraits['Rosa Luxemburg'];assert.ok(rosa.credit.includes('183-14077-006'));
+  assert.ok(thinkerPortraits['Hans Jonas'].credit.includes('Regina Kühne'));
+  for(const [key,f]of Object.entries(families)){
+    const html=await(await fetch(base+`/famille-${key}.html`)).text();
+    const names=new Set(f.philosophy.thinkers.flatMap(([name])=>thinkerPortraitGroups[name]));
+    assert.equal((html.match(/class="thinker-photo"/g)||[]).length,names.size);
+    for(const name of names)assert.ok(html.includes(thinkerPortraits[name].src));
+  }
+});
+
+test('les symboles sont légendés et la diversité bibliographique est mise en avant',async()=>{
+  const {familyVisuals}=await import('./public/family-visuals.js');
+  const directory=await(await fetch(base+'/familles.html')).text();
+  for(const visual of Object.values(familyVisuals))assert.ok(directory.includes(visual.label));
+  for(const file of ['sources.html','familles.html',...Object.keys(families).map(key=>`famille-${key}.html`)]){
+    const html=await(await fetch(base+'/'+file)).text();
+    assert.match(html,/class="bibliography-scope/);
+    assert.ok(html.includes('Nemo, Julliard et Rémond ne sont qu’une partie des auteurs mobilisés.'));
+  }
+});
