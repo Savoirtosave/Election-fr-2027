@@ -6,6 +6,17 @@ const count = document.querySelector('#result-count');
 const empty = document.querySelector('#empty');
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 let candidates = [];
+const navLinks = [...document.querySelectorAll('header nav a')];
+const observer = new IntersectionObserver(entries => {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    for (const link of navLinks) {
+      if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    }
+  }
+}, { rootMargin: '-10% 0px -65% 0px' });
+for (const id of ['candidats', 'familles', 'methode']) observer.observe(document.getElementById(id));
 function render() {
   const term = normalize(search.value.trim());
   const matches = candidates.filter(c => normalize(`${c.name} ${c.party}`).includes(term) && (family.value === 'all' || c.family === family.value));
@@ -26,7 +37,7 @@ function render() {
     list.append(article);
   }
   empty.hidden = matches.length > 0;
-  if (!candidates.length) { count.textContent = 'Annuaire non encore renseigné · Aucun décompte de candidatures disponible'; return; }
+  if (!candidates.length) { search.disabled = true; family.disabled = true; count.textContent = 'Annuaire non encore renseigné · Aucun décompte de candidatures disponible'; return; }
   count.textContent = `${matches.length} candidature${matches.length > 1 ? 's' : ''} affichée${matches.length > 1 ? 's' : ''}`;
   empty.querySelector('h3').textContent = 'Aucun résultat pour ces filtres.';
   empty.querySelector('p').textContent = 'Essayez un autre nom ou sélectionnez toutes les familles politiques.';
@@ -34,7 +45,7 @@ function render() {
 }
 search.addEventListener('input', render); family.addEventListener('change', render);
 try {
-  const response = await fetch('/data.json');
+  const response = await fetch('./data.json');
   if (!response.ok) throw new Error('Données indisponibles');
   const data = await response.json();
   candidates = data.candidates;
