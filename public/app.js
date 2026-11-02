@@ -1,4 +1,4 @@
-const labels = { radical: 'Gauche radicale / révolutionnaire', left: 'Gauche sociale-démocrate', green: 'Écologie politique', centre: 'Centre', right: 'Droite conservatrice / libérale', 'far-right': 'Droite radicale / extrême droite', unclassified: 'Classement non établi' };
+import { families } from './families.js';
 const search = document.querySelector('#search');
 const family = document.querySelector('#family');
 const list = document.querySelector('#candidate-list');
@@ -31,27 +31,63 @@ function render() {
   for (const c of matches) {
     const article = document.createElement('article'); article.className = 'candidate-card';
     article.dataset.family = c.family;
-    const portrait = element('div', 'candidate-initials', c.name.split(' ').map(part => part[0]).slice(0, 2).join(''));
-    portrait.setAttribute('aria-hidden', 'true');
+    const portrait = element('div', 'candidate-portrait');
+    const initials = element('span', 'candidate-initials', c.name.split(' ').map(part => part[0]).slice(0, 2).join(''));
+    initials.setAttribute('aria-hidden', 'true');
+    const photo = document.createElement('img');
+    photo.src = c.photo.src;
+    photo.alt = `Portrait de ${c.name}`;
+    photo.width = 160; photo.height = 160;
+    photo.loading = 'lazy'; photo.decoding = 'async';
+    if (c.photo.position) photo.style.objectPosition = c.photo.position;
+    if (c.photo.panel) portrait.classList.add(`portrait-panel-${c.photo.panel}`);
+    photo.addEventListener('error', () => {
+      photo.hidden = true;
+      initials.hidden = false;
+      portrait.setAttribute('role', 'img');
+      portrait.setAttribute('aria-label', `Portrait indisponible : ${c.name}`);
+    }, { once: true });
+    initials.hidden = true;
+    portrait.append(photo, initials);
     const badge = element('span', 'candidate-status', 'Candidature déclarée');
     const top = element('div', 'candidate-top'); top.append(portrait, badge);
     const heading = document.createElement('h3'); heading.textContent = c.name;
     const party = element('p', 'candidate-party', c.party);
-    const classification = element('p', 'candidate-family', labels[c.family] || labels.unclassified);
+    const classification = element('details', 'candidate-classification');
+    const politicalFamily = families[c.family];
+    const familySummary = element('summary', 'candidate-family', politicalFamily.label);
+    familySummary.title = `Comprendre le classement de ${c.name}`;
+    const explanation = element('div', 'classification-explanation');
+    explanation.append(
+      element('h4', '', politicalFamily.kind === 'family' ? 'Définition de la famille' : 'Définition du repère'),
+      element('p', '', politicalFamily.definition),
+      element('h4', '', `Pourquoi ce classement pour ${c.name} ?`),
+      element('p', '', c.rationale),
+      element('p', 'classification-note', 'Interprétation éditoriale fondée sur les sources de la fiche. Un repère principal ne résume pas toutes les positions du candidat.'),
+    );
+    classification.append(familySummary, explanation);
     const biography = element('p', 'candidate-biography', c.biography);
     const declaration = element('p', 'candidate-declaration', `${c.declarationDateType === 'reported' ? 'Candidature rapportée le' : 'Déclaration le'} ${formatDate(c.declaredAt)}`);
     const details = document.createElement('details');
     details.className = 'candidate-evidence';
-    const summary = document.createElement('summary'); summary.textContent = 'Classement et sources';
-    const reason = document.createElement('p'); reason.textContent = c.rationale;
-    const date = element('p', 'candidate-verification', `Fiche documentée le ${formatDate(c.verifiedAt)}`);
-    details.append(summary, reason);
+    const summary = document.createElement('summary'); summary.textContent = 'Sources et crédit photo';
+    details.append(summary);
     for (const s of c.sources) {
       const url = new URL(s.url); if (url.protocol !== 'https:') continue;
       const link = document.createElement('a'); link.href = url.href; link.textContent = s.label; link.target = '_blank'; link.rel = 'noopener noreferrer';
       const p = document.createElement('p'); p.append(link); details.append(p);
     }
-    article.append(top, heading, party, classification, biography, declaration, details, date);
+    const credit = element('p', 'photo-credit', `Photo : ${c.photo.credit} · `);
+    const photoSource = element('a', '', c.photo.license);
+    photoSource.href = c.photo.source; photoSource.target = '_blank'; photoSource.rel = 'noopener noreferrer';
+    credit.append(photoSource);
+    if (c.photo.licenseUrl) {
+      const license = element('a', '', 'Conditions de réutilisation');
+      license.href = c.photo.licenseUrl; license.target = '_blank'; license.rel = 'noopener noreferrer';
+      credit.append(document.createTextNode(' · '), license);
+    }
+    details.append(credit);
+    article.append(top, heading, party, classification, biography, declaration, details);
     list.append(article);
   }
   empty.hidden = matches.length > 0;

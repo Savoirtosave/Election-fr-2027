@@ -20,14 +20,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/nathalie-arthaud.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
+        "credit": "Kokluts",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Nathalie_Arthaud_%28LO%29_19-05-2024.jpg/250px-Nathalie_Arthaud_%28LO%29_19-05-2024.jpg"
+      }
     },
     {
       "name": "François Asselineau",
       "party": "Union populaire républicaine (UPR)",
-      "family": "unclassified",
+      "family": "sovereign",
       "biography": "Fondateur et président de l’UPR, il a été candidat à la présidentielle de 2017. Il défend la sortie de la France de l’Union européenne, de l’euro et de l’OTAN ; la presse rapporte une nouvelle candidature pour 2027.",
-      "rationale": "Les sources documentent son souverainisme et son projet de sortie de l’UE. Ces positions ne suffisent pas, à elles seules, à le ranger dans l’une des six familles du site : classement non établi.",
+      "rationale": "Son projet central est de sortir la France de l’Union européenne, de l’euro et de l’OTAN, comme le rappelle 20 Minutes. Cette priorité à la souveraineté nationale justifie le repère souverainiste. Son parcours à droite ne permet pas, à lui seul, de déduire toutes ses positions économiques ou de l’assimiler au RN.",
       "declaredAt": "2026-05-19",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
@@ -44,7 +52,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/francois-asselineau.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_ASSELINEAU.jpg",
+        "credit": "Union Populaire Républicaine",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Fran%C3%A7ois_ASSELINEAU.jpg/250px-Fran%C3%A7ois_ASSELINEAU.jpg"
+      }
     },
     {
       "name": "Gabriel Attal",
@@ -68,7 +84,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/gabriel-attal.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg",
+        "credit": "Ismail Aissoub",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Gabriel_Attal_2025_%28close_crop%29.jpg/250px-Gabriel_Attal_2025_%28close_crop%29.jpg"
+      }
     },
     {
       "name": "Delphine Batho",
@@ -88,14 +112,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/delphine-batho.png",
+        "source": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped-2).png",
+        "credit": "DeuxSevres79",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Delphine_Batho_%28cropped-2%29.png/250px-Delphine_Batho_%28cropped-2%29.png"
+      }
     },
     {
       "name": "Olivier Becht",
       "party": "Sans camp revendiqué ; ancien Agir / Renaissance",
-      "family": "unclassified",
+      "family": "centre",
       "biography": "Député du Haut-Rhin, ancien maire de Rixheim et ancien ministre du Commerce extérieur, il a aussi été juge administratif et enseignant. Il annonce sa candidature en revendiquant une démarche indépendante de ses anciennes formations.",
-      "rationale": "Le JDD rapporte qu’il ne se revendique plus d’un camp, après Agir et Renaissance. Son ancienne affiliation ne suffit pas à classer sa candidature actuelle : classement non établi.",
+      "rationale": "Son parcours à Agir, au groupe Agir ensemble et au gouvernement d’Élisabeth Borne le situe dans une tradition de centre droit réformiste. Le JDD rapporte néanmoins qu’il ne revendique plus de camp : le classement décrit donc son parcours politique documenté, avec cette réserve, et non une adhésion actuelle à Renaissance.",
       "declaredAt": "2026-09-24",
       "declarationDateType": "announced",
       "verifiedAt": "2026-11-02",
@@ -108,7 +140,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/olivier-becht.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Olivier_Becht_2023_(cropped).jpg",
+        "credit": "Palácio do Planalto from Brasilia, Brasil",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Olivier_Becht_2023_%28cropped%29.jpg/250px-Olivier_Becht_2023_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Xavier Bertrand",
@@ -128,7 +168,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/xavier-bertrand.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg",
+        "credit": "Claudio Centonze / European Union, 2025 / EC - Audiovisual Service",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Xavier_Bertrand_-_2025_%28cropped%29.jpg/250px-Xavier_Bertrand_-_2025_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Karim Bouamrane",
@@ -148,7 +196,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/karim-bouamrane.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026_(cropped).jpg",
+        "credit": "Oumma",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Karim_Bouamrane_en_2026_%28cropped%29.jpg/250px-Karim_Bouamrane_en_2026_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Bernard Cazeneuve",
@@ -168,7 +224,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/bernard-cazeneuve.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bernard_Cazeneuve,_(42399145362)_(cropped).jpg",
+        "credit": "Jérémy Barande",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Bernard_Cazeneuve%2C_%2842399145362%29_%28cropped%29.jpg/250px-Bernard_Cazeneuve%2C_%2842399145362%29_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Nicolas Dupont-Aignan",
@@ -196,14 +260,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/nicolas-dupont-aignan.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_fran%C3%A7ais.jpg",
+        "credit": "Debout la France",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Nicolas_Dupont-Aignan%2C_homme_politique_fran%C3%A7ais.jpg/250px-Nicolas_Dupont-Aignan%2C_homme_politique_fran%C3%A7ais.jpg"
+      }
     },
     {
       "name": "Sylvain Durif",
       "party": "Sans étiquette",
-      "family": "unclassified",
+      "family": "personal",
       "biography": "Personnalité des réseaux sociaux connue depuis les rumeurs de fin du monde à Bugarach en 2012, il se présente notamment sous le nom de « Christ cosmique ». Il annonce sa candidature dans une vidéo diffusée sur les réseaux sociaux.",
-      "rationale": "Les articles consultés documentent une candidature personnelle et des discours ésotériques, sans fournir un ensemble de positions permettant un classement politique solide.",
+      "rationale": "Le Figaro et RTL rapportent une annonce dans laquelle il se présente comme « Christ cosmique », « grand monarque » et promoteur d’une gouvernance planétaire. Le repère « projet personnel ésotérique » décrit ces références publiques. Aucun programme économique et social suffisamment structuré ne permet de lui attribuer honnêtement une famille classique de gauche ou de droite.",
       "declaredAt": "2026-08-23",
       "declarationDateType": "announced",
       "verifiedAt": "2026-11-02",
@@ -220,14 +292,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/sylvain-durif.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Sylvain_Durif.jpg",
+        "credit": "ThimGui",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Sylvain_Durif.jpg"
+      }
     },
     {
       "name": "Clara Egger",
       "party": "Solution démocratique",
-      "family": "unclassified",
+      "family": "democracy",
       "biography": "Professeure de sciences politiques à l’université de Rotterdam, elle porte la candidature de Solution démocratique. Déjà engagée dans une tentative de candidature en 2022, elle défend le référendum d’initiative citoyenne constituant et un rééquilibrage des institutions.",
-      "rationale": "Les articles du Dauphiné et du Temps décrivent une démarche centrée sur la démocratie directe. Cette priorité institutionnelle ne suffit pas à établir une appartenance à l’une des six familles.",
+      "rationale": "Le Dauphiné et Le Temps présentent sa démarche comme centrée sur le référendum d’initiative citoyenne constituant et le rééquilibrage des pouvoirs. C’est ce projet de démocratie directe, plutôt qu’une ancienne affiliation ou une position supposée sur l’économie, qui justifie son rattachement au repère citoyen et constituant.",
       "declaredAt": "2026-05-21",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
@@ -244,7 +324,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/clara-egger.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Clara_Egger.jpg",
+        "credit": "Thomas Binet",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Clara_Egger.jpg"
+      }
     },
     {
       "name": "Raphaël Glucksmann",
@@ -268,7 +356,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/raphael-glucksmann.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
+        "credit": "European Union 2024 - Source : EP",
+        "license": "European Parliament",
+        "licenseUrl": "https://www.europarl.europa.eu/legal-notice/",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg"
+      }
     },
     {
       "name": "Anasse Kazib",
@@ -288,7 +384,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/anasse-kazib.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_d%C3%A9cembre_2021.jpg",
+        "credit": "PabloMorao27",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Anasse_Kazib%2C_d%C3%A9cembre_2021.jpg"
+      }
     },
     {
       "name": "Selma Labib",
@@ -312,14 +416,23 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/selma-labib.jpg",
+        "source": "https://npa-revolutionnaires.org/",
+        "credit": "NPA – Révolutionnaires, visuel de campagne",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "position": "59% 50%",
+        "originalUrl": "https://npa-revolutionnaires.org/bandeau-selma-labib.jpeg"
+      }
     },
     {
       "name": "Francis Lalanne",
       "party": "France Libre (soutien)",
-      "family": "unclassified",
+      "family": "sovereign",
       "biography": "Chanteur et auteur-compositeur, il s’est engagé dans différentes mobilisations politiques, notamment contre le passe sanitaire. Sa campagne pour 2027, soutenue par France Libre et Dieudonné, met en avant la souveraineté et une démocratie plus directe.",
-      "rationale": "Les sources décrivent un projet de rupture institutionnelle et souverainiste. Elles ne suffisent pas à en établir ici un classement complet ; l’étiquette reste non établie.",
+      "rationale": "Franceinfo rapporte que sa campagne défend la reprise en main de la souveraineté nationale, une rupture avec le système politique et une démocratie plus directe. Le repère souverainiste décrit cette priorité, sans supposer que son programme ou ses alliances soient identiques à ceux des autres candidats souverainistes.",
       "declaredAt": "2026-08-19",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
@@ -336,7 +449,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/francis-lalanne.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Lalanne_2021_(cropped).jpg",
+        "credit": "Thomas Bresson",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lalanne_2021_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Marine Le Pen",
@@ -360,7 +481,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/marine-le-pen.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(cropped).jpg",
+        "credit": "Vox España",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Marine_Le_Pen_2025_%28cropped%29.jpg"
+      }
     },
     {
       "name": "David Lisnard",
@@ -384,14 +513,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/david-lisnard.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg",
+        "credit": "Grégor Sauvagère",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/David_Lisnard_en_2026.jpg"
+      }
     },
     {
       "name": "Mira Markovic",
       "party": "Parti animaliste",
-      "family": "unclassified",
+      "family": "animalist",
       "biography": "Cofondatrice du Parti animaliste en 2016, elle a été élue parisienne avec des responsabilités liées à l’environnement et à la condition animale. Elle place la protection des animaux, l’élevage et leur statut juridique au centre de sa candidature.",
-      "rationale": "Le portrait du Point documente un engagement animaliste. La défense des animaux ne détermine pas, à elle seule, une position sur les autres axes du classement : elle n’est donc pas automatiquement assimilée à l’écologie politique.",
+      "rationale": "Le portrait du Point documente son rôle de cofondatrice du Parti animaliste et une campagne consacrée à l’élevage, la chasse et au statut juridique des animaux. Ces priorités motivent un classement animaliste propre, plutôt qu’une assimilation automatique à l’ensemble des partis écologistes.",
       "declaredAt": "2026-10-02",
       "declarationDateType": "announced",
       "verifiedAt": "2026-11-02",
@@ -404,14 +541,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/mira-markovic.jpg",
+        "source": "https://www.lepoint.fr/politique/mira-douchka-markovic-qui-est-la-candidate-du-parti-animaliste-a-la-presidentielle-2027-ISVTAH26T5FENCCMCZ5AEONBVU/",
+        "credit": "Parti animaliste, via Le Point",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://www.lepoint.fr/resizer/v2/LWKXWWZYWFC4JIFZKE5Y72267Y.jpeg?smart=true&auth=393debcdce05574a04301b2b7d97962e644cff3ae32b9ac66953a061ae08318d&width=1200&height=630"
+      }
     },
     {
       "name": "Benoît Mathieu",
       "party": "Sans étiquette",
-      "family": "unclassified",
+      "family": "democracy",
       "biography": "Ingénieur en agroalimentaire de formation devenu enseignant contractuel, il entreprend un tour de France à vélo pour rencontrer des maires et recueillir des parrainages. Il revendique une représentation issue de la société civile et indépendante des partis.",
-      "rationale": "RMC documente sa critique du fonctionnement partisan et sa démarche citoyenne. Ces éléments institutionnels ne permettent pas un classement gauche–droite suffisamment étayé.",
+      "rationale": "RMC rapporte sa volonté d’une « représentation politique civile », son indépendance à l’égard des partis et sa recherche de parrainages auprès de maires sans étiquette. Il relève ici du versant citoyen de cette catégorie ; les sources ne lui attribuent pas pour autant le même programme constituant que Clara Egger ou Manolo Mlekuz.",
       "declaredAt": "2026-05-03",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
@@ -428,7 +573,16 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/benoit-mathieu.jpg",
+        "source": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-a-velo-ou-en-van-le-tour-de-france-des-candidats-de-moins-de-30-ans-20260805",
+        "credit": "Édouard Canete / équipe de campagne, via Le Figaro (portrait à droite du montage)",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "panel": "right",
+        "originalUrl": "https://i.f1g.fr/media/cms/1200x630_crop/2026/08/05/ebc8d7dfb0ab484b40fb9bdf8a0f8a00d98cb523b0bb40f6d0d11651bf2d8a6c.jpg"
+      }
     },
     {
       "name": "Jean-Luc Mélenchon",
@@ -452,18 +606,30 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/jean-luc-melenchon.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_(cropped).jpg",
+        "credit": "jlm2017.fr",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Antoine Mikolajczak",
       "party": "Équinoxe",
-      "family": "unclassified",
+      "family": "green",
       "biography": "Ingénieur originaire de l’Oise, il porte la candidature d’Équinoxe. Il figure parmi les jeunes candidats parcourant le pays pour rencontrer des élus et réunir les 500 parrainages nécessaires, aux côtés d’Alexia de Montgolfier et Louis Brémaud dans la démarche de son mouvement.",
-      "rationale": "Le reportage consulté confirme sa candidature mais ne documente pas assez ses positions sur tous les axes politiques. Le classement reste non établi.",
+      "rationale": "Le site officiel d’Équinoxe le désigne comme son représentant et place la sobriété, le long terme et les enjeux environnementaux au cœur de sa démarche. Ces priorités étayent un rattachement à l’écologie politique. Cela ne signifie pas une affiliation aux Écologistes ni un alignement automatique sur leur positionnement à gauche.",
       "declaredAt": "2026-08-05",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
       "sources": [
+        {
+          "label": "Équinoxe — Présentation officielle : sobriété, long terme et candidature d’Antoine Mikolajczak (consulté le 2 novembre 2026)",
+          "url": "https://parti-equinoxe.fr/"
+        },
         {
           "label": "Le Figaro, 5 août 2026 — Présidentielle 2027 : à vélo ou en van, le tour de France des candidats de moins de 30 ans",
           "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-a-velo-ou-en-van-le-tour-de-france-des-candidats-de-moins-de-30-ans-20260805"
@@ -472,14 +638,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/antoine-mikolajczak.png",
+        "source": "https://parti-equinoxe.fr/",
+        "credit": "Équinoxe, portrait de campagne",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://parti-equinoxe.fr/wp-content/uploads/2026/08/Parti-Equinoxe-Antoine-Mikolajczak-1024x853.png"
+      }
     },
     {
       "name": "Manolo Mlekuz",
       "party": "Trajectoire",
-      "family": "unclassified",
+      "family": "democracy",
       "biography": "Jeune candidat habitant Montreuil, il sillonne la France en van pour solliciter les parrainages d’élus. Il propose une présidence chargée d’ouvrir un processus constituant, en laissant le gouvernement issu des législatives conduire la politique nationale.",
-      "rationale": "RMC décrit un projet avant tout institutionnel autour d’une Assemblée constituante. Cette proposition ne suffit pas à déterminer une famille politique sur les dimensions économiques et sociales.",
+      "rationale": "RMC décrit son projet explicitement institutionnel : ouvrir une Assemblée constituante et laisser le gouvernement issu des législatives conduire la politique nationale. Ce projet de redistribution du pouvoir justifie le repère citoyen et constituant, sans préjuger d’un programme économique de gauche ou de droite.",
       "declaredAt": "2026-07-03",
       "declarationDateType": "reported",
       "verifiedAt": "2026-11-02",
@@ -496,7 +670,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/manolo-mlekuz.jpg",
+        "source": "https://rmc.bfmtv.com/actualites/politique/si-j-arrive-a-l-elysee-ce-candidat-pour-2027-age-de-20-ans-veut-etre-un-president-sans-pouvoir_AV-202607030571.html",
+        "credit": "RMC, capture d’émission",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/DCB1WGfWRwtroEir809d56LEgb4=/0x0:1920x1080/1920x0/images/Manolo-Mlekuz-candidat-a-l-election-presidentielle-2027-sur-RMC-le-3-juillet-2026-2314686.jpg"
+      }
     },
     {
       "name": "Édouard Philippe",
@@ -524,7 +706,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/edouard-philippe.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg",
+        "credit": "Wasasaq8",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Edouard_Philippe_3x4_crop.jpg"
+      }
     },
     {
       "name": "Florian Philippot",
@@ -548,7 +738,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/florian-philippot.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:2022-04-16_16-49-26_MAM-Paris_02.jpg",
+        "credit": "Thomas Bresson",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/2022-04-16_16-49-26_MAM-Paris_02.jpg"
+      }
     },
     {
       "name": "Gilles Platret",
@@ -568,14 +766,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/gilles-platret.jpg",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature_AN-202610090630.html",
+        "credit": "Philippe Desmazes / AFP, via BFMTV",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/n7_xV3LQdPKupXoaUjJPoriArhM=/0x105:2048x1257/2048x0/images/platret-1141834.jpg"
+      }
     },
     {
       "name": "Natacha Polony",
       "party": "Sans étiquette",
-      "family": "unclassified",
+      "family": "sovereign",
       "biography": "Journaliste et essayiste, ancienne directrice de Marianne et ancienne chroniqueuse d’On n’est pas couché, elle annonce sa candidature sur France Inter. Elle défend une politique de production en France et une plus grande souveraineté économique.",
-      "rationale": "Le Figaro décrit des références souverainistes et un héritage chevènementiste. Cette combinaison traverse plusieurs traditions ; les sources consultées ne justifient pas un classement univoque dans les six familles.",
+      "rationale": "Le Figaro documente sa défense de la production sur le sol français, de la souveraineté économique et son héritage chevènementiste. Le républicanisme souverainiste rend compte de ce fil conducteur, qui traverse des traditions de gauche et de droite, plutôt que de réduire sa candidature à l’un de ces camps.",
       "declaredAt": "2026-10-14",
       "declarationDateType": "announced",
       "verifiedAt": "2026-11-02",
@@ -588,7 +794,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/natacha-polony.jpg",
+        "source": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-je-suis-candidate-annonce-la-journaliste-natacha-polony-20261014",
+        "credit": "Photographie publiée par lefigaro.fr",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://i.f1g.fr/media/cms/1200x630_crop/2026/10/14/693bd4ca8c9a6d33b728d9dfdd3185dc844b814eaec7c53dcea16bb0fc5a5dd5.jpg"
+      }
     },
     {
       "name": "Bruno Retailleau",
@@ -616,7 +830,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/bruno-retailleau.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_(cropped).jpg",
+        "credit": "Anthonymontardyfr",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg/250px-Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg"
+      }
     },
     {
       "name": "Fabien Roussel",
@@ -636,14 +858,22 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/fabien-roussel.jpg",
+        "source": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-adoube-par-ses-militants-le-communiste-fabien-roussel-officialise-sa-candidature-en-solitaire-20260906",
+        "credit": "François Lo Presti / AFP, via Le Figaro",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://i.f1g.fr/media/cms/1200x630_crop/2026/09/06/afd4ea93434956f9422150342244643c11aad416959a5f8c34f86f6f0b64eb75.jpg"
+      }
     },
     {
       "name": "François Ruffin",
       "party": "Debout !",
-      "family": "unclassified",
+      "family": "left",
       "biography": "Député de la Somme, journaliste et documentariste, il a rompu avec La France insoumise et préside Debout !. Il lance sa démarche présidentielle à Montreuil puis affirme qu’il se présentera même en l’absence de primaire de la gauche.",
-      "rationale": "Le HuffPost décrit une gauche sociale et protectionniste, cherchant une voie entre les proches de Mélenchon et ceux de Hollande. Les catégories proposées rendent mal cette position intermédiaire : classement non établi plutôt qu’attribution forcée.",
+      "rationale": "Le HuffPost décrit une gauche sociale, protectionniste et attachée à la défense des travailleurs ; LCP documente sa recherche d’un rassemblement électoral et d’une primaire. Le repère « gauche sociale / sociale-démocrate » correspond ici à son versant social et institutionnel : il ne signifie pas que Ruffin partage toutes les options de marché de la social-démocratie.",
       "declaredAt": "2025-04-01",
       "declarationDateType": "announced",
       "verifiedAt": "2026-11-02",
@@ -660,7 +890,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/francois-ruffin.jpg",
+        "source": "https://www.huffingtonpost.fr/politique/article/presidentielle-2027-francois-ruffin-lance-sa-campagne-avec-un-meeting-contre-les-trop-mous-et-les-trop-fous_248275.html",
+        "credit": "Franck Crusiaux / AFP, via Le HuffPost",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://focus.huffingtonpost.fr/2024/09/11/53/0/1024/576/1820/1023/75/0/2d33ce5_1726043953345-000-36f83vf.jpg"
+      }
     },
     {
       "name": "Marine Tondelier",
@@ -688,7 +926,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/marine-tondelier.jpg",
+        "source": "https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html",
+        "credit": "Thibaud Moritz / AFP, via franceinfo",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://www.franceinfo.fr/pictures/Ti4L_uIUCh6xQDkAKcUr74CoEaY/0x288:7199x4335/1500x843/2025/10/22/000-494233x-68f902f4de5fe158746561.jpg"
+      }
     },
     {
       "name": "Éric Zemmour",
@@ -712,7 +958,15 @@
           "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
           "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
         }
-      ]
+      ],
+      "photo": {
+        "src": "./portraits/eric-zemmour.jpg",
+        "source": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html",
+        "credit": "BFMTV, capture d’émission",
+        "license": "Droits réservés",
+        "licenseUrl": "",
+        "originalUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/ov9TtMBi-UcLPkCDXaHLz--bSAE=/0x0:1920x1080/1920x0/images/Le-president-de-Reconquete-Eric-Zemmour-le-17-septembre-2026-2350111.jpg"
+      }
     }
   ]
 }
