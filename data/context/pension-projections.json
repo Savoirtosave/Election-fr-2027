@@ -1,0 +1,49 @@
+{
+  "sourceId": "ageing-report",
+  "publicationYear": 2024,
+  "baseYear": 2022,
+  "horizons": [
+    2022,
+    2045,
+    2070
+  ],
+  "scope": "Dépenses publiques brutes de pensions, définition du rapport européen ; % du PIB.",
+  "table": "I.1.6, page imprimée 28",
+  "values": {
+    "FR": [
+      14.4,
+      13.9,
+      13.6
+    ],
+    "DE": [
+      10.2,
+      11.0,
+      11.4
+    ],
+    "ES": [
+      13.1,
+      16.9,
+      16.7
+    ],
+    "IT": [
+      15.6,
+      16.5,
+      13.7
+    ],
+    "BE": [
+      12.7,
+      14.6,
+      16.2
+    ],
+    "DK": [
+      8.3,
+      8.3,
+      6.8
+    ],
+    "NL": [
+      6.5,
+      7.9,
+      8.5
+    ]
+  }
+}

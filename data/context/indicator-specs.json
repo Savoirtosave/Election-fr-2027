@@ -1,0 +1,409 @@
+[
+  {
+    "id": "debt",
+    "group": "finances",
+    "title": "Dette publique",
+    "period": "2026-Q2",
+    "unit": "% du PIB",
+    "sourceId": "debt-quarterly",
+    "filters": {
+      "unit": "PC_GDP"
+    },
+    "definition": "Stock de dette brute consolidée des administrations publiques au sens de Maastricht. Le ratio trimestriel rapporte ce stock au PIB des sept derniers trimestres.",
+    "reading": "La France est plus endettée que l’Allemagne et l’Espagne dans ce panel, mais moins que l’Italie. Le ratio dépend aussi du niveau du PIB.",
+    "divisor": 1
+  },
+  {
+    "id": "debt-amount",
+    "group": "finances",
+    "title": "Dette publique en euros",
+    "period": "2026-Q2",
+    "unit": "Md€",
+    "sourceId": "debt-quarterly",
+    "filters": {
+      "unit": "MIO_EUR"
+    },
+    "definition": "Même dette publique, exprimée en milliards d’euros courants (millions Eurostat divisés par 1 000).",
+    "reading": "Un montant absolu dépend de la taille de l’économie ; le ratio au PIB est plus pertinent pour comparer les pays.",
+    "divisor": 1000
+  },
+  {
+    "id": "debt-annual",
+    "group": "finances",
+    "title": "Dette publique annuelle",
+    "period": "2025",
+    "unit": "% du PIB",
+    "sourceId": "public-finance",
+    "filters": {
+      "na_item": "GD"
+    },
+    "definition": "Dette brute consolidée en fin d’année. Série annuelle permettant de suivre l’évolution depuis 2015.",
+    "reading": "Dette et déficit ne sont pas interchangeables : la dette est un stock, le déficit un flux annuel.",
+    "divisor": 1
+  },
+  {
+    "id": "balance",
+    "group": "finances",
+    "title": "Solde public",
+    "period": "2025",
+    "unit": "% du PIB",
+    "sourceId": "public-finance",
+    "filters": {
+      "na_item": "B9"
+    },
+    "definition": "Recettes moins dépenses de l’ensemble des administrations publiques. Un chiffre négatif indique un déficit.",
+    "reading": "Le déficit français atteint 5,1 % du PIB en 2025. Il comprend les intérêts ; il n’explique pas à lui seul toute la variation du stock de dette.",
+    "divisor": 1
+  },
+  {
+    "id": "interest",
+    "group": "finances",
+    "title": "Intérêts de la dette publique",
+    "period": "2025",
+    "unit": "% du PIB",
+    "sourceId": "interest",
+    "filters": {
+      "na_item": "D41PAY"
+    },
+    "definition": "Intérêts payés par l’ensemble des administrations publiques en comptabilité nationale (D41). Hors remboursement du principal.",
+    "reading": "Le coût dépend des taux, de l’inflation, des maturités et du refinancement. Ce périmètre dépasse le seul budget de l’État.",
+    "divisor": 1
+  },
+  {
+    "id": "interest-amount",
+    "group": "finances",
+    "title": "Intérêts en euros",
+    "period": "2025",
+    "unit": "Md€",
+    "sourceId": "interest-eur",
+    "filters": {},
+    "definition": "Intérêts de toutes les administrations publiques, en milliards d’euros courants.",
+    "reading": "À comparer au PIB et aux recettes : le montant ne mesure ni le principal à rembourser ni les seules émissions de l’année.",
+    "divisor": 1000
+  },
+  {
+    "id": "levies",
+    "group": "finances",
+    "title": "Impôts et cotisations sociales",
+    "period": "2025",
+    "unit": "% du PIB",
+    "sourceId": "levies",
+    "filters": {},
+    "definition": "Recettes fiscales et cotisations sociales nettes, y compris cotisations sociales imputées, déduction faite des montants non recouvrables.",
+    "reading": "Ce périmètre Eurostat n’est pas strictement celui des « prélèvements obligatoires » de l’Insee ni celui de toutes les séries OCDE. Il ne mesure pas le taux d’impôt d’un ménage.",
+    "divisor": 1
+  },
+  {
+    "id": "growth",
+    "group": "economy",
+    "title": "Croissance annuelle du PIB réel",
+    "period": "2025",
+    "unit": "%",
+    "sourceId": "gdp",
+    "filters": {},
+    "definition": "Variation annuelle du PIB en volume, corrigée de l’effet des prix.",
+    "reading": "L’Espagne croît plus vite dans ce panel en 2025. Une croissance du PIB n’est pas une mesure complète du niveau de vie ni du PIB par habitant.",
+    "divisor": 1
+  },
+  {
+    "id": "growth-quarterly",
+    "group": "economy",
+    "title": "Croissance trimestrielle du PIB réel",
+    "period": "2026-Q2",
+    "unit": "%",
+    "sourceId": "gdp-quarterly",
+    "filters": {},
+    "definition": "Variation par rapport au trimestre précédent, en volume, corrigée des variations saisonnières et calendaires.",
+    "reading": "Dernier trimestre commun aux sept pays dans la publication consultée. Le taux trimestriel ne doit pas être confondu avec une croissance annuelle ; les premières estimations françaises du T3 sont indiquées séparément.",
+    "divisor": 1
+  },
+  {
+    "id": "unemployment",
+    "group": "work",
+    "title": "Taux de chômage",
+    "period": "2026-09",
+    "unit": "% des actifs",
+    "sourceId": "unemployment",
+    "filters": {
+      "age": "TOTAL"
+    },
+    "definition": "Personnes de 15 à 74 ans sans emploi, disponibles et en recherche active, en proportion de la population active. Série harmonisée, corrigée des variations saisonnières.",
+    "reading": "L’Italie a un chômage plus faible que la France, mais aussi un taux d’activité nettement plus bas : il faut lire les deux indicateurs ensemble.",
+    "divisor": 1
+  },
+  {
+    "id": "youth-unemployment",
+    "group": "work",
+    "title": "Chômage des moins de 25 ans",
+    "period": "2026-09",
+    "unit": "% des actifs de 15–24 ans",
+    "sourceId": "unemployment",
+    "filters": {
+      "age": "Y_LT25"
+    },
+    "definition": "Chômeurs de 15 à 24 ans rapportés aux jeunes actifs, et non à tous les jeunes. Les étudiants sans emploi qui ne cherchent pas de travail ne sont pas au dénominateur.",
+    "reading": "Un taux de 21,9 % ne signifie pas que 21,9 % de tous les jeunes Français sont au chômage.",
+    "divisor": 1
+  },
+  {
+    "id": "activity",
+    "group": "work",
+    "title": "Taux d’activité des 15–64 ans",
+    "period": "2025",
+    "unit": "% de la population de 15–64 ans",
+    "sourceId": "activity",
+    "filters": {},
+    "definition": "Personnes en emploi ou au chômage, rapportées à toute la population de 15 à 64 ans. Moyenne annuelle ; les inactifs ne sont ni en emploi ni au chômage.",
+    "reading": "Un faible chômage peut coexister avec une faible participation au marché du travail. Le taux d’activité n’est pas le taux d’emploi.",
+    "divisor": 1
+  },
+  {
+    "id": "ageing",
+    "group": "population",
+    "title": "Population de 65 ans ou plus",
+    "period": "2025",
+    "unit": "% de la population",
+    "sourceId": "ageing",
+    "filters": {},
+    "definition": "Part des résidents âgés de 65 ans ou plus au 1er janvier de l’année.",
+    "reading": "Le vieillissement touche les sept pays, davantage l’Italie dans ce panel. Son effet sur les retraites et les soins dépend aussi de l’emploi, de la productivité et des règles collectives.",
+    "divisor": 1
+  },
+  {
+    "id": "minimum-eur",
+    "group": "income",
+    "title": "Salaire minimum brut mensuel",
+    "period": "2026-S2",
+    "unit": "€ par mois",
+    "sourceId": "minimum-wage",
+    "filters": {
+      "currency": "EUR"
+    },
+    "definition": "Minimum national brut pour un salarié adulte à temps plein, harmonisé par Eurostat en montant mensuel. Les pays versant 14 mensualités sont ramenés à 12 ; les minima horaires sont convertis suivant la convention nationale retenue par Eurostat.",
+    "reading": "La comparaison n’est pas celle du salaire net ni du revenu disponible d’un ménage. En Italie et au Danemark, il n’existe pas de minimum légal national général ; les conventions collectives jouent un rôle central.",
+    "decimals": 0,
+    "missing": {
+      "IT": "Pas de minimum légal national général ; minima principalement conventionnels.",
+      "DK": "Pas de minimum légal national général ; minima principalement conventionnels."
+    }
+  },
+  {
+    "id": "minimum-pps",
+    "group": "income",
+    "title": "Salaire minimum en pouvoir d’achat",
+    "period": "2026-S2",
+    "unit": "SPA par mois",
+    "sourceId": "minimum-wage",
+    "filters": {
+      "currency": "PPS"
+    },
+    "definition": "Même minimum brut mensuel, exprimé en standards de pouvoir d’achat (SPA) pour tenir compte des différences de niveaux de prix. Un SPA n’est pas une monnaie versée au salarié.",
+    "reading": "L’écart en euros peut différer de l’écart en pouvoir d’achat. Fiscalité, logement, temps de travail de référence et prestations familiales continuent de compter.",
+    "decimals": 0,
+    "missing": {
+      "IT": "Pas de minimum légal national général ; aucune valeur nationale n’est imputée.",
+      "DK": "Pas de minimum légal national général ; aucune valeur nationale n’est imputée."
+    }
+  },
+  {
+    "id": "gdp-pps-index",
+    "group": "economy",
+    "title": "PIB par habitant en pouvoir d’achat",
+    "period": "2025",
+    "unit": "UE27 = 100",
+    "sourceId": "ppp",
+    "filters": {
+      "ppp_cat18": "GDP",
+      "indic_ppp": "VI_PPS_EU27_2020_HAB"
+    },
+    "definition": "Comparaison des volumes par habitant après correction des différences de prix par les parités de pouvoir d’achat. La référence UE27 vaut 100 pour l’indice ; la valeur en SPA exprime un volume comparable, pas un revenu en euros.",
+    "reading": "Le PIB par habitant décrit la production moyenne rapportée à toute la population. Il ne mesure ni le revenu médian ni la productivité d’une personne au travail.",
+    "decimals": 0
+  },
+  {
+    "id": "gdp-pps-level",
+    "group": "economy",
+    "title": "PIB par habitant en SPA",
+    "period": "2025",
+    "unit": "SPA par habitant",
+    "sourceId": "ppp",
+    "filters": {
+      "ppp_cat18": "GDP",
+      "indic_ppp": "EXP_PPS_EU27_2020_HAB"
+    },
+    "definition": "Comparaison des volumes par habitant après correction des différences de prix par les parités de pouvoir d’achat. La référence UE27 vaut 100 pour l’indice ; la valeur en SPA exprime un volume comparable, pas un revenu en euros.",
+    "reading": "Le PIB par habitant décrit la production moyenne rapportée à toute la population. Il ne mesure ni le revenu médian ni la productivité d’une personne au travail.",
+    "decimals": 0
+  },
+  {
+    "id": "consumption-pps",
+    "group": "economy",
+    "title": "Consommation individuelle réelle par habitant",
+    "period": "2025",
+    "unit": "UE27 = 100",
+    "sourceId": "ppp",
+    "filters": {
+      "ppp_cat18": "A01",
+      "indic_ppp": "VI_PPS_EU27_2020_HAB"
+    },
+    "definition": "Consommation individuelle réelle par habitant en pouvoir d’achat : biens et services consommés par les ménages, qu’ils soient payés par eux ou financés pour eux par les administrations et les institutions sans but lucratif.",
+    "reading": "Cet indicateur éclaire les conditions matérielles de vie et les services consommés ; il complète le PIB sans résumer les inégalités ou le patrimoine.",
+    "decimals": 0
+  },
+  {
+    "id": "productivity-person",
+    "group": "economy",
+    "title": "Productivité par personne employée",
+    "period": "2025",
+    "unit": "UE27 = 100, en SPA",
+    "sourceId": "productivity",
+    "filters": {
+      "na_item": "NLPR_PER",
+      "unit": "PC_EU27_2020_MPPS_CP"
+    },
+    "definition": "PIB en pouvoir d’achat rapporté au nombre de personnes employées.",
+    "reading": "Productivité du travail, PIB par habitant et taux d’emploi sont distincts. Le nombre d’heures travaillées, les structures sectorielles et la participation à l’emploi influencent la comparaison.",
+    "decimals": 1
+  },
+  {
+    "id": "productivity-hour",
+    "group": "economy",
+    "title": "Productivité par heure travaillée",
+    "period": "2025",
+    "unit": "UE27 = 100, en SPA",
+    "sourceId": "productivity",
+    "filters": {
+      "na_item": "NLPR_HW",
+      "unit": "PC_EU27_2020_MPPS_CP"
+    },
+    "definition": "PIB en pouvoir d’achat rapporté au total des heures travaillées.",
+    "reading": "Productivité du travail, PIB par habitant et taux d’emploi sont distincts. Le nombre d’heures travaillées, les structures sectorielles et la participation à l’emploi influencent la comparaison.",
+    "decimals": 1
+  },
+  {
+    "id": "poverty",
+    "group": "inequality",
+    "title": "Pauvreté monétaire après transferts",
+    "period": "2025",
+    "unit": "% de la population concernée",
+    "sourceId": "poverty",
+    "filters": {
+      "statinfo": "MED_EI",
+      "unit": "PC",
+      "rskpovth": "B_60",
+      "age": "TOTAL"
+    },
+    "definition": "Part des personnes vivant dans un ménage dont le revenu disponible équivalent, après impôts directs et transferts sociaux, est inférieur à 60 % du revenu médian national. Enquête EU-SILC 2025 ; les revenus se rapportent généralement à 2024.",
+    "reading": "Le seuil est propre à chaque pays : c’est une mesure de pauvreté relative, pas une comparaison d’un même panier de biens. Les pensions sont incluses dans les revenus disponibles.",
+    "decimals": 1,
+    "periodNote": "Enquête EU-SILC 2025, revenus généralement de 2024."
+  },
+  {
+    "id": "child-poverty",
+    "group": "inequality",
+    "title": "Pauvreté monétaire des moins de 18 ans",
+    "period": "2025",
+    "unit": "% de la population concernée",
+    "sourceId": "poverty",
+    "filters": {
+      "statinfo": "MED_EI",
+      "unit": "PC",
+      "rskpovth": "B_60",
+      "age": "Y_LT18"
+    },
+    "definition": "Part des personnes vivant dans un ménage dont le revenu disponible équivalent, après impôts directs et transferts sociaux, est inférieur à 60 % du revenu médian national. Enquête EU-SILC 2025 ; les revenus se rapportent généralement à 2024.",
+    "reading": "Le seuil est propre à chaque pays : c’est une mesure de pauvreté relative, pas une comparaison d’un même panier de biens. Les pensions sont incluses dans les revenus disponibles.",
+    "decimals": 1,
+    "periodNote": "Enquête EU-SILC 2025, revenus généralement de 2024."
+  },
+  {
+    "id": "senior-poverty",
+    "group": "retirement",
+    "title": "Pauvreté monétaire des 65 ans ou plus",
+    "period": "2025",
+    "unit": "% de la population concernée",
+    "sourceId": "poverty",
+    "filters": {
+      "statinfo": "MED_EI",
+      "unit": "PC",
+      "rskpovth": "B_60",
+      "age": "Y_GE65"
+    },
+    "definition": "Part des personnes vivant dans un ménage dont le revenu disponible équivalent, après impôts directs et transferts sociaux, est inférieur à 60 % du revenu médian national. Enquête EU-SILC 2025 ; les revenus se rapportent généralement à 2024.",
+    "reading": "Le seuil est propre à chaque pays : c’est une mesure de pauvreté relative, pas une comparaison d’un même panier de biens. Les pensions sont incluses dans les revenus disponibles.",
+    "decimals": 1,
+    "periodNote": "Enquête EU-SILC 2025, revenus généralement de 2024."
+  },
+  {
+    "id": "poverty-before",
+    "group": "inequality",
+    "title": "Pauvreté avant transferts sociaux, hors pensions",
+    "period": "2025",
+    "unit": "% de la population",
+    "sourceId": "poverty-before",
+    "filters": {
+      "statinfo": "MED_EI",
+      "unit": "PC",
+      "rskpovth": "B_60",
+      "age": "TOTAL"
+    },
+    "definition": "Taux sous 60 % du revenu médian, calculé avant les transferts sociaux autres que les pensions. Les pensions restent comptées comme revenu ; le seuil est celui de la distribution après transferts. Enquête EU-SILC 2025, revenus généralement de 2024.",
+    "reading": "Comparer avec le taux après transferts donne un écart comptable. Ce n’est pas l’effet causal complet de la redistribution, car fiscalité, comportements et pensions ne sont pas neutralisés.",
+    "decimals": 1,
+    "periodNote": "Enquête EU-SILC 2025, revenus généralement de 2024."
+  },
+  {
+    "id": "gini",
+    "group": "inequality",
+    "title": "Inégalités de revenu : coefficient de Gini",
+    "period": "2025",
+    "unit": "indice de 0 à 100",
+    "sourceId": "gini",
+    "filters": {
+      "age": "TOTAL",
+      "statinfo": "GINI_HND"
+    },
+    "definition": "Inégalité du revenu disponible équivalent après impôts directs et transferts sociaux : 0 signifie l’égalité parfaite, 100 la concentration maximale. EU-SILC 2025, revenus généralement de 2024.",
+    "reading": "Le Gini porte sur les revenus, pas sur le patrimoine. Il doit être lu avec la pauvreté et d’autres mesures des écarts de niveau de vie.",
+    "decimals": 1
+  },
+  {
+    "id": "s80s20",
+    "group": "inequality",
+    "title": "Rapport de revenus S80/S20",
+    "period": "2025",
+    "unit": "rapport",
+    "sourceId": "quintiles",
+    "filters": {},
+    "definition": "Revenu total des 20 % de personnes les plus aisées divisé par celui des 20 % les moins aisées, sur le revenu disponible équivalent. EU-SILC 2025, revenus généralement de 2024.",
+    "reading": "Un rapport de 4 signifie que le premier groupe reçoit quatre fois le revenu total du second. Ce n’est pas le rapport entre le revenu de deux individus types.",
+    "decimals": 1
+  },
+  {
+    "id": "arope",
+    "group": "inequality",
+    "title": "Risque de pauvreté ou d’exclusion sociale",
+    "period": "2025",
+    "unit": "% de la population",
+    "sourceId": "arope",
+    "filters": {},
+    "definition": "Indicateur AROPE : personnes concernées par au moins une des situations suivantes — pauvreté monétaire, privation matérielle et sociale sévère, ou très faible intensité de travail du ménage — selon les règles Eurostat.",
+    "reading": "Les trois groupes se recoupent : on ne peut pas additionner leurs pourcentages. Cet indicateur est plus large que la seule pauvreté monétaire.",
+    "decimals": 1
+  },
+  {
+    "id": "pensions-total",
+    "group": "retirement",
+    "title": "Dépenses de pensions des régimes de protection sociale",
+    "period": "2024",
+    "unit": "% du PIB",
+    "sourceId": "pensions-spending",
+    "filters": {
+      "spdepb": "TOTAL",
+      "spdepm": "TOTAL"
+    },
+    "definition": "Total des prestations de pensions recensées par ESSPROS : vieillesse, réversion, invalidité et autres catégories, régimes publics et privés de protection sociale couverts par le système statistique.",
+    "reading": "Ce total n’est pas une dépense exclusivement publique. Les régimes professionnels capitalisés peuvent compter dans ESSPROS alors qu’ils ne figurent pas dans les dépenses des administrations publiques.",
+    "decimals": 1
+  }
+]

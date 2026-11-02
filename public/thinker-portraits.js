@@ -8,8 +8,13 @@ export const thinkerPortraits = {
     "credit": "Maurice Quentin de La Tour",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 696,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Maurice Barrès": {
     "name": "Maurice Barrès",
@@ -20,8 +25,13 @@ export const thinkerPortraits = {
     "credit": "Photographe français.",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 355,
+    "height": 550,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Charles Maurras": {
     "name": "Charles Maurras",
@@ -32,8 +42,13 @@ export const thinkerPortraits = {
     "credit": "Studio Harcourt",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 697,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Benjamin Constant": {
     "name": "Benjamin Constant",
@@ -44,8 +59,13 @@ export const thinkerPortraits = {
     "credit": "Lina Vallier (fl. 1836 - 1852)",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 619,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Adam Smith": {
     "name": "Adam Smith",
@@ -56,8 +76,13 @@ export const thinkerPortraits = {
     "credit": "Etching created by Cadell and Davies (1811), John Horsburgh (1828) or R.C. Bell (1872).",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 746,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Jean Bodin": {
     "name": "Jean Bodin",
@@ -68,9 +93,14 @@ export const thinkerPortraits = {
     "credit": "François Stuerhelt",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Portrait peint ou gravé",
-    "zoom": 1.2
+    "zoom": 1.2,
+    "width": 437,
+    "height": 550,
+    "focus": [
+      0.5,
+      0.37
+    ]
   },
   "John Stuart Mill": {
     "name": "John Stuart Mill",
@@ -81,8 +111,13 @@ export const thinkerPortraits = {
     "credit": "John Watkins",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 244,
+    "height": 362,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Montesquieu": {
     "name": "Montesquieu",
@@ -93,8 +128,13 @@ export const thinkerPortraits = {
     "credit": "After Jacques-Antoine Dassier",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 615,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "John Locke": {
     "name": "John Locke",
@@ -105,9 +145,14 @@ export const thinkerPortraits = {
     "credit": "Godfrey Kneller",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Portrait peint ou gravé",
-    "zoom": 1.15
+    "zoom": 1.15,
+    "width": 500,
+    "height": 578,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Friedrich Hayek": {
     "name": "Friedrich Hayek",
@@ -118,8 +163,13 @@ export const thinkerPortraits = {
     "credit": "The original uploader was DickClarkMises at English Wikipedia.",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 625,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Alexis de Tocqueville": {
     "name": "Alexis de Tocqueville",
@@ -130,9 +180,14 @@ export const thinkerPortraits = {
     "credit": "Théodore Chassériau",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Portrait peint ou gravé",
-    "zoom": 1.7
+    "zoom": 1.7,
+    "width": 500,
+    "height": 675,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Edmund Burke": {
     "name": "Edmund Burke",
@@ -143,8 +198,13 @@ export const thinkerPortraits = {
     "credit": "Joshua Reynolds",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 610,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Joseph de Maistre": {
     "name": "Joseph de Maistre",
@@ -155,9 +215,14 @@ export const thinkerPortraits = {
     "credit": "Carl Christian Vogel von Vogelstein",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Portrait peint ou gravé",
-    "zoom": 1.25
+    "zoom": 1.25,
+    "width": 500,
+    "height": 658,
+    "focus": [
+      0.56,
+      0.25
+    ]
   },
   "Charles de Gaulle": {
     "name": "Charles de Gaulle",
@@ -168,8 +233,13 @@ export const thinkerPortraits = {
     "credit": "Office of War Information, Overseas Picture Division. [1] The image prefix (LC-USW3) at the Library of Congress image page matches that of pictures from the OWI collection (see prefix list here.",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 676,
+    "focus": [
+      0.5,
+      0.23
+    ]
   },
   "Arne Næss": {
     "name": "Arne Næss",
@@ -180,8 +250,13 @@ export const thinkerPortraits = {
     "credit": "Vindheim",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 217,
+    "height": 230,
+    "focus": [
+      0.58,
+      0.35
+    ]
   },
   "Thomas Hobbes": {
     "name": "Thomas Hobbes",
@@ -192,8 +267,13 @@ export const thinkerPortraits = {
     "credit": "John Michael Wright",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 527,
+    "focus": [
+      0.5,
+      0.33
+    ]
   },
   "Peter Singer": {
     "name": "Peter Singer",
@@ -204,9 +284,14 @@ export const thinkerPortraits = {
     "credit": "Todd Huffman from Phoenix, AZ",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 2.15
+    "zoom": 2.15,
+    "width": 500,
+    "height": 569,
+    "focus": [
+      0.57,
+      0.24
+    ]
   },
   "Cornelius Castoriadis": {
     "name": "Cornelius Castoriadis",
@@ -217,8 +302,13 @@ export const thinkerPortraits = {
     "credit": "Davidamescurtis",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 297,
+    "height": 327,
+    "focus": [
+      0.55,
+      0.28
+    ]
   },
   "Nicolas de Condorcet": {
     "name": "Nicolas de Condorcet",
@@ -229,8 +319,13 @@ export const thinkerPortraits = {
     "credit": "Unidentified painter / Formerly attributed to Jean-Baptiste Greuze",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Portrait peint ou gravé"
+    "kind": "Portrait peint ou gravé",
+    "width": 500,
+    "height": 618,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Tom Regan": {
     "name": "Tom Regan",
@@ -241,8 +336,13 @@ export const thinkerPortraits = {
     "credit": "Bryan Regan",
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 172,
+    "height": 234,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Will Kymlicka": {
     "name": "Will Kymlicka",
@@ -253,8 +353,13 @@ export const thinkerPortraits = {
     "credit": "Sue Donaldson",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 530,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Carole Pateman": {
     "name": "Carole Pateman",
@@ -265,9 +370,14 @@ export const thinkerPortraits = {
     "credit": "Marcelo Camargo/Agência Brasil",
     "license": "CC BY 3.0 br",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.15
+    "zoom": 1.15,
+    "width": 500,
+    "height": 333,
+    "focus": [
+      0.63,
+      0.3
+    ]
   },
   "Léon Blum": {
     "name": "Léon Blum",
@@ -278,8 +388,13 @@ export const thinkerPortraits = {
     "credit": "AnonymousUnknown author (Keystone France)",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 677,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Karl Marx": {
     "name": "Karl Marx",
@@ -290,9 +405,14 @@ export const thinkerPortraits = {
     "credit": "John Jabez Edwin Mayall",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.8
+    "zoom": 1.8,
+    "width": 500,
+    "height": 740,
+    "focus": [
+      0.52,
+      0.24
+    ]
   },
   "John Maynard Keynes": {
     "name": "John Maynard Keynes",
@@ -303,8 +423,13 @@ export const thinkerPortraits = {
     "credit": "Auteur non identifié",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 289,
+    "height": 300,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Léon Trotski": {
     "name": "Léon Trotski",
@@ -315,8 +440,13 @@ export const thinkerPortraits = {
     "credit": "Auteur non identifié",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 678,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Friedrich Engels": {
     "name": "Friedrich Engels",
@@ -327,8 +457,13 @@ export const thinkerPortraits = {
     "credit": "William Hall (1826–ca. 1898) (cropped and sepia tone removed)",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 667,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Mikhaïl Bakounine": {
     "name": "Mikhaïl Bakounine",
@@ -339,9 +474,14 @@ export const thinkerPortraits = {
     "credit": "Nadar",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.9
+    "zoom": 1.9,
+    "width": 500,
+    "height": 579,
+    "focus": [
+      0.48,
+      0.24
+    ]
   },
   "Rosa Luxemburg": {
     "name": "Rosa Luxemburg",
@@ -352,8 +492,13 @@ export const thinkerPortraits = {
     "credit": "Bundesarchiv, Bild 183-14077-006 / Auteur non identifié / CC-BY-SA",
     "license": "CC BY-SA 3.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 707,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "André Gorz": {
     "name": "André Gorz",
@@ -364,9 +509,14 @@ export const thinkerPortraits = {
     "credit": "AnonymousUnknown author · Détail d’une photographie avec Dorine Gorz",
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "position": "100% 25%",
     "kind": "Photographie",
-    "zoom": 1.25
+    "zoom": 1.25,
+    "width": 500,
+    "height": 381,
+    "focus": [
+      0.67,
+      0.3
+    ]
   },
   "Eduard Bernstein": {
     "name": "Eduard Bernstein",
@@ -377,9 +527,14 @@ export const thinkerPortraits = {
     "credit": "not credited",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.7
+    "zoom": 1.7,
+    "width": 500,
+    "height": 670,
+    "focus": [
+      0.5,
+      0.21
+    ]
   },
   "Fernand Pelloutier": {
     "name": "Fernand Pelloutier",
@@ -390,8 +545,13 @@ export const thinkerPortraits = {
     "credit": "Auteur non identifié",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 260,
+    "height": 320,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Pierre-Joseph Proudhon": {
     "name": "Pierre-Joseph Proudhon",
@@ -402,9 +562,14 @@ export const thinkerPortraits = {
     "credit": "Nadar",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.65
+    "zoom": 1.65,
+    "width": 500,
+    "height": 667,
+    "focus": [
+      0.6,
+      0.25
+    ]
   },
   "Hans Jonas": {
     "name": "Hans Jonas",
@@ -415,8 +580,13 @@ export const thinkerPortraits = {
     "credit": "Universitätsarchiv St.Gallen | Regina Kühne | HSGH 022/001945 | CC-BY-SA 4.0",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 674,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "Jean Jaurès": {
     "name": "Jean Jaurès",
@@ -427,8 +597,13 @@ export const thinkerPortraits = {
     "credit": "Nadar",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 712,
+    "focus": [
+      0.5,
+      0.3
+    ]
   },
   "John Rawls": {
     "name": "John Rawls",
@@ -439,8 +614,13 @@ export const thinkerPortraits = {
     "credit": "Published by the Belknap Press of Harvard University Press. Photograph taken by Alec Rawls, John's son. The portrait was uncredited on the original dust jacket, but Alec is identified as its photographer on the copyright page of the 1994 German-language first edition of the book John Rawls by Thomas Pogge.",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 500,
+    "height": 700,
+    "focus": [
+      0.62,
+      0.4
+    ]
   },
   "Ivan Illich": {
     "name": "Ivan Illich",
@@ -451,9 +631,14 @@ export const thinkerPortraits = {
     "credit": "Associated Press",
     "license": "Public domain",
     "licenseUrl": "",
-    "position": "50% 25%",
     "kind": "Photographie",
-    "zoom": 1.6
+    "zoom": 1.6,
+    "width": 500,
+    "height": 633,
+    "focus": [
+      0.5,
+      0.32
+    ]
   },
   "Sue Donaldson": {
     "name": "Sue Donaldson",
@@ -464,8 +649,13 @@ export const thinkerPortraits = {
     "credit": "Portrait du profil de Sue Donaldson, The Writers’ Union of Canada ; photographe non indiqué",
     "license": "Droits réservés",
     "licenseUrl": "",
-    "position": "50% 30%",
-    "kind": "Photographie"
+    "kind": "Photographie",
+    "width": 640,
+    "height": 480,
+    "focus": [
+      0.5,
+      0.3
+    ]
   }
 };
 

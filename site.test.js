@@ -1,3 +1,5 @@
+import { observationNote } from './public/context-format.js';
+import { portraitGeometry } from './scripts/render-thinker-portraits.mjs';
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { server } from './server.js';
@@ -247,17 +249,17 @@ test('les profils individuels distinguent l’ébauche personnelle des positions
 test('le contexte conserve les définitions, périodes, sources et calculs officiels', async () => {
   const context = await (await fetch(base + '/context-data.json')).json();
   assert.equal(context.asOf, '2026-11-02');
-  assert.deepEqual(context.countries.map(c=>c.id), ['FR','DE','ES','IT']);
-  assert.equal(context.metrics.length,17);
-  assert.equal(new Set(context.metrics.map(m=>m.id)).size,17);
+  assert.deepEqual(context.countries.map(c=>c.id), ['FR','DE','ES','IT','BE','DK','NL']);
+  assert.equal(context.metrics.length,37);
+  assert.equal(new Set(context.metrics.map(m=>m.id)).size,37);
   const html = await (await fetch(base + '/contexte.html')).text();
-  for(const id of ['comparer','finances','emploi','croissance','ecole','population','partage','sources-contexte']) assert.ok(html.includes(`id="${id}"`));
+  for(const id of ['comparer','finances','emploi','croissance','revenus','inegalites','retraites','ecole','population','partage','sources-contexte']) assert.ok(html.includes(`id="${id}"`));
   for(const metric of context.metrics){
-    assert.equal(metric.observations.length,4,metric.id);
+    assert.equal(metric.observations.length,7,metric.id);
     assert.ok(metric.definition && metric.reading && metric.unit && metric.period);
     assert.ok(html.includes(`id="definition-${metric.id}"`));
     for(const point of metric.observations){
-      assert.ok(Number.isFinite(point.value));
+      if(point.value===null){assert.ok(['minimum-eur','minimum-pps'].includes(metric.id));assert.ok(['IT','DK'].includes(point.country));assert.equal(point.status,'not-applicable');assert.ok(point.reason);}else assert.ok(Number.isFinite(point.value));
       assert.equal(point.period,metric.period);
       assert.ok(context.countries.some(c=>c.id===point.country));
     }
@@ -280,16 +282,16 @@ test('le contexte conserve les définitions, périodes, sources et calculs offic
   assert.ok(html.includes('cotisations sociales imputées'));
   const csv=await fetch(base+'/contexte.csv');assert.match(csv.headers.get('content-type'),/text\/csv/);
   const csvLines=(await csv.text()).trim().split(/\r?\n/);
-  assert.equal(csvLines.length,69);
+  assert.equal(csvLines.length,260);
   const exported=csvLines.slice(1).map(line=>[...line.matchAll(/"((?:[^"]|"")*)"(?:;|$)/g)].map(match=>match[1].replaceAll('""','"')));
   for(const metric of context.metrics) for(const point of metric.observations){
     const country=context.countries.find(c=>c.id===point.country).name;
     const row=exported.find(row=>row[0]===metric.title && row[2]===country);
     assert.ok(row,metric.id+'/'+country);assert.equal(row[1],metric.period);
-    assert.equal(Number(row[3].replace(',','.')),point.value);assert.equal(row[4],metric.unit);assert.equal(row[5],point.flag);
+    assert.equal(row[3]===''?null:Number(row[3].replace(',','.')),point.value);assert.equal(row[4],metric.unit);assert.equal(row[5],observationNote(point));
   }
   const verified=execFileSync(process.execPath,['scripts/update-context.mjs','--check'],{cwd:new URL('.',import.meta.url),encoding:'utf8'});
-  assert.match(verified,/17 indicateurs de contexte vérifiés/);
+  assert.match(verified,/37 indicateurs de contexte vérifiés/);
 });
 
 test('chaque parti et candidat possède les six dossiers internationaux sans transfert implicite',async()=>{
@@ -408,4 +410,36 @@ test('les symboles sont légendés et la diversité bibliographique est mise en 
     assert.match(html,/class="bibliography-scope/);
     assert.ok(html.includes('Nemo, Julliard et Rémond ne sont qu’une partie des auteurs mobilisés.'));
   }
+});
+
+
+test('les périmètres des retraites et la redistribution restent explicites',async()=>{
+ const data=JSON.parse(await readFile('public/context-data.json','utf8'));
+ const get=id=>data.metrics.find(m=>m.id===id);
+ for(const c of data.countries){
+  const obs=id=>get(id).observations.find(o=>o.country===c.id);
+  assert.ok(Math.abs(obs('transfer-gap').value-(obs('poverty-before').value-obs('poverty').value))<1e-9);
+  const p=obs('public-oldage-share'),x=p.components;
+  assert.ok(Math.abs(p.value-100*(x.oldage+x.survivors)/x.total)<1e-9);
+  assert.equal(get('pension-projection-2070').series[c.id].length,3);
+ }
+ for(const id of ['pension-projection-2045','pension-projection-2070']){assert.equal(get(id).isProjection,true);assert.equal(get(id).projectionPublished,2024);}
+ const html=await readFile('public/contexte.html','utf8');
+ assert.ok(html.includes('pas une prévision actualisée de 2026'));
+ assert.ok(html.includes('Précisions sur les données'));
+ assert.ok(!html.includes('class="data-flag"'));
+ for(const m of data.metrics)for(const sid of m.sourceIds)assert.ok(html.includes(`id="source-contexte-${sid}"`));
+ for(const link of html.matchAll(/href="#([^" ]+)"/g))assert.ok(html.includes(`id="${link[1]}"`),link[1]);
+});
+
+
+test('les recadrages préservent les proportions et couvrent le cadre sans bord vide',async()=>{
+ const {thinkerPortraits}=await import('./public/thinker-portraits.js');
+ for(const p of Object.values(thinkerPortraits)){
+  const g=portraitGeometry(p);
+  assert.ok(g.left<=0 && g.top<=0 && g.left+g.width>=99.999 && g.top+g.height>=99.999,p.name);
+  assert.ok(Math.abs(.8*g.width/g.height-p.width/p.height)<1e-9,p.name);
+  const rawLeft=50-p.focus[0]*g.width;
+  if(rawLeft<=0 && rawLeft>=100-g.width)assert.ok(Math.abs(g.left+p.focus[0]*g.width-50)<1e-9,p.name);
+ }
 });

@@ -30,5 +30,29 @@
     "mathsChangeSince2022": -3,
     "maths2022": 471,
     "sourceId": "pisa-IT"
+  },
+  "BE": {
+    "maths": 480,
+    "reading": 466,
+    "science": 490,
+    "mathsChangeSince2022": -10,
+    "maths2022": 490,
+    "sourceId": "pisa-BE"
+  },
+  "DK": {
+    "maths": 471,
+    "reading": 460,
+    "science": 478,
+    "mathsChangeSince2022": -19,
+    "maths2022": 490,
+    "sourceId": "pisa-DK"
+  },
+  "NL": {
+    "maths": 483,
+    "reading": 441,
+    "science": 485,
+    "mathsChangeSince2022": -9,
+    "maths2022": 492,
+    "sourceId": "pisa-NL"
   }
 }

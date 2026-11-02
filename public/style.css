@@ -756,3 +756,15 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
   .bibliography-scope p { font-size: 14px; }
 }
 .bibliography-scope h2 { color: #fff; }
+
+/* Centre the face using the source image geometry, with no empty image edges. */
+.thinker-photo-frame { position: relative; }
+.thinker-photo { position: absolute; max-width: none; object-fit: fill; transform: none; }
+
+.context-table-wrap .context-table { min-width: 1060px; }
+.context-footnotes { margin: .75rem 0 1.5rem; padding: 1rem 1.25rem; border-left: 3px solid var(--accent, #244de7); background: #f1f4fa; font-size: .85rem; line-height: 1.6; }
+.context-footnotes ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+.context-table sup a, .context-value sup a { padding: .15rem; text-decoration: none; }
+.pension-systems h4 { margin-top: 0; font-size: 1.2rem; }
+.context-legend { flex-wrap: wrap; }
+@media(max-width:600px) { .context-bar-row { grid-template-columns: 85px minmax(35px,1fr) 75px; gap: .4rem; } }

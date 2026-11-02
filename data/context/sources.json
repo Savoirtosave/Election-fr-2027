@@ -2,77 +2,77 @@
   "public-finance": {
     "publisher": "Eurostat",
     "title": "Déficit/surplus, dette et données associées du gouvernement",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=GD&na_item=B9&sinceTimePeriod=2015",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&unit=PC_GDP&na_item=GD&na_item=B9&sinceTimePeriod=2015",
     "updated": "2026-10-21T11:00:00+0200",
     "dataset": "gov_10dd_edpt1"
   },
   "debt-quarterly": {
     "publisher": "Eurostat",
     "title": "Dette publique trimestrielle",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&unit=MIO_EUR&na_item=GD&sinceTimePeriod=2025-Q1",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&unit=PC_GDP&unit=MIO_EUR&na_item=GD&sinceTimePeriod=2025-Q1",
     "updated": "2026-10-21T11:00:00+0200",
     "dataset": "gov_10q_ggdebt"
   },
   "interest": {
     "publisher": "Eurostat",
     "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D41PAY&sinceTimePeriod=2015",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&unit=PC_GDP&na_item=D41PAY&sinceTimePeriod=2015",
     "updated": "2026-10-21T11:00:00+0200",
     "dataset": "gov_10a_main"
   },
   "interest-eur": {
     "publisher": "Eurostat",
     "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=MIO_EUR&na_item=D41PAY&sinceTimePeriod=2025",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&unit=MIO_EUR&na_item=D41PAY&sinceTimePeriod=2025",
     "updated": "2026-10-21T11:00:00+0200",
     "dataset": "gov_10a_main"
   },
   "gdp": {
     "publisher": "Eurostat",
     "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données annuelles",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&sinceTimePeriod=2015",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&na_item=B1GQ&unit=CLV_PCH_PRE&sinceTimePeriod=2015",
     "updated": "2026-10-22T23:00:00+0200",
     "dataset": "nama_10_gdp"
   },
   "gdp-quarterly": {
     "publisher": "Eurostat",
     "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données trimestrielles",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&sinceTimePeriod=2025-Q1",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&sinceTimePeriod=2025-Q1",
     "updated": "2026-10-30T23:00:00+0100",
     "dataset": "namq_10_gdp"
   },
   "unemployment": {
     "publisher": "Eurostat",
     "title": "Chômage par sexe et âge - données mensuelles",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sex=T&s_adj=SA&unit=PC_ACT&sinceTimePeriod=2025-01",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sex=T&s_adj=SA&unit=PC_ACT&sinceTimePeriod=2025-01",
     "updated": "2026-10-30T11:00:00+0100",
     "dataset": "une_rt_m"
   },
   "activity": {
     "publisher": "Eurostat",
     "title": "Taux de participation aux forces de travail par nationalité",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_argan?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&age=Y15-64&sex=T&citizen=TOTAL&sinceTimePeriod=2024",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_argan?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&age=Y15-64&sex=T&citizen=TOTAL&sinceTimePeriod=2024",
     "updated": "2026-10-30T11:00:00+0100",
     "dataset": "lfsa_argan"
   },
   "ageing": {
     "publisher": "Eurostat",
     "title": "Indicateurs de structure de la population au niveau national",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjanind?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&indic_de=PC_Y65_MAX&sinceTimePeriod=2015",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjanind?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&indic_de=PC_Y65_MAX&sinceTimePeriod=2015",
     "updated": "2026-09-25T23:00:00+0200",
     "dataset": "demo_pjanind"
   },
   "levies": {
     "publisher": "Eurostat",
     "title": "Principaux agrégats fiscaux de la comptabilité nationale",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_taxag?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D2_D5_D91_D61_M_D995&sinceTimePeriod=2015",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_taxag?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&unit=PC_GDP&na_item=D2_D5_D91_D61_M_D995&sinceTimePeriod=2015",
     "updated": "2026-10-28T11:00:00+0100",
     "dataset": "gov_10a_taxag"
   },
   "corporations": {
     "publisher": "Eurostat",
     "title": "Opérations non financières - données annuelles",
-    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nasa_10_nf_tr?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S11&sector=S12&unit=CP_MEUR&na_item=D1&na_item=B1N&sinceTimePeriod=2024",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nasa_10_nf_tr?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S11&sector=S12&unit=CP_MEUR&na_item=D1&na_item=B1N&sinceTimePeriod=2024",
     "updated": "2026-10-29T23:00:00+0100",
     "dataset": "nasa_10_nf_tr"
   },
@@ -115,5 +115,169 @@
     "title": "Compte @ericdor_econo et capture transmise du message du 28 octobre 2026",
     "url": "https://x.com/ericdor_econo",
     "role": "Piste de recherche et lecture économique ; les chiffres de la comparaison sont recalculés à partir d’Eurostat. Le message de la capture n’a pas été retrouvé dans les publications visibles du compte."
+  },
+  "minimum-wage": {
+    "publisher": "Eurostat",
+    "title": "Salaires minima mensuels - données semestrielles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_mw_cur?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&currency=EUR&currency=PPS&sinceTimePeriod=2025-S1",
+    "updated": "2026-07-31T11:00:00+0200",
+    "dataset": "earn_mw_cur"
+  },
+  "ppp": {
+    "publisher": "Eurostat",
+    "title": "Parités de pouvoir d'achat, indices des niveaux de prix et dépenses nominales et réelles par catégories analytiques - basés sur la COICOP 2018",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&ppp_cat18=GDP&ppp_cat18=A01&indic_ppp=VI_PPS_EU27_2020_HAB&indic_ppp=EXP_PPS_EU27_2020_HAB&sinceTimePeriod=2023",
+    "updated": "2026-07-09T23:00:00+0200",
+    "dataset": "prc_ppp_ind_1"
+  },
+  "productivity": {
+    "publisher": "Eurostat",
+    "title": "Productivité du travail et coût salariaux unitaires - données annuelles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_lp_ulc?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&na_item=NLPR_PER&na_item=NLPR_HW&sinceTimePeriod=2023",
+    "updated": "2026-10-22T23:00:00+0200",
+    "dataset": "nama_10_lp_ulc"
+  },
+  "poverty": {
+    "publisher": "Eurostat",
+    "title": "Taux de risque de pauvreté par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sex=T&age=TOTAL&age=Y_LT18&age=Y_GE65&sinceTimePeriod=2020",
+    "updated": "2026-10-20T11:00:00+0200",
+    "dataset": "ilc_li02"
+  },
+  "poverty-before": {
+    "publisher": "Eurostat",
+    "title": "Taux de risque de pauvreté avant transferts sociaux (les pensions sont exclues des transferts sociaux) par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li10?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sex=T&age=TOTAL&sinceTimePeriod=2020",
+    "updated": "2026-10-20T23:00:00+0200",
+    "dataset": "ilc_li10"
+  },
+  "gini": {
+    "publisher": "Eurostat",
+    "title": "Coefficient de Gini du revenu disponible équivalent par âge",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sinceTimePeriod=2020",
+    "updated": "2026-10-20T11:00:00+0200",
+    "dataset": "ilc_di12"
+  },
+  "quintiles": {
+    "publisher": "Eurostat",
+    "title": "Rapport interquintile S80/S20 de revenu disponible par sexe et par groupe d'âge",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di11?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sex=T&age=TOTAL&sinceTimePeriod=2020",
+    "updated": "2026-10-20T11:00:00+0200",
+    "dataset": "ilc_di11"
+  },
+  "arope": {
+    "publisher": "Eurostat",
+    "title": "Personnes en risque de pauvreté ou d'exclusion sociale par âge et sexe",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_peps01n?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sex=T&age=TOTAL&unit=PC&sinceTimePeriod=2020",
+    "updated": "2026-10-20T23:00:00+0200",
+    "dataset": "ilc_peps01n"
+  },
+  "pensions-spending": {
+    "publisher": "Eurostat",
+    "title": "Dépenses de pensions par type de pension et condition de ressources",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/spr_exp_pens?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&unit=PC_GDP&sinceTimePeriod=2015",
+    "updated": "2026-10-26T23:00:00+0100",
+    "dataset": "spr_exp_pens"
+  },
+  "public-oldage": {
+    "publisher": "Eurostat",
+    "title": "Dépenses des administrations publiques par fonction (CFAP)",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&geo=BE&geo=DK&geo=NL&sector=S13&na_item=TE&cofog99=TOTAL&cofog99=GF1002&cofog99=GF1003&unit=PC_GDP&sinceTimePeriod=2015",
+    "updated": "2026-10-21T23:00:00+0200",
+    "dataset": "gov_10a_exp"
+  },
+  "pisa-BE": {
+    "publisher": "OCDE",
+    "title": "Education GPS — BE — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=BEL&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in Belgium was 490 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was -2 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 23.4% of students in Belgium (OECD average: 25.7%), while 7.3% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 270 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Belgium changed by -1 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -13 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Belgium scored 480 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 16 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -10 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 466 PISA score points score points in Belgium (OECD average: 461 PISA score points). The difference between boys and girls was -33 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -13 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Belgium scored 508 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 57.1% performed better than expected based on their science "
+  },
+  "pisa-DK": {
+    "publisher": "OCDE",
+    "title": "Education GPS — DK — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=DNK&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in Denmark was 478 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 1 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 24.9% of students in Denmark (OECD average: 25.7%), while 4.8% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 249 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Denmark changed by -16 PISA score points (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -21 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Denmark scored 471 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 14 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -19 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 460 PISA score points score points in Denmark (OECD average: 461 PISA score points). The difference between boys and girls was -31 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -29 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Denmark scored 506 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 61.2% performed better than expected based on their science performance (OECD average: 56.3%). Some 62% of st"
+  },
+  "pisa-NL": {
+    "publisher": "OCDE",
+    "title": "Education GPS — NL — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=NLD&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in the Netherlands was 485 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was -5 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 27% of students in the Netherlands (OECD average: 25.7%), while 8.7% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 288 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in the Netherlands changed by -3 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -25 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in the Netherlands scored 483 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 9 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -9 PISA score points between 2022 and 2025, a change that was not statistically significant, (OECD average: -9 PISA score points). Reading performance averaged 441 PISA score points score points in the Netherlands (OECD average: 461 PISA score points). The difference between boys and girls was -35 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -18 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in the Netherlands scored 506 PISA score points on average in computational problem solving (OECD avera"
+  },
+  "ageing-report": {
+    "publisher": "Commission européenne / Comité de politique économique",
+    "title": "2024 Ageing Report — scénario de dépenses publiques de pensions, tableaux I.1.6 et I.1.7",
+    "url": "https://economy-finance.ec.europa.eu/document/download/971dd209-41c2-425d-94f8-e3c3c3459af9_en?filename=ip279_en.pdf",
+    "updated": "2024-04-18",
+    "role": "Scénario de référence 2022–2070 établi dans le rapport de 2024, suivant les hypothèses et réformes retenues à cette date. Ce n’est pas une prévision actualisée de 2026."
+  },
+  "pension-fiche-FR": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions FR",
+    "url": "https://economy-finance.ec.europa.eu/document/download/e412927a-ea31-406d-bb6c-c925914123e9_en?filename=2024-ageing-report-country-fiche-France.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-DE": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions DE",
+    "url": "https://economy-finance.ec.europa.eu/document/download/e8f41d38-6d27-45b4-8919-c9348720fcfc_en?filename=2024-ageing-report-country-fiche-Germany.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-ES": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions ES",
+    "url": "https://economy-finance.ec.europa.eu/document/download/392994f2-c025-4066-bea8-f65cf4bcd411_en?filename=2024-ageing-report-country-fiche-Spain.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-IT": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions IT",
+    "url": "https://economy-finance.ec.europa.eu/document/download/82b762d7-21ce-4992-aa97-888fd2c66205_en?filename=2024-ageing-report-country-fiche-Italy.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-BE": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions BE",
+    "url": "https://economy-finance.ec.europa.eu/document/download/44c42889-3c34-4ce7-82b9-2636b38dacb2_en?filename=2024-ageing-report-country-fiche-Belgium.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-DK": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions DK",
+    "url": "https://economy-finance.ec.europa.eu/document/download/93eeaeab-e2bf-4e62-9cc9-bbb42c2f091e_en?filename=2024-ageing-report-country-fiche-Denmark.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fiche-NL": {
+    "publisher": "Commission européenne / autorités nationales",
+    "title": "2024 Ageing Report — fiche pensions NL",
+    "url": "https://economy-finance.ec.europa.eu/document/download/610eea99-d6a4-4f2b-8d00-6fe0467c3b37_en?filename=2024-ageing-report-country-fiche-Netherlands.pdf",
+    "updated": "2024-04-18",
+    "role": "Architecture des régimes et hypothèses du scénario 2024 ; les changements législatifs ultérieurs ne sont pas assimilés à ce scénario."
+  },
+  "pension-fr-law": {
+    "publisher": "Service Public / DILA",
+    "title": "Âge de départ à la retraite des salariés — fiche vérifiée le 14 août 2026",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043"
+  },
+  "pension-be-law": {
+    "publisher": "Service fédéral des Pensions",
+    "title": "Âge légal et pension anticipée — législation mise à jour après la loi du 28 mai 2026",
+    "url": "https://www.sfpd.fgov.be/fr/age-de-la-pension/quand"
+  },
+  "pension-es-law": {
+    "publisher": "Seguridad Social",
+    "title": "Jubilación — âge et conditions de cotisation",
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393/28396/28472"
+  },
+  "pension-nl-law": {
+    "publisher": "Rijksoverheid",
+    "title": "Wanneer gaat mijn AOW in?",
+    "url": "https://www.rijksoverheid.nl/onderwerpen/algemene-ouderdomswet-aow/vraag-en-antwoord/wanneer-gaat-mijn-aow-in"
   }
 }
