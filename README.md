@@ -1,6 +1,6 @@
 # Repères 2027
 
-Première version d’un site indépendant d’information sur l’élection présidentielle française de 2027. Interface en français, responsive, sans requêtes externes au chargement, cookies, suivi ou collecte de données.
+Site indépendant d’information sur l’élection présidentielle française de 2027. Interface en français, responsive, sans requêtes externes au chargement, cookies, suivi ou collecte de données.
 
 ## Démarrage
 
@@ -11,7 +11,27 @@ cd /workspace/Election-fr-2027
 npm start
 ```
 
-Le serveur utilise le port 3000 (`PORT` permet de le modifier). `npm test` lance les tests HTTP et éditoriaux. Pas de compilation : les fichiers de `public/` peuvent également être hébergés sur un hébergeur statique.
+Le serveur utilise le port 3000 (`PORT` permet de le modifier). `npm test` lance les contrôles de génération, de navigation, de références, de contenu et de ressources HTTP. Les pages HTML sont déjà générées et versionnées : aucune compilation n’est nécessaire pour lancer le site ou utiliser Live Server sur `public/index.html`. Les fichiers de `public/` peuvent être hébergés sur un hébergeur statique.
+
+## Pages et édition
+
+- `public/index.html` : accueil, avec des liens vers les rubriques.
+- `public/candidats.html` : annuaire et filtres ; les explications ouvrent aussi les dossiers de lecture.
+- `public/familles.html` : panorama des six familles et des courants transversaux.
+- `public/famille-*.html` : dix dossiers autonomes (origines, dimensions, débats et références), dont un dossier explicitement consacré aux limites de la catégorie personnelle hors axe.
+- `public/election.html` : fonctionnement du scrutin, présentations d’élus, deux tours, suffrages exprimés, campagne et contrôles.
+- `public/sources.html` : méthode, seize références scientifiques ou de recherche et six sources institutionnelles.
+
+Les contenus des dossiers sont dans `public/families.js`, la bibliographie et les références officielles dans `public/references.js`, les fragments éditoriaux dans `site/`. Le gabarit commun et la génération des quinze pages sont dans `scripts/build-pages.mjs`. Après modification de ces sources ou du nombre de candidatures :
+
+```sh
+npm run build
+npm test
+```
+
+Versionner les sources et les HTML générés ensemble. Les tests utilisent aussi `node scripts/build-pages.mjs --check` pour détecter des pages périmées. Cette génération utilise uniquement les modules natifs de Node.js. Les pages de lecture et les sources restent consultables sans JavaScript ; l’annuaire interactif nécessite JavaScript. Les anciens favoris `index.html#candidats`, `#familles`, `#methode` et `#references` sont redirigés vers les nouvelles pages.
+
+Les références scientifiques éclairent des traditions et des concepts, sans établir à elles seules le classement d’un candidat. Les références institutionnelles distinguent les textes en vigueur et les archives pédagogiques de 2022 : les anciennes dates de scrutin ne sont pas réutilisées pour 2027.
 
 ## État éditorial
 
@@ -34,7 +54,7 @@ Modifier `public/data.json`. `verifiedAt` global est la date du dernier contrôl
 - `verifiedAt` : date ISO du contrôle ;
 - `sources` : objets `{ "label": "Titre, éditeur et date", "url": "https://…" }`, incluant annonce explicite, confirmation journalistique et références du classement.
 
-N’inclure dans cette liste que des candidatures déclarées encore actives, vérifiées. Les candidatures retirées et les hypothèses ne doivent pas être comptées comme actives. Ne pas attribuer automatiquement à une personne le score de son parti. Après vérification, adapter aussi les mentions d’état dans `public/index.html` pour refléter précisément la couverture obtenue ; ne jamais annoncer l’exhaustivité sans contrôle.
+N’inclure dans cette liste que des candidatures déclarées encore actives, vérifiées. Les candidatures retirées et les hypothèses ne doivent pas être comptées comme actives. Ne pas attribuer automatiquement à une personne le score de son parti. Après vérification, adapter aussi les mentions éditoriales dans les sources de `site/` et le gabarit, puis exécuter `npm run build` pour refléter précisément la couverture obtenue ; ne jamais annoncer l’exhaustivité sans contrôle.
 
 ## Portraits et crédits
 
@@ -42,4 +62,4 @@ Les 31 portraits sont servis depuis `public/portraits/` : aucune requête vers u
 
 Une partie des images provient de Wikimedia Commons sous la licence indiquée ; d’autres proviennent de sites de campagne ou d’articles de presse et restent sous droits réservés. Un crédit ne les place pas sous licence libre. Les images de presse ne doivent pas être présumées librement réutilisables pour d’autres usages. Les portraits sont redimensionnés pour l’affichage ; les cadrages de Selma Labib et Benoît Mathieu sont réalisés en CSS à partir du visuel source identifié. Les originaux sont référencés pour conserver la provenance et les conditions applicables.
 
-La date de contrôle documentaire reste dans les données et les mentions générales du suivi ; elle n’est plus affichée au bas de chaque fiche. `npm test` vérifie notamment les portraits servis et les définitions de classification, en plus des contrôles HTTP et documentaires.
+La date de contrôle documentaire reste dans les données ; elle n’est plus affichée au bas de chaque fiche. `npm test` vérifie notamment les portraits servis et les définitions de classification, en plus des contrôles HTTP et documentaires.

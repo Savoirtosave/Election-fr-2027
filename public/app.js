@@ -1,4 +1,5 @@
 import { families } from './families.js';
+import { academicReferences } from './references.js';
 const search = document.querySelector('#search');
 const family = document.querySelector('#family');
 const list = document.querySelector('#candidate-list');
@@ -13,17 +14,6 @@ function element(tag, className, text) {
   return node;
 }
 let candidates = [];
-const navLinks = [...document.querySelectorAll('header nav a')];
-const observer = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-    if (!entry.isIntersecting) continue;
-    for (const link of navLinks) {
-      if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    }
-  }
-}, { rootMargin: '-10% 0px -65% 0px' });
-for (const id of ['candidats', 'familles', 'methode']) observer.observe(document.getElementById(id));
 function render() {
   const term = normalize(search.value.trim());
   const matches = candidates.filter(c => normalize(`${c.name} ${c.party}`).includes(term) && (family.value === 'all' || c.family === family.value));
@@ -65,6 +55,17 @@ function render() {
       element('p', '', c.rationale),
       element('p', 'classification-note', 'Interprétation éditoriale fondée sur les sources de la fiche. Un repère principal ne résume pas toutes les positions du candidat.'),
     );
+    const guideLink = element('a', 'text-link', 'Approfondir ce courant : histoire, idées et débats →');
+    guideLink.href = `./famille-${c.family}.html`;
+    explanation.append(guideLink);
+    const reading = element('ul', 'classification-reading');
+    for (const id of politicalFamily.references) {
+      const reference = academicReferences[id];
+      const link = element('a', '', `${reference.authors} (${reference.year}), ${reference.title}`);
+      link.href = `./sources.html#ref-${id}`;
+      const item = document.createElement('li'); item.append(link); reading.append(item);
+    }
+    explanation.append(reading);
     classification.append(familySummary, explanation);
     const biography = element('p', 'candidate-biography', c.biography);
     const declaration = element('p', 'candidate-declaration', `${c.declarationDateType === 'reported' ? 'Candidature rapportée le' : 'Déclaration le'} ${formatDate(c.declaredAt)}`);
@@ -103,6 +104,8 @@ try {
   if (!response.ok) throw new Error('Données indisponibles');
   const data = await response.json();
   candidates = data.candidates;
+  const requestedFamily = new URLSearchParams(window.location.search).get('famille');
+  if (requestedFamily && Object.hasOwn(families, requestedFamily)) family.value = requestedFamily;
   render();
 } catch {
   count.textContent = 'Chargement impossible. Réessayez en actualisant la page.';
