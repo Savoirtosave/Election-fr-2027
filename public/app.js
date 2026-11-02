@@ -1,6 +1,5 @@
 import { partyLogos } from './party-logos.js';
 import { families } from './families.js';
-import { academicReferences } from './references.js';
 const search = document.querySelector('#search');
 const family = document.querySelector('#family');
 const list = document.querySelector('#candidate-list');
@@ -42,7 +41,12 @@ function render() {
     portrait.append(photo, initials);
     const badge = element('span', 'candidate-status', 'Candidature déclarée');
     const top = element('div', 'candidate-top'); top.append(portrait, badge);
-    const heading = document.createElement('h3'); heading.textContent = c.name;
+    const heading = document.createElement('h3');
+    const profileLink = element('a', 'candidate-profile-link', c.name);
+    profileLink.href = `./candidat-${c.id}.html`; heading.append(profileLink);
+    const portraitLink = element('a', 'candidate-portrait-link');
+    portraitLink.href = profileLink.href; portraitLink.setAttribute('aria-label', `Profil de ${c.name}`);
+    portraitLink.append(portrait); top.prepend(portraitLink);
     const party = element('div', 'candidate-party');
     const logos = element('div', 'candidate-logos');
     for (const id of c.logoIds) {
@@ -71,14 +75,6 @@ function render() {
     const guideLink = element('a', 'text-link', 'Approfondir ce courant : histoire, idées et débats →');
     guideLink.href = `./famille-${c.family}.html`;
     explanation.append(guideLink);
-    const reading = element('ul', 'classification-reading');
-    for (const id of politicalFamily.references) {
-      const reference = academicReferences[id];
-      const link = element('a', '', `${reference.authors} (${reference.year}), ${reference.title}`);
-      link.href = `./sources.html#ref-${id}`;
-      const item = document.createElement('li'); item.append(link); reading.append(item);
-    }
-    explanation.append(reading);
     classification.append(familySummary, explanation);
     const biography = element('p', 'candidate-biography', c.biography);
     const declaration = element('p', 'candidate-declaration', `${c.declarationDateType === 'reported' ? 'Candidature rapportée le' : 'Déclaration le'} ${formatDate(c.declaredAt)}`);
@@ -111,7 +107,9 @@ function render() {
       const provenance = element('a', '', 'Provenance des logos'); provenance.href = './sources.html#logos';
       logoCredit.append(provenance); details.append(logoCredit);
     }
-    article.append(top, heading, party, classification, biography, declaration, details);
+    const programmeLink = element('a', 'candidate-programme-link', 'Profil et programme · ébauche →');
+    programmeLink.href = `./candidat-${c.id}.html#programme`;
+    article.append(top, heading, party, classification, biography, declaration, programmeLink, details);
     list.append(article);
   }
   empty.hidden = matches.length > 0;

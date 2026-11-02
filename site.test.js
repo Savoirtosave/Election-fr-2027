@@ -10,7 +10,8 @@ import { parties, partyTopics } from './public/parties.js';
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
 after(() => server.close());
-const pages = ['index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', 'partis.html', ...parties.map(p => `parti-${p.id}.html`), ...Object.keys(families).map(key => `famille-${key}.html`)];
+const candidateData = JSON.parse(await readFile(new URL('./public/data.json', import.meta.url), 'utf8'));
+const pages = [...candidateData.candidates.map(c => `candidat-${c.id}.html`), 'index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', 'partis.html', ...parties.map(p => `parti-${p.id}.html`), ...Object.keys(families).map(key => `famille-${key}.html`)];
 
 test('les pages sont générées de façon reproductible sans dépendance', () => {
   const result = execFileSync(process.execPath, ['scripts/build-pages.mjs', '--check'], { cwd: new URL('.', import.meta.url), encoding: 'utf8' });
@@ -128,7 +129,7 @@ test('fichiers privés et chemins hors du site restent inaccessibles', async () 
   assert.equal((await fetch(base + '/absent')).status,404);
 });
 
-test('les partis ont une histoire, quatre thèmes sourcés et des lectures historiques', async () => {
+test('les partis ont une histoire, des thèmes sourcés et des lectures historiques', async () => {
   const chamber = JSON.parse(await readFile(new URL('./public/parliament.json', import.meta.url), 'utf8'));
   const ids = new Set();
   assert.equal(parties.length, 25);
@@ -143,6 +144,8 @@ test('les partis ont une histoire, quatre thèmes sourcés et des lectures histo
     for (const source of party.sources) assert.equal(new URL(source.url).protocol, 'https:');
     for (const key of Object.keys(partyTopics)) {
       assert.ok(party.issues[key].text.length > 50);
+      assert.ok(party.issues[key].summary);
+      assert.equal(party.issues[key].status === 'pending', party.issues[key].sourceIds.length === 0);
       for (const sourceId of party.issues[key].sourceIds) assert.ok(party.sources.some(s => s.id === sourceId));
     }
     const html = await (await fetch(base + `/parti-${party.id}.html`)).text();
@@ -201,4 +204,38 @@ test('les logos locaux couvrent les partis et respectent les affiliations actuel
   assert.deepEqual(data.candidates.find(c => c.name === 'Olivier Becht').logoIds, []);
   assert.deepEqual(data.candidates.find(c => c.name === 'Selma Labib').logoIds, ['npa-r']);
   assert.deepEqual(data.candidates.find(c => c.name === 'Xavier Bertrand').logoIds, ['nous-france', 'lr']);
+});
+
+
+test('les profils individuels distinguent l’ébauche personnelle des positions du parti', async () => {
+  const { candidateDrafts } = await import('./public/candidate-programmes.js');
+  const ids = new Set();
+  for (const c of candidateData.candidates) {
+    assert.match(c.id, /^[a-z]+(?:-[a-z]+)*$/);
+    assert.ok(!ids.has(c.id)); ids.add(c.id);
+    assert.ok(candidateDrafts[c.id]);
+    assert.ok(c.sources[candidateDrafts[c.id].sourceIndex]);
+    const html = await (await fetch(base + `/candidat-${c.id}.html`)).text();
+    for (const anchor of ['profil', 'programme', 'sources-candidat']) assert.ok(html.includes(`id="${anchor}"`));
+    assert.ok(html.includes('Ébauche évolutive'));
+    for (const id of c.partyIds) {
+      assert.ok(parties.some(p => p.id === id));
+      assert.ok(html.includes(`./parti-${id}.html`));
+      assert.ok(html.includes('pas automatiquement des engagements personnels'));
+    }
+    if (c.affiliationKind === 'independent') assert.equal(c.partyIds.length, 0);
+  }
+  const directory = await (await fetch(base + '/partis.html')).text();
+  assert.ok(directory.includes('id="sans-parti"'));
+  for (const c of candidateData.candidates) assert.ok(directory.includes(`./candidat-${c.id}.html`), c.name);
+  for (const p of parties) {
+    const html = await (await fetch(base + `/parti-${p.id}.html`)).text();
+    assert.ok(html.includes('id="candidats-parti"'));
+    assert.doesNotMatch(html, /Rémond|Julliard/);
+    assert.match(html, /representation-compact/);
+    for (const c of candidateData.candidates.filter(c => c.partyIds.includes(p.id))) assert.ok(html.includes(`./candidat-${c.id}.html`));
+  }
+  const noParty = candidateData.candidates.filter(c => c.affiliationKind === 'independent');
+  assert.ok(noParty.some(c => c.name === 'Olivier Becht'));
+  assert.ok(!noParty.some(c => c.name === 'Bernard Cazeneuve' || c.name === 'Francis Lalanne'));
 });

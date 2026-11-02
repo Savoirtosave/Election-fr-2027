@@ -67,7 +67,7 @@ La date de contrôle documentaire reste dans les données ; elle n’est plus af
 
 ## Partis, groupes et courants intellectuels
 
-L’annuaire des partis reprend les principes de mise en page du modèle indiqué (recherche, indicateurs, onglets, tri, cartes et liste), avec des sigles éditoriaux et les couleurs du site ; il ne réutilise pas ses logos, ses données brésiliennes ou ses numéros de partis. La sélection de 25 formations françaises est un panorama non exhaustif. Les sources officielles des partis décrivent leurs propres orientations et sont distinguées des ouvrages de recherche et des articles de presse. Les quatre thèmes ne sont pas complétés par des mesures inventées lorsqu’un document ne les précise pas.
+L’annuaire des partis reprend les principes de mise en page du modèle indiqué (recherche, indicateurs, onglets, tri, cartes et liste), avec les logos des formations et les couleurs du site ; il ne réutilise pas ses logos, ses données brésiliennes ou ses numéros de partis. La sélection de 25 formations françaises est un panorama non exhaustif. Les sources officielles des partis décrivent leurs propres orientations et sont distinguées des ouvrages de recherche et des articles de presse. Huit thèmes structurent la comparaison : économie, sécurité, immigration, écologie, fiscalité, logement, international et laïcité. Les thèmes non documentés sont indiqués explicitement. Les synthèses courtes et compléments sourcés se trouvent dans `public/party-positions.js`.
 
 Les effectifs parlementaires proviennent du tableau officiel de l’Assemblée nationale, relevé le **2 novembre 2026** : **574 sièges pourvus**, dont **563 dans 11 groupes** et **11 non-inscrits**, plus **3 sièges vacants**, soit **577 sièges au total**. Les membres et apparentés sont conservés séparément. Les 577 points du schéma comptent chaque siège une fois ; ce dessin ne reproduit pas le plan exact des places.
 
@@ -76,3 +76,10 @@ Un groupe peut accueillir plusieurs partis : les effectifs de groupe affichés s
 Les influences philosophiques et les penseurs sont décrits dans `families[key].philosophy`. Les lectures centrales sont **Les Droites en France** (1982) et **Les Droites aujourd’hui** (2005) de René Rémond, **Les Gauches françaises, 1762–2012** (2012) et **Fernand Pelloutier et les origines du syndicalisme d’action directe** (1971) de Jacques Julliard. Les typologies historiques et les références philosophiques ne sont pas transposées mécaniquement aux partis contemporains. Le repère personnel hors axe n’est doté d’aucune généalogie philosophique inventée.
 
 L’annuaire et le tableau parlementaire sont disponibles sans JavaScript. `parties-app.js` ajoute la recherche, les filtres par famille et groupe, les tris, les vues cartes/liste et les onglets utilisables au clavier. Les profils détaillés et les dossiers de courants restent statiques.
+
+
+### Profils et programmes en ébauche
+
+Chaque candidat possède une page statique `public/candidat-<id>.html`, accessible depuis son portrait, son nom et le lien « Profil et programme ». `public/data.json` conserve un identifiant stable, les affiliations actuelles (`partyIds`) et leur nature (`affiliationKind` : parti, mouvement, soutien ou indépendant). Les logos ne servent pas à inférer une adhésion. Les partis affichent leurs candidatures suivies ; le bas de l’annuaire distingue les indépendants des autres mouvements.
+
+`public/candidate-programmes.js` contient les synthèses personnelles et l’index de la source de presse utilisée dans la fiche. Elles sont séparées des positions collectives du parti. Les textes de 2024, manifestes et programmes de préparation ne sont pas assimilés à des engagements présidentiels personnels de 2027. À mesure des publications, compléter les huit sujets, la date, la portée et le chiffrage, avec une source précise, puis lancer `npm run build` et `npm test`. Les pages générées sont versionnées afin de rester accessibles avec Go Live sans étape de compilation.

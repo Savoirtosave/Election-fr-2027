@@ -31,7 +31,12 @@
       },
       "logoIds": [
         "lo"
-      ]
+      ],
+      "id": "nathalie-arthaud",
+      "partyIds": [
+        "lo"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "François Asselineau",
@@ -66,7 +71,12 @@
       },
       "logoIds": [
         "upr"
-      ]
+      ],
+      "id": "francois-asselineau",
+      "partyIds": [
+        "upr"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Gabriel Attal",
@@ -101,7 +111,12 @@
       },
       "logoIds": [
         "renaissance"
-      ]
+      ],
+      "id": "gabriel-attal",
+      "partyIds": [
+        "renaissance"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Delphine Batho",
@@ -132,7 +147,12 @@
       },
       "logoIds": [
         "generation-ecologie"
-      ]
+      ],
+      "id": "delphine-batho",
+      "partyIds": [
+        "generation-ecologie"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Olivier Becht",
@@ -161,7 +181,10 @@
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
         "originalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Olivier_Becht_2023_%28cropped%29.jpg/250px-Olivier_Becht_2023_%28cropped%29.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "olivier-becht",
+      "partyIds": [],
+      "affiliationKind": "independent"
     },
     {
       "name": "Xavier Bertrand",
@@ -193,7 +216,12 @@
       "logoIds": [
         "nous-france",
         "lr"
-      ]
+      ],
+      "id": "xavier-bertrand",
+      "partyIds": [
+        "lr"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Karim Bouamrane",
@@ -224,7 +252,12 @@
       },
       "logoIds": [
         "ps"
-      ]
+      ],
+      "id": "karim-bouamrane",
+      "partyIds": [
+        "ps"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Bernard Cazeneuve",
@@ -255,7 +288,10 @@
       },
       "logoIds": [
         "convention"
-      ]
+      ],
+      "id": "bernard-cazeneuve",
+      "partyIds": [],
+      "affiliationKind": "movement"
     },
     {
       "name": "Nicolas Dupont-Aignan",
@@ -294,7 +330,12 @@
       },
       "logoIds": [
         "dlf"
-      ]
+      ],
+      "id": "nicolas-dupont-aignan",
+      "partyIds": [
+        "dlf"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Sylvain Durif",
@@ -327,7 +368,10 @@
         "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Sylvain_Durif.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "sylvain-durif",
+      "partyIds": [],
+      "affiliationKind": "independent"
     },
     {
       "name": "Clara Egger",
@@ -362,7 +406,10 @@
       },
       "logoIds": [
         "solution-democratique"
-      ]
+      ],
+      "id": "clara-egger",
+      "partyIds": [],
+      "affiliationKind": "movement"
     },
     {
       "name": "Raphaël Glucksmann",
@@ -397,7 +444,12 @@
       },
       "logoIds": [
         "place-publique"
-      ]
+      ],
+      "id": "raphael-glucksmann",
+      "partyIds": [
+        "place-publique"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Anasse Kazib",
@@ -428,7 +480,12 @@
       },
       "logoIds": [
         "revolution-permanente"
-      ]
+      ],
+      "id": "anasse-kazib",
+      "partyIds": [
+        "revolution-permanente"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Selma Labib",
@@ -464,7 +521,12 @@
       },
       "logoIds": [
         "npa-r"
-      ]
+      ],
+      "id": "selma-labib",
+      "partyIds": [
+        "npa-r"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Francis Lalanne",
@@ -497,7 +559,10 @@
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lalanne_2021_%28cropped%29.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "francis-lalanne",
+      "partyIds": [],
+      "affiliationKind": "support"
     },
     {
       "name": "Marine Le Pen",
@@ -532,7 +597,12 @@
       },
       "logoIds": [
         "rn"
-      ]
+      ],
+      "id": "marine-le-pen",
+      "partyIds": [
+        "rn"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "David Lisnard",
@@ -567,7 +637,12 @@
       },
       "logoIds": [
         "nouvelle-energie"
-      ]
+      ],
+      "id": "david-lisnard",
+      "partyIds": [
+        "nouvelle-energie"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Mira Markovic",
@@ -598,7 +673,12 @@
       },
       "logoIds": [
         "parti-animaliste"
-      ]
+      ],
+      "id": "mira-markovic",
+      "partyIds": [
+        "parti-animaliste"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Benoît Mathieu",
@@ -632,7 +712,10 @@
         "panel": "right",
         "originalUrl": "https://i.f1g.fr/media/cms/1200x630_crop/2026/08/05/ebc8d7dfb0ab484b40fb9bdf8a0f8a00d98cb523b0bb40f6d0d11651bf2d8a6c.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "benoit-mathieu",
+      "partyIds": [],
+      "affiliationKind": "independent"
     },
     {
       "name": "Jean-Luc Mélenchon",
@@ -667,7 +750,12 @@
       },
       "logoIds": [
         "lfi"
-      ]
+      ],
+      "id": "jean-luc-melenchon",
+      "partyIds": [
+        "lfi"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Antoine Mikolajczak",
@@ -702,7 +790,10 @@
       },
       "logoIds": [
         "equinoxe"
-      ]
+      ],
+      "id": "antoine-mikolajczak",
+      "partyIds": [],
+      "affiliationKind": "movement"
     },
     {
       "name": "Manolo Mlekuz",
@@ -737,7 +828,10 @@
       },
       "logoIds": [
         "trajectoire"
-      ]
+      ],
+      "id": "manolo-mlekuz",
+      "partyIds": [],
+      "affiliationKind": "movement"
     },
     {
       "name": "Édouard Philippe",
@@ -776,7 +870,12 @@
       },
       "logoIds": [
         "horizons"
-      ]
+      ],
+      "id": "edouard-philippe",
+      "partyIds": [
+        "horizons"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Florian Philippot",
@@ -811,7 +910,10 @@
       },
       "logoIds": [
         "patriotes"
-      ]
+      ],
+      "id": "florian-philippot",
+      "partyIds": [],
+      "affiliationKind": "movement"
     },
     {
       "name": "Gilles Platret",
@@ -840,7 +942,10 @@
         "licenseUrl": "",
         "originalUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/n7_xV3LQdPKupXoaUjJPoriArhM=/0x105:2048x1257/2048x0/images/platret-1141834.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "gilles-platret",
+      "partyIds": [],
+      "affiliationKind": "independent"
     },
     {
       "name": "Natacha Polony",
@@ -869,7 +974,10 @@
         "licenseUrl": "",
         "originalUrl": "https://i.f1g.fr/media/cms/1200x630_crop/2026/10/14/693bd4ca8c9a6d33b728d9dfdd3185dc844b814eaec7c53dcea16bb0fc5a5dd5.jpg"
       },
-      "logoIds": []
+      "logoIds": [],
+      "id": "natacha-polony",
+      "partyIds": [],
+      "affiliationKind": "independent"
     },
     {
       "name": "Bruno Retailleau",
@@ -908,7 +1016,12 @@
       },
       "logoIds": [
         "lr"
-      ]
+      ],
+      "id": "bruno-retailleau",
+      "partyIds": [
+        "lr"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Fabien Roussel",
@@ -939,7 +1052,12 @@
       },
       "logoIds": [
         "pcf"
-      ]
+      ],
+      "id": "fabien-roussel",
+      "partyIds": [
+        "pcf"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "François Ruffin",
@@ -974,7 +1092,12 @@
       },
       "logoIds": [
         "debout"
-      ]
+      ],
+      "id": "francois-ruffin",
+      "partyIds": [
+        "debout"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Marine Tondelier",
@@ -1013,7 +1136,12 @@
       },
       "logoIds": [
         "ecologistes"
-      ]
+      ],
+      "id": "marine-tondelier",
+      "partyIds": [
+        "ecologistes"
+      ],
+      "affiliationKind": "party"
     },
     {
       "name": "Éric Zemmour",
@@ -1048,7 +1176,12 @@
       },
       "logoIds": [
         "reconquete"
-      ]
+      ],
+      "id": "eric-zemmour",
+      "partyIds": [
+        "reconquete"
+      ],
+      "affiliationKind": "party"
     }
   ]
 }
