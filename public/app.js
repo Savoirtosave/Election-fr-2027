@@ -39,12 +39,12 @@ function render() {
     const party = element('p', 'candidate-party', c.party);
     const classification = element('p', 'candidate-family', labels[c.family] || labels.unclassified);
     const biography = element('p', 'candidate-biography', c.biography);
-    const declaration = element('p', 'candidate-declaration', `Déclaration : ${formatDate(c.declaredAt)}`);
+    const declaration = element('p', 'candidate-declaration', `${c.declarationDateType === 'reported' ? 'Candidature rapportée le' : 'Déclaration le'} ${formatDate(c.declaredAt)}`);
     const details = document.createElement('details');
     details.className = 'candidate-evidence';
     const summary = document.createElement('summary'); summary.textContent = 'Classement et sources';
     const reason = document.createElement('p'); reason.textContent = c.rationale;
-    const date = element('p', 'candidate-verification', `Fiche vérifiée le ${formatDate(c.verifiedAt)}`);
+    const date = element('p', 'candidate-verification', `Fiche documentée le ${formatDate(c.verifiedAt)}`);
     details.append(summary, reason);
     for (const s of c.sources) {
       const url = new URL(s.url); if (url.protocol !== 'https:') continue;

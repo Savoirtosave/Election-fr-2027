@@ -1,4 +1,718 @@
 {
-  "verifiedAt": null,
-  "candidates": []
+  "verifiedAt": "2026-11-02",
+  "coverage": "partial",
+  "candidates": [
+    {
+      "name": "Nathalie Arthaud",
+      "party": "Lutte ouvrière",
+      "family": "radical",
+      "biography": "Professeure d’économie et de gestion, elle est porte-parole de Lutte ouvrière. Déjà candidate en 2012, 2017 et 2022, elle annonce une quatrième campagne présidentielle pour 2027.",
+      "rationale": "RTL décrit son engagement trotskiste, la défense des travailleurs et son objectif de renverser le capitalisme par la révolution : ces positions relèvent de la gauche révolutionnaire.",
+      "declaredAt": "2025-12-08",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "RTL, 9 décembre 2025 — Présidentielle 2027 : qui est vraiment Nathalie Arthaud, la porte-parole de Lutte ouvrière ?",
+          "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "François Asselineau",
+      "party": "Union populaire républicaine (UPR)",
+      "family": "unclassified",
+      "biography": "Fondateur et président de l’UPR, il a été candidat à la présidentielle de 2017. Il défend la sortie de la France de l’Union européenne, de l’euro et de l’OTAN ; la presse rapporte une nouvelle candidature pour 2027.",
+      "rationale": "Les sources documentent son souverainisme et son projet de sortie de l’UE. Ces positions ne suffisent pas, à elles seules, à le ranger dans l’une des six familles du site : classement non établi.",
+      "declaredAt": "2026-05-19",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "20 Minutes, 19 mai 2026 — Présidentielle 2027: Candidat à l'élection, François Asselineau bientôt jugé pour agression et harcèlement sexuels",
+          "url": "https://www.20minutes.fr/justice/4224280-20260519-candidat-presidentielle-2027-francois-asselineau-bientot-juge-agressions-harcelement-sexuels"
+        },
+        {
+          "label": "CNews, 19 mai 2026 — Agression et harcèlement sexuels : le candidat à la présidentielle 2027, François Asselineau, renvoyé en correctionnelle",
+          "url": "https://www.cnews.fr/france/2026-05-19/agression-et-harcelement-sexuels-le-candidat-la-presidentielle-2027-francois"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Gabriel Attal",
+      "party": "Renaissance",
+      "family": "centre",
+      "biography": "Premier ministre en 2024 après avoir notamment été ministre de l’Éducation nationale, il dirige Renaissance. Il annonce sa candidature à Mur-de-Barrez, dans l’Aveyron, et entre en concurrence avec Édouard Philippe au sein du bloc central.",
+      "rationale": "RTL situe sa candidature dans le bloc central. Son parcours dans les gouvernements d’Emmanuel Macron et à la tête de Renaissance étaye ce rattachement éditorial au centre, sans préjuger de toutes ses positions.",
+      "declaredAt": "2026-05-22",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "RTL, 22 mai 2026 — Présidentielle 2027 : Gabriel Attal officialise sa candidature à l'élection",
+          "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-gabriel-attal-officialise-sa-candidature-a-l-election-presidentielle-7900637844"
+        },
+        {
+          "label": "Le Figaro, 22 mai 2026 — Présidentielle 2027 : « J’ai décidé d’être candidat », annonce Gabriel Attal",
+          "url": "https://www.lefigaro.fr/politique/presidentielle-2027-j-ai-decide-d-etre-candidat-annonce-gabriel-attal-20260522"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Delphine Batho",
+      "party": "Génération écologie",
+      "family": "green",
+      "biography": "Ancienne ministre de l’Écologie et députée des Deux-Sèvres, elle préside Génération écologie. Elle se présente pour défendre une candidature écologiste autonome et critique le principe d’une primaire élargie de la gauche.",
+      "rationale": "L’entretien repris par Le HuffPost/AFP place l’écologie au cœur de sa démarche. Ses positions plus fermes sur les sujets régaliens la distinguent d’autres écologistes sans effacer cet ancrage.",
+      "declaredAt": "2025-11-25",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le HuffPost avec AFP, 26 novembre 2025 — Delphine Batho se porte candidate et critique la primaire",
+          "url": "https://www.huffingtonpost.fr/politique/article/delphine-batho-deputee-ecolo-se-porte-candidate-a-la-presidentielle-et-fustige-la-primaire_257544.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Olivier Becht",
+      "party": "Sans camp revendiqué ; ancien Agir / Renaissance",
+      "family": "unclassified",
+      "biography": "Député du Haut-Rhin, ancien maire de Rixheim et ancien ministre du Commerce extérieur, il a aussi été juge administratif et enseignant. Il annonce sa candidature en revendiquant une démarche indépendante de ses anciennes formations.",
+      "rationale": "Le JDD rapporte qu’il ne se revendique plus d’un camp, après Agir et Renaissance. Son ancienne affiliation ne suffit pas à classer sa candidature actuelle : classement non établi.",
+      "declaredAt": "2026-09-24",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le JDD, consulté le 2 novembre 2026 — Présidentielle 2027 : l'ancien ministre Olivier Becht annonce sa candidature",
+          "url": "https://www.lejdd.fr/politique/quand-on-na-aucune-chance-il-faut-la-saisir-lancien-ministre-olivier-becht-annonce-sa-candidature-a-la-presidentielle-184281"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Xavier Bertrand",
+      "party": "Nous France / Les Républicains",
+      "family": "right",
+      "biography": "Président de la région Hauts-de-France et ancien ministre de la Santé et du Travail, il a aussi dirigé l’UMP. Il affirme vouloir se présenter en 2027, après avoir participé à la primaire de la droite pour 2022.",
+      "rationale": "La Dépêche documente son parcours à l’UMP puis à LR et son identification au gaullisme social. Le rattachement à la droite tient compte de cette sensibilité territoriale et sociale.",
+      "declaredAt": "2024-02-03",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "La Dépêche du Midi, 3 février 2024 — Xavier Bertrand déclare avoir bien l’intention d’être candidat",
+          "url": "https://www.ladepeche.fr/2024/02/03/presidentielle-2027-xavier-bertrand-le-president-lr-des-hauts-de-france-declare-avoir-bien-lintention-detre-candidat-11742325.php"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Karim Bouamrane",
+      "party": "Parti socialiste",
+      "family": "left",
+      "biography": "Maire de Saint-Ouen-sur-Seine depuis 2020, cet élu socialiste annonce sa candidature sur France Inter. Il revendique une gauche ancrée dans l’action locale et se démarque de La France insoumise comme du Rassemblement national.",
+      "rationale": "Le Figaro documente son engagement socialiste et sa recherche d’une voie distincte de LFI. Le rattachement à la gauche sociale-démocrate est une synthèse éditoriale de cette orientation réformiste.",
+      "declaredAt": "2026-06-09",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, 9 juin 2026 — Présidentielle 2027 : «Je suis candidat», annonce le maire socialiste de Saint-Ouen Karim Bouamrane",
+          "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Bernard Cazeneuve",
+      "party": "La Convention",
+      "family": "left",
+      "biography": "Ancien Premier ministre et ministre de l’Intérieur sous François Hollande, il a auparavant été maire de Cherbourg-Octeville. Fondateur de La Convention après son départ du PS, il défend une gauche républicaine distincte de LFI. L’annonce formelle du 16 juillet est recensée par Wikipédia ; l’entretien du Figaro consulté date d’avril et exprimait encore sa disponibilité.",
+      "rationale": "Son parcours gouvernemental socialiste et sa démarche à La Convention l’inscrivent dans une gauche réformiste et républicaine. La catégorie sociale-démocrate reste une synthèse ; elle ne gomme pas ses désaccords avec le PS actuel.",
+      "declaredAt": "2026-07-16",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, entretien du 28 avril 2026, mis à jour le 29 — Bernard Cazeneuve : « Je suis prêt à être candidat en 2027 » (extrait accessible)",
+          "url": "https://www.lefigaro.fr/politique/bernard-cazeneuve-au-figaro-je-suis-pret-a-etre-candidat-en-2027-20260428"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Nicolas Dupont-Aignan",
+      "party": "Debout la France",
+      "family": "right",
+      "biography": "Président de Debout la France et ancien député de l’Essonne, il a déjà été candidat en 2012, 2017 et 2022. Il engage une quatrième campagne, centrée sur la souveraineté nationale, puis réaffirme sa candidature en septembre 2026.",
+      "rationale": "Franceinfo le présente comme souverainiste. Son parcours gaulliste le rattache à la droite, avec une dimension nationale marquée ; son alliance avec Marine Le Pen en 2017 doit aussi être prise en compte et empêche de réduire ce positionnement à la seule droite libérale.",
+      "declaredAt": "2025-03-08",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 8 mars 2025 — Présidentielle 2027 : le souverainiste Nicolas Dupont-Aignan se lance pour la 4e fois dans la course à l'Elysée – franceinfo",
+          "url": "https://www.francetvinfo.fr/politique/nicolas-dupont-aignan/le-souverainiste-nicolas-dupont-aignan-se-lance-pour-la-4e-fois-dans-la-course-a-l-elysee_7118136.html"
+        },
+        {
+          "label": "Le Figaro, 8 mars 2025 — Nicolas Dupont-Aignan se déclare candidat à la prochaine élection présidentielle",
+          "url": "https://www.lefigaro.fr/politique/nicolas-dupont-aignan-se-declare-candidat-a-la-prochaine-election-presidentielle-20250308"
+        },
+        {
+          "label": "Le JDD, 19 septembre 2026 — Présidentielle : Nicolas Dupont-Aignan officialise sa candidature et fait le pari du Frexit",
+          "url": "https://www.lejdd.fr/politique/presidentielle-nicolas-dupont-aignan-officialise-sa-candidature-et-fait-le-pari-du-frexit-183876"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Sylvain Durif",
+      "party": "Sans étiquette",
+      "family": "unclassified",
+      "biography": "Personnalité des réseaux sociaux connue depuis les rumeurs de fin du monde à Bugarach en 2012, il se présente notamment sous le nom de « Christ cosmique ». Il annonce sa candidature dans une vidéo diffusée sur les réseaux sociaux.",
+      "rationale": "Les articles consultés documentent une candidature personnelle et des discours ésotériques, sans fournir un ensemble de positions permettant un classement politique solide.",
+      "declaredAt": "2026-08-23",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, 25 août 2026 — «Grand monarque» et doux cinglé complotiste : Sylvain Durif annonce sa candidature à la présidentielle 2027",
+          "url": "https://www.lefigaro.fr/politique/grand-monarque-et-doux-cingle-complotiste-sylvain-durif-annonce-sa-candidature-a-la-presidentielle-2027-20260825"
+        },
+        {
+          "label": "RTL, 25 août 2026 — Christ cosmique, grand monarque et bientôt président de la République ? Le vidéaste complotiste Sylvain Durif se déclare candidat à l'élection de 2027",
+          "url": "https://www.rtl.fr/actu/politique/christ-cosmique-grand-monarque-et-bientot-president-de-la-republique-le-videaste-complotiste-sylvain-durif-se-declare-candidat-a-l-election-de-2027-7900664715"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Clara Egger",
+      "party": "Solution démocratique",
+      "family": "unclassified",
+      "biography": "Professeure de sciences politiques à l’université de Rotterdam, elle porte la candidature de Solution démocratique. Déjà engagée dans une tentative de candidature en 2022, elle défend le référendum d’initiative citoyenne constituant et un rééquilibrage des institutions.",
+      "rationale": "Les articles du Dauphiné et du Temps décrivent une démarche centrée sur la démocratie directe. Cette priorité institutionnelle ne suffit pas à établir une appartenance à l’une des six familles.",
+      "declaredAt": "2026-05-21",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Dauphiné libéré, 21 mai 2026 — Politique. L'Ardéchoise Clara Egger est candidate à l’élection présidentielle pour « rétablir un équilibre démocratique »",
+          "url": "https://www.ledauphine.com/politique/2026/05/21/l-ardechoise-clara-egger-est-candidate-a-l-election-presidentielle-pour-retablir-un-equilibre-democratique"
+        },
+        {
+          "label": "Le Temps, 1er septembre 2026 — Clara Egger, la seule candidate française qui comprend vraiment le référendum - Le Temps",
+          "url": "https://www.letemps.ch/monde/france/clara-egger-la-seule-candidate-francaise-qui-comprend-vraiment-le-referendum"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Raphaël Glucksmann",
+      "party": "Place publique",
+      "family": "left",
+      "biography": "Essayiste et député européen depuis 2019, il est l’une des figures de Place publique. Il annonce sa candidature en passant par la primaire organisée avec le Parti socialiste ; le suivi de presse le donne ensuite vainqueur de ce scrutin.",
+      "rationale": "Le HuffPost et le suivi BFMTV situent sa démarche dans la gauche sociale-démocrate, avec une proposition d’augmentation du salaire net et une candidature portée avec le PS.",
+      "declaredAt": "2026-08-23",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le HuffPost, 23 août 2026 — Présidentielle 2027 : Raphaël Glucksmann annonce sa candidature, via la primaire du Parti socialiste",
+          "url": "https://www.huffingtonpost.fr/politique/article/presidentielle-2027-raphael-glucksmann-annonce-sa-candidature-via-la-primaire-du-parti-socialiste_308981.html"
+        },
+        {
+          "label": "BFMTV — Suivi des candidatures, consulté le 2 novembre 2026 : victoire à la primaire sociale-démocrate",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-qui-sont-les-candidats-deja-declares-et-ceux-qui-pourraient-rejoindre-la-course-a-l-elysee_AN-202604260015.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Anasse Kazib",
+      "party": "Révolution permanente",
+      "family": "radical",
+      "biography": "Cheminot et syndicaliste SUD Rail, il est porte-parole de Révolution permanente. Ancien chroniqueur des Grandes Gueules sur RMC, il avait déjà tenté de se présenter en 2022 sans réunir les parrainages nécessaires.",
+      "rationale": "Franceinfo cite son annonce d’une candidature « ouvrière, communiste et révolutionnaire » et décrit le trotskisme de son organisation : le rattachement à la gauche révolutionnaire repose sur ces positions explicites.",
+      "declaredAt": "2026-06-01",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 1er juin 2026 — Le cheminot Anasse Kazib annonce sa candidature à la présidentielle 2027 – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Selma Labib",
+      "party": "NPA – Révolutionnaires",
+      "family": "radical",
+      "biography": "Conductrice de bus et porte-parole du NPA – Révolutionnaires, elle a conduit sa liste aux élections européennes de 2024. Son parti annonce sa candidature pour porter une voix ouvrière indépendante à la présidentielle.",
+      "rationale": "BFMTV et RTL décrivent une candidature ouvrière et anticapitaliste portée par le NPA-R, distinct du NPA – L’Anticapitaliste. Cet objectif de rupture relève de la gauche révolutionnaire.",
+      "declaredAt": "2026-06-17",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "BFMTV, 17 juin 2026 — Présidentielle 2027: le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html"
+        },
+        {
+          "label": "RTL, 17 juin 2026 — Présidentielle 2027 : Selma Labib officiellement candidate pour le NPA-Révolutionnaires",
+          "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-selma-labib-officiellement-candidate-pour-le-npa-revolutionnaires-7900647117"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Francis Lalanne",
+      "party": "France Libre (soutien)",
+      "family": "unclassified",
+      "biography": "Chanteur et auteur-compositeur, il s’est engagé dans différentes mobilisations politiques, notamment contre le passe sanitaire. Sa campagne pour 2027, soutenue par France Libre et Dieudonné, met en avant la souveraineté et une démocratie plus directe.",
+      "rationale": "Les sources décrivent un projet de rupture institutionnelle et souverainiste. Elles ne suffisent pas à en établir ici un classement complet ; l’étiquette reste non établie.",
+      "declaredAt": "2026-08-19",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 19 août 2026 — Présidentielle 2027 : le chanteur Francis Lalanne annonce être candidat, premier meeting vendredi à Paris – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-chanteur-francis-lalanne-officiellement-candidat-premier-meeting-vendredi-a-paris_8153588.html"
+        },
+        {
+          "label": "Le Point, 23 août 2026 — Présidentielle 2027 : Francis Lalanne veut nommer Dieudonné Premier ministre",
+          "url": "https://www.lepoint.fr/politique/presidentielle-2027-francis-lalanne-veut-nommer-dieudonne-premier-ministre-S22UKX7EWNCT7FPCKCDIRIDEAM/"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Marine Le Pen",
+      "party": "Rassemblement national",
+      "family": "far-right",
+      "biography": "Députée du Pas-de-Calais et présidente du groupe RN à l’Assemblée nationale, elle a déjà participé aux présidentielles de 2012, 2017 et 2022. Elle confirme sa candidature sur TF1 après l’arrêt d’appel de juillet 2026 ; un pourvoi en cassation est annoncé dans l’affaire des assistants parlementaires.",
+      "rationale": "Son parcours à la tête du FN puis du RN et la priorité nationale défendue dans ce courant motivent ce rattachement à la droite radicale. La catégorie du site regroupe droite radicale et extrême droite sans les considérer comme des synonymes.",
+      "declaredAt": "2026-07-07",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Euronews, 7 juillet 2026 — \"Je suis candidate à l'élection présidentielle\", annonce Marine Le Pen sur TF1 | Euronews",
+          "url": "https://fr.euronews.com/my-europe/2026/07/07/je-suis-candidate-a-lelection-presidentielle-annonce-marine-le-pen-sur-tf1"
+        },
+        {
+          "label": "BFMTV — Suivi des candidatures, consulté le 2 novembre 2026 : candidature de Marine Le Pen et procédure judiciaire",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-qui-sont-les-candidats-deja-declares-et-ceux-qui-pourraient-rejoindre-la-course-a-l-elysee_AN-202604260015.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "David Lisnard",
+      "party": "Nouvelle Énergie",
+      "family": "right",
+      "biography": "Maire de Cannes et président de l’Association des maires de France, il porte le mouvement Nouvelle Énergie. Il annonce sa candidature en quittant Les Républicains et plaide pour une primaire ouverte de la droite.",
+      "rationale": "Franceinfo rapporte son projet « libéral, sécuritaire, éducatif et scientifique ». Cette combinaison et son parcours à droite étayent le classement dans la droite libérale et conservatrice.",
+      "declaredAt": "2026-03-31",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 31 mars 2026 — Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle et officialise son départ des Républicains – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
+        },
+        {
+          "label": "BFMTV, 17 janvier 2025 — Présidentielle 2027: David Lisnard appelle à une primaire de la droite et se porte candidat",
+          "url": "https://www.bfmtv.com/politique/presidentielle-2027-david-lisnard-appelle-a-une-primaire-de-la-droite-et-se-porte-candidat_AN-202501170372.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Mira Markovic",
+      "party": "Parti animaliste",
+      "family": "unclassified",
+      "biography": "Cofondatrice du Parti animaliste en 2016, elle a été élue parisienne avec des responsabilités liées à l’environnement et à la condition animale. Elle place la protection des animaux, l’élevage et leur statut juridique au centre de sa candidature.",
+      "rationale": "Le portrait du Point documente un engagement animaliste. La défense des animaux ne détermine pas, à elle seule, une position sur les autres axes du classement : elle n’est donc pas automatiquement assimilée à l’écologie politique.",
+      "declaredAt": "2026-10-02",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Point, 3 octobre 2026 — Mira Markovic : qui est la candidate du Parti animaliste à la présidentielle 2027 ?",
+          "url": "https://www.lepoint.fr/politique/mira-douchka-markovic-qui-est-la-candidate-du-parti-animaliste-a-la-presidentielle-2027-ISVTAH26T5FENCCMCZ5AEONBVU/"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Benoît Mathieu",
+      "party": "Sans étiquette",
+      "family": "unclassified",
+      "biography": "Ingénieur en agroalimentaire de formation devenu enseignant contractuel, il entreprend un tour de France à vélo pour rencontrer des maires et recueillir des parrainages. Il revendique une représentation issue de la société civile et indépendante des partis.",
+      "rationale": "RMC documente sa critique du fonctionnement partisan et sa démarche citoyenne. Ces éléments institutionnels ne permettent pas un classement gauche–droite suffisamment étayé.",
+      "declaredAt": "2026-05-03",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "RMC, 3 mai 2026 — Présidentielle 2027: à 27 ans, il sillonne la France à vélo en quête des 500 parrainages",
+          "url": "https://rmc.bfmtv.com/actualites/politique/presidentielle-2027-a-27-ans-il-sillonne-la-france-a-velo-en-quete-des-500-parrainages_AV-202605030128.html"
+        },
+        {
+          "label": "Le Figaro, 5 août 2026 — Présidentielle 2027 : à vélo ou en van, le tour de France des candidats de moins de 30 ans",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-a-velo-ou-en-van-le-tour-de-france-des-candidats-de-moins-de-30-ans-20260805"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Jean-Luc Mélenchon",
+      "party": "La France insoumise",
+      "family": "radical",
+      "biography": "Ancien sénateur, ministre, député européen puis député, il est le fondateur de La France insoumise. Après les campagnes de 2012, 2017 et 2022, il annonce sur TF1 une quatrième candidature présidentielle.",
+      "rationale": "RTL et Le HuffPost décrivent une candidature de transformation sociale et écologique portée par LFI. Le rattachement à la gauche radicale distingue cette stratégie électorale de celle des organisations révolutionnaires également regroupées dans cette catégorie.",
+      "declaredAt": "2026-05-03",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le HuffPost, 3 mai 2026 — Jean-Luc Mélenchon officiellement candidat à la présidentielle 2027, sa quatrième tentative",
+          "url": "https://www.huffingtonpost.fr/politique/article/jean-luc-melenchon-officiellement-candidat-a-la-presidentielle-2027-sa-quatrieme-tentative_263337.html"
+        },
+        {
+          "label": "RTL, 3 mai 2026 — Le RN est \"l’adversaire principal\" : Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027, à un an du scrutin",
+          "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Antoine Mikolajczak",
+      "party": "Équinoxe",
+      "family": "unclassified",
+      "biography": "Ingénieur originaire de l’Oise, il porte la candidature d’Équinoxe. Il figure parmi les jeunes candidats parcourant le pays pour rencontrer des élus et réunir les 500 parrainages nécessaires, aux côtés d’Alexia de Montgolfier et Louis Brémaud dans la démarche de son mouvement.",
+      "rationale": "Le reportage consulté confirme sa candidature mais ne documente pas assez ses positions sur tous les axes politiques. Le classement reste non établi.",
+      "declaredAt": "2026-08-05",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, 5 août 2026 — Présidentielle 2027 : à vélo ou en van, le tour de France des candidats de moins de 30 ans",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-a-velo-ou-en-van-le-tour-de-france-des-candidats-de-moins-de-30-ans-20260805"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Manolo Mlekuz",
+      "party": "Trajectoire",
+      "family": "unclassified",
+      "biography": "Jeune candidat habitant Montreuil, il sillonne la France en van pour solliciter les parrainages d’élus. Il propose une présidence chargée d’ouvrir un processus constituant, en laissant le gouvernement issu des législatives conduire la politique nationale.",
+      "rationale": "RMC décrit un projet avant tout institutionnel autour d’une Assemblée constituante. Cette proposition ne suffit pas à déterminer une famille politique sur les dimensions économiques et sociales.",
+      "declaredAt": "2026-07-03",
+      "declarationDateType": "reported",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "RMC, 3 juillet 2026 — \"Si j'arrive à l'Elysée...\": ce candidat pour 2027, âgé de 20 ans, veut être un président \"sans pouvoir\"",
+          "url": "https://rmc.bfmtv.com/actualites/politique/si-j-arrive-a-l-elysee-ce-candidat-pour-2027-age-de-20-ans-veut-etre-un-president-sans-pouvoir_AV-202607030571.html"
+        },
+        {
+          "label": "Le Figaro, 5 août 2026 — Présidentielle 2027 : à vélo ou en van, le tour de France des candidats de moins de 30 ans",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-a-velo-ou-en-van-le-tour-de-france-des-candidats-de-moins-de-30-ans-20260805"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Édouard Philippe",
+      "party": "Horizons",
+      "family": "right",
+      "biography": "Premier ministre d’Emmanuel Macron de 2017 à 2020, il est maire du Havre et fondateur d’Horizons. Il annonce sa candidature dans un entretien au Point, avec l’ambition de rassembler une partie de la droite et du centre.",
+      "rationale": "Son parcours à l’UMP puis à LR, avant la création d’Horizons et son alliance avec le bloc central, motive un rattachement à la droite libérale. Sa participation au camp présidentiel explique aussi sa proximité avec le centre ; les deux dimensions sont à conserver.",
+      "declaredAt": "2024-09-03",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Point, 3 septembre 2024 — EXCLUSIF. Édouard Philippe : « Je serai candidat à la prochaine élection présidentielle »",
+          "url": "https://www.lepoint.fr/politique/exclusif-edouard-philippe-je-serai-candidat-a-la-prochaine-election-presidentielle-03-09-2024-2569359_20.php"
+        },
+        {
+          "label": "Le Figaro, 2 novembre 2024 — «Je n’ai pas peur du match» : Édouard Philippe, le début d’une longue campagne vers la présidentielle 2027",
+          "url": "https://www.lefigaro.fr/politique/je-n-ai-pas-peur-du-match-edouard-philippe-le-debut-d-une-longue-campagne-vers-la-presidentielle-2027-20241102"
+        },
+        {
+          "label": "Le HuffPost, 26 janvier 2025 — Présidentielle : Édouard Philippe au défi de faire tourner une machine à vide jusqu’en 2027",
+          "url": "https://www.huffingtonpost.fr/politique/article/presidentielle-edouard-philippe-au-defi-de-faire-tourner-une-machine-a-vide-jusqu-en-2027_245234.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Florian Philippot",
+      "party": "Les Patriotes",
+      "family": "far-right",
+      "biography": "Ancien député européen et ancien vice-président du Front national, il préside Les Patriotes. Il annonce sa candidature sur France 2 et défend la sortie de l’Union européenne et de l’OTAN, tout en évoquant un possible retrait pour un candidat souverainiste plus rassembleur.",
+      "rationale": "Franceinfo qualifie Les Patriotes de parti d’extrême droite et documente son parcours au FN. Le souverainisme est une dimension supplémentaire de sa démarche, et non à lui seul la justification de ce classement.",
+      "declaredAt": "2026-05-09",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 9 mai 2026 — Le souverainiste Florian Philippot annonce sa candidature à l'élection présidentielle de 2027 – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html"
+        },
+        {
+          "label": "BFMTV, 9 mai 2026 — Présidentielle 2027: le président des Patriotes Florian Philippot annonce être candidat à l'Élysée",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-president-des-patriotes-florian-philippot-annonce-etre-candidat-a-l-elysee_AN-202605090155.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Gilles Platret",
+      "party": "Divers droite",
+      "family": "right",
+      "biography": "Maire de Chalon-sur-Saône et ancien vice-président des Républicains, il annonce sa candidature lors d’une réunion dans sa ville. Il met notamment en avant l’unité nationale, la sécurité et sa critique de l’islamisme.",
+      "rationale": "BFMTV le présente comme un élu divers droite, ancien cadre LR, avec des priorités conservatrices et sécuritaires. Ce rattachement décrit les positions documentées sans conclure à une équivalence avec celles du RN.",
+      "declaredAt": "2026-10-08",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "BFMTV, 9 octobre 2026 — Présidentielle 2027: le maire divers droite de Chalon-sur-Saône Gilles Platret annonce sa candidature",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature_AN-202610090630.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Natacha Polony",
+      "party": "Sans étiquette",
+      "family": "unclassified",
+      "biography": "Journaliste et essayiste, ancienne directrice de Marianne et ancienne chroniqueuse d’On n’est pas couché, elle annonce sa candidature sur France Inter. Elle défend une politique de production en France et une plus grande souveraineté économique.",
+      "rationale": "Le Figaro décrit des références souverainistes et un héritage chevènementiste. Cette combinaison traverse plusieurs traditions ; les sources consultées ne justifient pas un classement univoque dans les six familles.",
+      "declaredAt": "2026-10-14",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, 14 octobre 2026 — Présidentielle 2027 : «Je suis candidate», annonce la journaliste Natacha Polony",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-je-suis-candidate-annonce-la-journaliste-natacha-polony-20261014"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Bruno Retailleau",
+      "party": "Les Républicains",
+      "family": "right",
+      "biography": "Président des Républicains et ancien ministre de l’Intérieur, il a également présidé le groupe LR au Sénat. Les adhérents de son parti le désignent pour la présidentielle ; il reste ouvert sous conditions à une primaire avec Édouard Philippe.",
+      "rationale": "Franceinfo et BFMTV situent sa candidature dans la droite LR et documentent sa volonté de fédérer ce camp. Son parcours et ses priorités conservatrices justifient ce rattachement, sans l’assimiler automatiquement à l’extrême droite.",
+      "declaredAt": "2026-04-19",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 19 avril 2026 — Présidentielle 2027 : Bruno Retailleau largement désigné candidat par les adhérents du parti Les Républicains – franceinfo",
+          "url": "https://www.franceinfo.fr/politique/les-republicains/presidentielle-2027-bruno-retailleau-largement-designe-candidat-par-les-adherents-du-parti-les-republicains_7949957.html"
+        },
+        {
+          "label": "BFMTV, 28 octobre 2026 — Présidentielle 2027: Bruno Retailleau estime qu'une primaire \"ne sert à rien\" si Édouard Philippe n'y participe pas",
+          "url": "https://www.bfmtv.com/politique/les-republicains/presidentielle-2027-favorable-a-une-primaire-bruno-retailleau-estime-qu-elle-ne-sert-a-rien-si-edouard-philippe-n-y-participe-pas_AN-202610280400.html"
+        },
+        {
+          "label": "franceinfo, 28 octobre 2026 — Le candidat LR à la présidentielle Bruno Retailleau juge \"fantaisiste et ridicule\" l'organisation d'une \"grande primaire des démocrates\" proposée par son adversaire Gabriel Attal – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/le-candidat-lr-a-la-presidentielle-bruno-retailleau-juge-fantaisiste-et-ridicule-l-organisation-d-une-grande-primaire-des-democrates-proposee-par-son-adversaire-gabriel-attal_8257928.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Fabien Roussel",
+      "party": "Parti communiste français",
+      "family": "radical",
+      "biography": "Secrétaire national du Parti communiste français, ancien député du Nord et candidat à la présidentielle de 2022, il repart en campagne pour 2027. Il officialise sa candidature sur TF1 après un vote des militants communistes.",
+      "rationale": "Le Figaro documente une candidature communiste autonome. Le rattachement à la gauche radicale renvoie à cette tradition de transformation sociale ; sa stratégie électorale et institutionnelle doit être distinguée de celle des organisations trotskistes.",
+      "declaredAt": "2026-09-06",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le Figaro, 6 septembre 2026 — Présidentielle 2027 : adoubé par ses militants, le communiste Fabien Roussel officialise sa candidature en solitaire",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-adoube-par-ses-militants-le-communiste-fabien-roussel-officialise-sa-candidature-en-solitaire-20260906"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "François Ruffin",
+      "party": "Debout !",
+      "family": "unclassified",
+      "biography": "Député de la Somme, journaliste et documentariste, il a rompu avec La France insoumise et préside Debout !. Il lance sa démarche présidentielle à Montreuil puis affirme qu’il se présentera même en l’absence de primaire de la gauche.",
+      "rationale": "Le HuffPost décrit une gauche sociale et protectionniste, cherchant une voie entre les proches de Mélenchon et ceux de Hollande. Les catégories proposées rendent mal cette position intermédiaire : classement non établi plutôt qu’attribution forcée.",
+      "declaredAt": "2025-04-01",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "Le HuffPost, 2 avril 2025 — Présidentielle 2027 : François Ruffin lance sa campagne avec un meeting contre « les trop mous et les trop fous »",
+          "url": "https://www.huffingtonpost.fr/politique/article/presidentielle-2027-francois-ruffin-lance-sa-campagne-avec-un-meeting-contre-les-trop-mous-et-les-trop-fous_248275.html"
+        },
+        {
+          "label": "LCP, 12 mai 2026 — 2027: François Ruffin ira à la présidentielle 's'il n'y a pas de primaire' | LCP - Assemblée nationale",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-n-y-a-pas-de-primaire-moi-j-y-vais-annonce-francois-ruffin"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Marine Tondelier",
+      "party": "Les Écologistes",
+      "family": "green",
+      "biography": "Secrétaire nationale des Écologistes depuis 2022 et élue des Hauts-de-France, elle s’est fait connaître par son opposition au RN à Hénin-Beaumont. Elle annonce d’abord sa candidature dans la perspective d’une primaire de gauche ; le suivi de presse la présente depuis comme candidate investie par son parti.",
+      "rationale": "Franceinfo et Le Figaro documentent une candidature fondée sur les solutions écologistes et la protection des populations. Son parcours et ces priorités étayent le rattachement à l’écologie politique.",
+      "declaredAt": "2025-10-22",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "franceinfo, 22 octobre 2025 — La patronne des Ecologistes, Marine Tondelier, se déclare candidate à l'élection présidentielle de 2027 – franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html"
+        },
+        {
+          "label": "Le Figaro, 22 octobre 2025 — «Un acte d’amour pour la France» : Marine Tondelier annonce sa «candidature à l’élection présidentielle»",
+          "url": "https://www.lefigaro.fr/politique/un-acte-d-amour-pour-la-france-marine-tondelier-annonce-sa-candidature-a-l-election-presidentielle-20251022"
+        },
+        {
+          "label": "BFMTV — Suivi des candidatures, consulté le 2 novembre 2026 : investiture écologiste",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-qui-sont-les-candidats-deja-declares-et-ceux-qui-pourraient-rejoindre-la-course-a-l-elysee_AN-202604260015.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    },
+    {
+      "name": "Éric Zemmour",
+      "party": "Reconquête",
+      "family": "far-right",
+      "biography": "Ancien journaliste et essayiste, il a fondé Reconquête et a été candidat à la présidentielle de 2022. Il annonce sur BFMTV qu’il se présentera de nouveau ; son projet accorde une place centrale à l’immigration et aux expulsions d’étrangers.",
+      "rationale": "Franceinfo et BFMTV qualifient Reconquête de parti d’extrême droite et documentent ses propositions de « remigration ». Ces positions individuelles et partisanes motivent le classement.",
+      "declaredAt": "2026-09-17",
+      "declarationDateType": "announced",
+      "verifiedAt": "2026-11-02",
+      "sources": [
+        {
+          "label": "BFMTV, 17 septembre 2026 — \"Je serai candidat\": Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
+        },
+        {
+          "label": "franceinfo, 17 septembre 2026 — Eric Zemmour, président du parti d’extrême droite Reconquête, annonce qu'il sera candidat à l'élection présidentielle – franceinfo",
+          "url": "https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html"
+        },
+        {
+          "label": "Wikipédia — Présidentielle française de 2027 : tableau des déclarations et références (consulté le 2 novembre 2026)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+        }
+      ]
+    }
+  ]
 }
