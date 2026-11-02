@@ -1,3 +1,4 @@
+import { indicatorHelp } from './context-help.js';
 import { observationNote,formatValue } from './context-format.js';
 const explorer=document.querySelector('#context-explorer'),select=document.querySelector('#context-indicator'),comparison=document.querySelector('#context-comparison');
 const node=(tag,className,text)=>{const el=document.createElement(tag);el.className=className;if(text)el.textContent=text;return el;};
@@ -5,7 +6,8 @@ try {
  const response=await fetch('./context-data.json');if(!response.ok)throw new Error('Données indisponibles');const data=await response.json();
  function render(){
   const metric=data.metrics.find(m=>m.id===select.value);comparison.replaceChildren();
-  comparison.append(node('h3','',metric.title),node('p','context-chart-meta',`${metric.period.replace('-Q',' · T')} · ${metric.unit}`));
+  const title=node('div','context-indicator-title'),help=node('details','indicator-help'),summary=node('summary','');summary.setAttribute('aria-label',`Comprendre : ${metric.title}`);const mark=node('span','','?');mark.setAttribute('aria-hidden','true');summary.append(mark);const content=node('div','indicator-help-content'),[meaning,method]=indicatorHelp[metric.id];content.append(node('p','',meaning),node('p','',method));const more=node('a','','Définition complète et sources →');more.href=`#definition-${metric.id}`;content.append(more);help.append(summary,content);title.append(node('h3','',metric.title),help);
+  comparison.append(title,node('p','context-chart-meta',`${metric.period.replace('-Q',' · T')} · ${metric.unit}`));
   const values=metric.observations.filter(o=>o.value!==null).map(o=>o.value),minimum=Math.min(0,...values),maximum=Math.max(0,...values),span=maximum-minimum||1,chart=node('div','context-bars'),notes=[];
   for(const country of data.countries){
    const point=metric.observations.find(o=>o.country===country.id),note=observationNote(point),row=node('div','context-bar-row');row.append(node('span','context-country',country.name));
@@ -18,3 +20,14 @@ try {
  }
  select.addEventListener('change',render);render();explorer.hidden=false;
 }catch{explorer.hidden=true;}
+
+// Les aides restent des éléments natifs, utilisables même sans le comparateur.
+document.addEventListener('keydown',event=>{
+ if(event.key!=='Escape')return;
+ const help=event.target.closest('.indicator-help[open]');
+ if(help){help.open=false;help.querySelector('summary').focus();}
+});
+document.addEventListener('click',event=>{
+ const link=event.target.closest('.indicator-help a[href^="#definition-"]');
+ if(link){const target=document.getElementById(link.hash.slice(1));if(target)target.open=true;}
+});

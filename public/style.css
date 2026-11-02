@@ -787,3 +787,17 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
 .family-further-reading { padding-top: 22px; }
 .family-further-reading summary { cursor: pointer; font-size: 16px; font-weight: 650; padding: 12px 0; }
 .family-further-reading details > p:first-of-type { margin-top: 16px; }
+
+/* Aides rapides natives : dans le flux, pour rester lisibles dans les tableaux défilants. */
+.indicator-help { display: inline; font-weight: 400; font-size: 13px; white-space: normal; }
+.indicator-help > summary { display: inline-flex; vertical-align: middle; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; margin-left: 3px; list-style: none; cursor: pointer; border: 0; border-radius: 50%; color: #365286; background: transparent; }
+.indicator-help > summary::-webkit-details-marker { display: none; }
+.indicator-help > summary span { display: inline-flex; align-items: center; justify-content: center; width: 19px; height: 19px; border: 1.4px solid currentColor; border-radius: 50%; font: 700 12px/1 sans-serif; }
+.indicator-help > summary:hover, .indicator-help[open] > summary { color: #244de7; background: #e7edff; }
+.indicator-help > summary:focus-visible { outline: 2px solid #244de7; outline-offset: 2px; }
+.indicator-help-content { display: block; margin: 8px 0 12px; padding: 12px 14px; background: #edf2fc; border-left: 3px solid #6c86bc; border-radius: 5px; color: #263951; text-align: left; font-size: 13px; line-height: 1.6; font-weight: 400; }
+.indicator-help-content p { margin: 0 0 8px; font-size: inherit; line-height: inherit; color: inherit; }
+.indicator-help-content a { font-size: 12px; }
+.context-indicator-title h3 { display: inline; }
+.context-indicator-title { margin: 0 0 12px; }
+.context-highlight-label { color: var(--muted, #59677e); font-size: 14px; margin-bottom: 10px; }

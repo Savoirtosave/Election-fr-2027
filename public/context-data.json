@@ -327,7 +327,7 @@
       "title": "Dette publique",
       "period": "2026-Q2",
       "unit": "% du PIB",
-      "definition": "Stock de dette brute consolidée des administrations publiques au sens de Maastricht. Le ratio trimestriel rapporte ce stock au PIB des sept derniers trimestres.",
+      "definition": "Stock de dette brute consolidée des administrations publiques au sens de Maastricht. Le ratio trimestriel rapporte ce stock au PIB des quatre derniers trimestres.",
       "reading": "La France est plus endettée que l’Allemagne et l’Espagne dans ce panel, mais moins que l’Italie. Le ratio dépend aussi du niveau du PIB.",
       "decimals": 1,
       "sourceIds": [
