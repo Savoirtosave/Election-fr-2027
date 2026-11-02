@@ -482,3 +482,13 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
   .party-profile-identity .party-mark { width: 64px; height: 64px; font-size: 12px; }
   header nav { gap: 6px; }
 }
+
+/* Original party logos retain their proportions and their own colours. */
+.party-mark { background: var(--logo-background, white); border: 1px solid #e2e6ed; padding: 6px; }
+.party-mark img { width: 100%; height: 100%; object-fit: contain; }
+.candidate-party { display: grid; gap: 9px; }
+.candidate-logos { display: flex; flex-wrap: wrap; gap: 8px; }
+.candidate-logos:empty { display: none; }
+.candidate-party-logo { display: grid; place-items: center; width: 126px; height: 64px; padding: 8px; border: 1px solid #e2e6ed; border-radius: 9px; background: var(--logo-background, white); }
+.candidate-party-logo img { width: 100%; height: 100%; object-fit: contain; }
+.logo-credit { font-size: .85rem; color: var(--muted); }

@@ -1,3 +1,4 @@
+import { partyLogos } from './party-logos.js';
 import { families } from './families.js';
 import { academicReferences } from './references.js';
 const search = document.querySelector('#search');
@@ -42,7 +43,19 @@ function render() {
     const badge = element('span', 'candidate-status', 'Candidature déclarée');
     const top = element('div', 'candidate-top'); top.append(portrait, badge);
     const heading = document.createElement('h3'); heading.textContent = c.name;
-    const party = element('p', 'candidate-party', c.party);
+    const party = element('div', 'candidate-party');
+    const logos = element('div', 'candidate-logos');
+    for (const id of c.logoIds) {
+      const logo = partyLogos[id];
+      const link = element('a', 'candidate-party-logo');
+      link.href = logo.href;
+      link.style.setProperty('--logo-background', logo.background);
+      const image = document.createElement('img');
+      image.src = logo.src; image.alt = `Logo : ${logo.name}`;
+      image.width = 120; image.height = 64; image.loading = 'lazy'; image.decoding = 'async';
+      link.append(image); logos.append(link);
+    }
+    party.append(logos, element('span', '', c.party));
     const classification = element('details', 'candidate-classification');
     const politicalFamily = families[c.family];
     const familySummary = element('summary', 'candidate-family', politicalFamily.label);
@@ -71,7 +84,7 @@ function render() {
     const declaration = element('p', 'candidate-declaration', `${c.declarationDateType === 'reported' ? 'Candidature rapportée le' : 'Déclaration le'} ${formatDate(c.declaredAt)}`);
     const details = document.createElement('details');
     details.className = 'candidate-evidence';
-    const summary = document.createElement('summary'); summary.textContent = 'Sources et crédit photo';
+    const summary = document.createElement('summary'); summary.textContent = 'Sources et crédits des visuels';
     details.append(summary);
     for (const s of c.sources) {
       const url = new URL(s.url); if (url.protocol !== 'https:') continue;
@@ -88,6 +101,16 @@ function render() {
       credit.append(document.createTextNode(' · '), license);
     }
     details.append(credit);
+    if (c.logoIds.length) {
+      const logoCredit = element('p', 'logo-credit', 'Logos : ');
+      for (const id of c.logoIds) {
+        const link = element('a', '', partyLogos[id].name);
+        link.href = partyLogos[id].source; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        logoCredit.append(link, document.createTextNode(' · '));
+      }
+      const provenance = element('a', '', 'Provenance des logos'); provenance.href = './sources.html#logos';
+      logoCredit.append(provenance); details.append(logoCredit);
+    }
     article.append(top, heading, party, classification, biography, declaration, details);
     list.append(article);
   }

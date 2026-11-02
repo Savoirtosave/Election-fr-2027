@@ -179,3 +179,26 @@ test('chaque courant présente ses influences sans inventer une filiation person
   const sources = await (await fetch(base + '/sources.html')).text();
   for (const key of ['remond','remond-actuel','julliard-gauches']) assert.ok(sources.includes(`id="ref-${key}"`));
 });
+
+test('les logos locaux couvrent les partis et respectent les affiliations actuelles', async () => {
+  const { partyLogos } = await import('./public/party-logos.js');
+  for (const party of parties) assert.ok(partyLogos[party.id], party.id);
+  for (const [id, logo] of Object.entries(partyLogos)) {
+    assert.match(logo.source, /^https:\/\//, id);
+    assert.match(logo.src, /^\.\/logos\/[a-z-]+\.(svg|png|webp)$/, id);
+    const response = await fetch(base + '/' + logo.src.slice(2));
+    assert.equal(response.status, 200, id);
+    const bytes = Buffer.from(await response.arrayBuffer());
+    assert.ok(bytes.length > 100, id);
+    if (logo.src.endsWith('.svg')) {
+      assert.match(bytes.toString(), /<svg\b/);
+      assert.doesNotMatch(bytes.toString(), /<script\b|<foreignObject\b|(?:href|src)=["']https?:/i);
+    } else if (logo.src.endsWith('.png')) assert.equal(bytes.subarray(1,4).toString(), 'PNG');
+    else assert.equal(bytes.subarray(8,12).toString(), 'WEBP');
+  }
+  const data = JSON.parse(await readFile(new URL('./public/data.json', import.meta.url), 'utf8'));
+  for (const c of data.candidates) for (const id of c.logoIds) assert.ok(partyLogos[id], c.name);
+  assert.deepEqual(data.candidates.find(c => c.name === 'Olivier Becht').logoIds, []);
+  assert.deepEqual(data.candidates.find(c => c.name === 'Selma Labib').logoIds, ['npa-r']);
+  assert.deepEqual(data.candidates.find(c => c.name === 'Xavier Bertrand').logoIds, ['nous-france', 'lr']);
+});

@@ -1,3 +1,4 @@
+import { partyLogos } from '../public/party-logos.js';
 import { readFile, writeFile } from 'node:fs/promises';
 import { families } from '../public/families.js';
 import { academicReferences, institutionalReferences } from '../public/references.js';
@@ -83,7 +84,8 @@ const sourcesPage = intro('UNE MÉTHODE VISIBLE', 'Des sources, et ce qu’on en
   `<section class="section references" id="bibliographie"><p class="eyebrow">OUVRAGES, ARTICLES ET DONNÉES</p><h2>Une bibliographie pour comprendre les différences</h2><p class="section-intro">${Object.keys(academicReferences).length} références de recherche et de méthode. Les dossiers renvoient aux travaux qui éclairent directement leur sujet. Aucun de ces travaux n’est utilisé comme preuve automatique du classement individuel d’un candidat.</p><div class="bibliography-grid">${bibliography}</div></section>` +
   `<section class="section references section-soft" id="regles-officielles"><p class="eyebrow">LE DROIT ET LES INSTITUTIONS</p><h2>Les sources des règles électorales</h2><p class="section-intro">Les textes en vigueur priment sur les archives pédagogiques. Les anciens calendriers de 2022 ne sont pas transposés à 2027.</p><div class="bibliography-grid">${institutions}</div></section>` +
   `<section class="section reading-section"><h2>Sources de presse et portraits</h2><p>Chaque fiche de candidature conserve les articles qui documentent l’annonce, la biographie et le classement. Les sources sont accessibles dans « Sources et crédit photo » ; les crédits et les conditions de réutilisation des portraits y sont également indiqués.</p><a class="text-link" href="./candidats.html">Consulter les fiches et leurs sources →</a></section>`;
-pages.set('sources.html', layout('sources.html', 'Méthode et bibliographie', 'La méthode de classement, une bibliographie scientifique élargie et les textes officiels sur l’élection présidentielle.', sourcesPage));
+const logoSources = `<section class="section references" id="logos"><h2>Logos des partis et mouvements</h2><p>Visuels reproduits à des fins d’identification, sans modification de leur dessin. Les marques restent la propriété de leurs titulaires ; leur présence ne vaut pas soutien au site. Les fichiers sont conservés localement. Sources consultées le 2 novembre 2026.</p><ul>${Object.values(partyLogos).map(l=>`<li>${external(l.source,e(l.name))}${l.asset ? ' · '+external(l.asset,'Fichier original') : ' · SVG extrait de la page officielle'}</li>`).join('')}</ul></section>`;
+pages.set('sources.html', layout('sources.html', 'Méthode et bibliographie', 'La méthode de classement, une bibliographie scientifique élargie et les textes officiels sur l’élection présidentielle.', sourcesPage + logoSources));
 
 const parliament = JSON.parse(await read('public/parliament.json'));
 for (const [file, content] of renderPartyPages({ layout, intro, e, external, referenceLinks, parliament })) pages.set(file, content);
