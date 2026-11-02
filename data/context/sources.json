@@ -1,0 +1,119 @@
+{
+  "public-finance": {
+    "publisher": "Eurostat",
+    "title": "Déficit/surplus, dette et données associées du gouvernement",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=GD&na_item=B9&sinceTimePeriod=2015",
+    "updated": "2026-10-21T11:00:00+0200",
+    "dataset": "gov_10dd_edpt1"
+  },
+  "debt-quarterly": {
+    "publisher": "Eurostat",
+    "title": "Dette publique trimestrielle",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&unit=MIO_EUR&na_item=GD&sinceTimePeriod=2025-Q1",
+    "updated": "2026-10-21T11:00:00+0200",
+    "dataset": "gov_10q_ggdebt"
+  },
+  "interest": {
+    "publisher": "Eurostat",
+    "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D41PAY&sinceTimePeriod=2015",
+    "updated": "2026-10-21T11:00:00+0200",
+    "dataset": "gov_10a_main"
+  },
+  "interest-eur": {
+    "publisher": "Eurostat",
+    "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=MIO_EUR&na_item=D41PAY&sinceTimePeriod=2025",
+    "updated": "2026-10-21T11:00:00+0200",
+    "dataset": "gov_10a_main"
+  },
+  "gdp": {
+    "publisher": "Eurostat",
+    "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données annuelles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&sinceTimePeriod=2015",
+    "updated": "2026-10-22T23:00:00+0200",
+    "dataset": "nama_10_gdp"
+  },
+  "gdp-quarterly": {
+    "publisher": "Eurostat",
+    "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données trimestrielles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&sinceTimePeriod=2025-Q1",
+    "updated": "2026-10-30T23:00:00+0100",
+    "dataset": "namq_10_gdp"
+  },
+  "unemployment": {
+    "publisher": "Eurostat",
+    "title": "Chômage par sexe et âge - données mensuelles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sex=T&s_adj=SA&unit=PC_ACT&sinceTimePeriod=2025-01",
+    "updated": "2026-10-30T11:00:00+0100",
+    "dataset": "une_rt_m"
+  },
+  "activity": {
+    "publisher": "Eurostat",
+    "title": "Taux de participation aux forces de travail par nationalité",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_argan?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&age=Y15-64&sex=T&citizen=TOTAL&sinceTimePeriod=2024",
+    "updated": "2026-10-30T11:00:00+0100",
+    "dataset": "lfsa_argan"
+  },
+  "ageing": {
+    "publisher": "Eurostat",
+    "title": "Indicateurs de structure de la population au niveau national",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjanind?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&indic_de=PC_Y65_MAX&sinceTimePeriod=2015",
+    "updated": "2026-09-25T23:00:00+0200",
+    "dataset": "demo_pjanind"
+  },
+  "levies": {
+    "publisher": "Eurostat",
+    "title": "Principaux agrégats fiscaux de la comptabilité nationale",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_taxag?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D2_D5_D91_D61_M_D995&sinceTimePeriod=2015",
+    "updated": "2026-10-28T11:00:00+0100",
+    "dataset": "gov_10a_taxag"
+  },
+  "corporations": {
+    "publisher": "Eurostat",
+    "title": "Opérations non financières - données annuelles",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nasa_10_nf_tr?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S11&sector=S12&unit=CP_MEUR&na_item=D1&na_item=B1N&sinceTimePeriod=2024",
+    "updated": "2026-10-29T23:00:00+0100",
+    "dataset": "nasa_10_nf_tr"
+  },
+  "pisa-FR": {
+    "publisher": "OCDE",
+    "title": "Education GPS — FR — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=FRA&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in France was 483 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was -6 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 25.8% of students in France (OECD average: 25.7%), while 6.7% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 272 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in France changed by -4 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -12 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in France scored 458 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 13 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -16 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 456 PISA score points score points in France (OECD average: 461 PISA score points). The difference between boys and girls was -32 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -18 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in France scored 497 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 53.8% performed better than expected based on their science perfor"
+  },
+  "pisa-DE": {
+    "publisher": "OCDE",
+    "title": "Education GPS — DE — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=DEU&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in Germany was 486 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 3 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 26.8% of students in Germany (OECD average: 25.7%), while 9.4% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 289 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Germany changed by -7 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -24 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Germany scored 464 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 11 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -11 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 465 PISA score points score points in Germany (OECD average: 461 PISA score points). The difference between boys and girls was -25 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -15 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Germany scored 498 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 53% performed better than expected based on their science per"
+  },
+  "pisa-ES": {
+    "publisher": "OCDE",
+    "title": "Education GPS — ES — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=ESP&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in Spain was 477 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 0 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 24.4% of students in Spain (OECD average: 25.7%), while 4.2% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 244 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Spain changed by -7 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -15 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Spain scored 457 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 14 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -16 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 451 PISA score points score points in Spain (OECD average: 461 PISA score points). The difference between boys and girls was -26 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -23 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Spain scored 499 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 57.5% performed better than expected based on their science performance ("
+  },
+  "pisa-IT": {
+    "publisher": "OCDE",
+    "title": "Education GPS — IT — Student performance (PISA 2025)",
+    "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=ITA&treshold=10&topic=PI",
+    "excerpt": "In 2025, the average score of 15-year-old students in science in Italy was 483 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 3 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 22.3% of students in Italy (OECD average: 25.7%), while 4.4% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 240 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Italy changed by 6 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was 5 PISA score points, a trend that was not statistically significant (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Italy scored 468 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 17 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -3 PISA score points between 2022 and 2025, a change that was not statistically significant, (OECD average: -9 PISA score points). Reading performance averaged 474 PISA score points score points in Italy (OECD average: 461 PISA score points). The difference between boys and girls was -28 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -7 PISA score points between 2022 and 2025, a change that was not statistically significant (OECD average: -14 PISA score points). Students in Italy scored 490 PISA score points on average in comput"
+  },
+  "insee-unemployment": {
+    "publisher": "Insee",
+    "title": "Chômage et indicateurs du marché du travail, deuxième trimestre 2026 (7 août 2026)",
+    "url": "https://www.insee.fr/fr/statistiques/9032359"
+  },
+  "insee-gdp": {
+    "publisher": "Insee",
+    "title": "Première estimation du PIB au troisième trimestre 2026 (30 octobre 2026)",
+    "url": "https://www.insee.fr/fr/statistiques/9111036"
+  },
+  "dor": {
+    "publisher": "Eric Dor / IÉSEG",
+    "title": "Compte @ericdor_econo et capture transmise du message du 28 octobre 2026",
+    "url": "https://x.com/ericdor_econo",
+    "role": "Piste de recherche et lecture économique ; les chiffres de la comparaison sont recalculés à partir d’Eurostat. Le message de la capture n’a pas été retrouvé dans les publications visibles du compte."
+  }
+}

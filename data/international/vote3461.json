@@ -1,0 +1,38 @@
+{
+  "source": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461",
+  "openData": "https://data.assemblee-nationale.fr/static/openData/repository/16/loi/scrutins/Scrutins.json.zip",
+  "uid": "VTANR5L16V3461",
+  "date": "2024-03-12",
+  "votes": [
+    {
+      "candidateId": "olivier-becht",
+      "acteurRef": "PA642935",
+      "vote": "pour"
+    },
+    {
+      "candidateId": "marine-le-pen",
+      "acteurRef": "PA720614",
+      "vote": "abstention"
+    },
+    {
+      "candidateId": "francois-ruffin",
+      "acteurRef": "PA722142",
+      "vote": "contre"
+    },
+    {
+      "candidateId": "fabien-roussel",
+      "acteurRef": "PA720692",
+      "vote": "contre"
+    },
+    {
+      "candidateId": "delphine-batho",
+      "acteurRef": "PA335999",
+      "vote": "pour"
+    },
+    {
+      "candidateId": "nicolas-dupont-aignan",
+      "acteurRef": "PA1206",
+      "vote": "contre"
+    }
+  ]
+}

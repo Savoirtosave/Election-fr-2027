@@ -1,0 +1,34 @@
+{
+  "FR": {
+    "maths": 458,
+    "reading": 456,
+    "science": 483,
+    "mathsChangeSince2022": -16,
+    "maths2022": 474,
+    "sourceId": "pisa-FR"
+  },
+  "DE": {
+    "maths": 464,
+    "reading": 465,
+    "science": 486,
+    "mathsChangeSince2022": -11,
+    "maths2022": 475,
+    "sourceId": "pisa-DE"
+  },
+  "ES": {
+    "maths": 457,
+    "reading": 451,
+    "science": 477,
+    "mathsChangeSince2022": -16,
+    "maths2022": 473,
+    "sourceId": "pisa-ES"
+  },
+  "IT": {
+    "maths": 468,
+    "reading": 474,
+    "science": 483,
+    "mathsChangeSince2022": -3,
+    "maths2022": 471,
+    "sourceId": "pisa-IT"
+  }
+}

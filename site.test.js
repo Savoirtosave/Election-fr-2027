@@ -11,7 +11,7 @@ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
 after(() => server.close());
 const candidateData = JSON.parse(await readFile(new URL('./public/data.json', import.meta.url), 'utf8'));
-const pages = [...candidateData.candidates.map(c => `candidat-${c.id}.html`), 'index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', 'partis.html', ...parties.map(p => `parti-${p.id}.html`), ...Object.keys(families).map(key => `famille-${key}.html`)];
+const pages = [...candidateData.candidates.map(c => `candidat-${c.id}.html`), 'index.html', 'candidats.html', 'familles.html', 'election.html', 'sources.html', 'partis.html', 'contexte.html', ...parties.map(p => `parti-${p.id}.html`), ...Object.keys(families).map(key => `famille-${key}.html`)];
 
 test('les pages sont générées de façon reproductible sans dépendance', () => {
   const result = execFileSync(process.execPath, ['scripts/build-pages.mjs', '--check'], { cwd: new URL('.', import.meta.url), encoding: 'utf8' });
@@ -25,7 +25,7 @@ test('chaque rubrique est une vraie page HTML avec sa navigation', async () => {
     assert.equal((html.match(/<h1(?:\s[^>]*)?>/g) || []).length, 1, path);
     const nav = html.match(/<nav aria-label="Navigation principale">([\s\S]*?)<\/nav>/)?.[1];
     assert.ok(nav, path);
-    for (const file of ['candidats.html','partis.html','familles.html','election.html','sources.html']) assert.ok(nav.includes(`href="./${file}"`), path);
+    for (const file of ['candidats.html','partis.html','familles.html','election.html','contexte.html','sources.html']) assert.ok(nav.includes(`href="./${file}"`), path);
     if (path !== 'index.html') assert.match(nav, /aria-current="(?:page|location)"/);
   }
   const home = await (await fetch(base)).text();
@@ -41,6 +41,9 @@ test('les liens entre pages et les citations internes aboutissent à une cible r
     for (const [, href] of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
       const url = new URL(href.replaceAll('&amp;', '&'), base + path);
       if (url.origin !== base) continue;
+      if (['/context-data.json','/contexte.csv'].includes(url.pathname)) {
+        const asset = await fetch(url.href); assert.equal(asset.status, 200, url.pathname); continue;
+      }
       const target = documents.get(url.pathname);
       assert.ok(target, `${path} → ${url.pathname}`);
       if (url.hash) assert.ok(target.includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `${path} → ${url.pathname}${url.hash}`);
@@ -238,4 +241,94 @@ test('les profils individuels distinguent l’ébauche personnelle des positions
   const noParty = candidateData.candidates.filter(c => c.affiliationKind === 'independent');
   assert.ok(noParty.some(c => c.name === 'Olivier Becht'));
   assert.ok(!noParty.some(c => c.name === 'Bernard Cazeneuve' || c.name === 'Francis Lalanne'));
+});
+
+
+test('le contexte conserve les définitions, périodes, sources et calculs officiels', async () => {
+  const context = await (await fetch(base + '/context-data.json')).json();
+  assert.equal(context.asOf, '2026-11-02');
+  assert.deepEqual(context.countries.map(c=>c.id), ['FR','DE','ES','IT']);
+  assert.equal(context.metrics.length,17);
+  assert.equal(new Set(context.metrics.map(m=>m.id)).size,17);
+  const html = await (await fetch(base + '/contexte.html')).text();
+  for(const id of ['comparer','finances','emploi','croissance','ecole','population','partage','sources-contexte']) assert.ok(html.includes(`id="${id}"`));
+  for(const metric of context.metrics){
+    assert.equal(metric.observations.length,4,metric.id);
+    assert.ok(metric.definition && metric.reading && metric.unit && metric.period);
+    assert.ok(html.includes(`id="definition-${metric.id}"`));
+    for(const point of metric.observations){
+      assert.ok(Number.isFinite(point.value));
+      assert.equal(point.period,metric.period);
+      assert.ok(context.countries.some(c=>c.id===point.country));
+    }
+    for(const id of metric.sourceIds){
+      const source=context.sources[id];assert.ok(source,id);
+      assert.equal(new URL(source.url).protocol,'https:');
+      if(source.updated)assert.ok(source.updated.slice(0,10)<=context.asOf);
+    }
+  }
+  const shares=context.metrics.find(m=>m.id==='labour-share');
+  for(const o of shares.observations){
+    assert.equal(o.components.length,2);
+    assert.equal(o.numerator,o.components.reduce((n,c)=>n+c.compensation,0));
+    assert.equal(o.denominator,o.components.reduce((n,c)=>n+c.netValueAdded,0));
+    assert.ok(Math.abs(o.value-100*o.numerator/o.denominator)<1e-10);
+  }
+  assert.equal(Number(shares.observations.find(o=>o.country==='FR').value.toFixed(1)),81.6);
+  assert.ok(context.metrics.find(m=>m.id==='balance').observations.find(o=>o.country==='FR').value<0);
+  assert.ok(html.includes('pas un classement mondial'));
+  assert.ok(html.includes('cotisations sociales imputées'));
+  const csv=await fetch(base+'/contexte.csv');assert.match(csv.headers.get('content-type'),/text\/csv/);
+  const csvLines=(await csv.text()).trim().split(/\r?\n/);
+  assert.equal(csvLines.length,69);
+  const exported=csvLines.slice(1).map(line=>[...line.matchAll(/"((?:[^"]|"")*)"(?:;|$)/g)].map(match=>match[1].replaceAll('""','"')));
+  for(const metric of context.metrics) for(const point of metric.observations){
+    const country=context.countries.find(c=>c.id===point.country).name;
+    const row=exported.find(row=>row[0]===metric.title && row[2]===country);
+    assert.ok(row,metric.id+'/'+country);assert.equal(row[1],metric.period);
+    assert.equal(Number(row[3].replace(',','.')),point.value);assert.equal(row[4],metric.unit);assert.equal(row[5],point.flag);
+  }
+  const verified=execFileSync(process.execPath,['scripts/update-context.mjs','--check'],{cwd:new URL('.',import.meta.url),encoding:'utf8'});
+  assert.match(verified,/17 indicateurs de contexte vérifiés/);
+});
+
+test('chaque parti et candidat possède les six dossiers internationaux sans transfert implicite',async()=>{
+  const data=JSON.parse(await readFile(new URL('./public/international-data.json',import.meta.url),'utf8'));
+  assert.equal(Object.keys(data.parties).length,25);assert.equal(Object.keys(data.candidates).length,31);
+  assert.equal(Object.keys(data.topics).length,6);
+  for(const [kind,entities] of Object.entries({parties:data.parties,candidates:data.candidates})){
+    for(const [id,entity] of Object.entries(entities)){
+      const path=kind==='parties'?`parti-${id}.html`:`candidat-${id}.html`;
+      const html=await(await fetch(base+'/'+path)).text();
+      assert.equal((html.match(/id="international"/g)||[]).length,1,path);
+      for(const topic of Object.keys(data.topics))assert.ok(html.includes(`id="intl-${topic}"`),path+'/'+topic);
+      for(const [topic,position] of Object.entries(entity.positions)){
+        assert.ok(data.topics[topic]);assert.ok(position.summary && position.text && position.sourceIds.length);
+        for(const sid of position.sourceIds){assert.ok(data.sources[sid]);assert.equal(new URL(data.sources[sid].url).protocol,'https:');}
+      }
+      assert.ok(entity.reviewedSourceIds.length);
+      for(const sid of entity.reviewedSourceIds)assert.ok(data.sources[sid]);
+    }
+  }
+  assert.ok(data.parties.lfi.positions.nato.summary.includes('Sortir'));
+  assert.ok(data.parties.dlf.positions.nato.summary.includes('commandement intégré'));
+  assert.ok(data.candidates['bruno-retailleau'].positions.nato.summary.includes('Rester'));
+  assert.ok(!data.candidates['xavier-bertrand'].positions.nato,'Ne pas copier la position de LR sur un autre candidat');
+  assert.ok(!data.candidates['marine-tondelier'].positions.china,'Ne pas attribuer automatiquement le programme collectif');
+});
+
+
+test('les repères parlementaires individuels décrivent le scrutin et sa portée',async()=>{
+  const audit=JSON.parse(await readFile(new URL('./data/international/vote3461.json',import.meta.url),'utf8'));
+  const international=JSON.parse(await readFile(new URL('./public/international-data.json',import.meta.url),'utf8'));
+  assert.equal(audit.uid,'VTANR5L16V3461');assert.equal(audit.votes.length,6);
+  for(const vote of audit.votes){
+    const item=international.candidates[vote.candidateId].positions.ukraine;
+    assert.equal(item.status,'dated');assert.ok(item.sourceIds.includes('assemblee-3461'));
+    assert.match(item.text,/12 mars 2024/);
+    assert.match(item.text,/ne permet pas de déduire/);
+  }
+  assert.ok(international.candidates['olivier-becht'].positions.ukraine.summary.includes('Vote pour'));
+  assert.ok(international.candidates['marine-le-pen'].positions.ukraine.summary.includes('Abstention'));
+  assert.ok(international.candidates['francois-ruffin'].positions.ukraine.summary.includes('Vote contre'));
 });

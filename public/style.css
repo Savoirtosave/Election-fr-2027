@@ -567,3 +567,80 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
 }
 .profile-image-frame { position: relative; height: 270px; overflow: hidden; border-radius: 15px; }
 .candidate-preview-portrait { position: relative; }
+
+/* Statistical context: dated comparisons and accessible data tables. */
+.context-highlights { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }
+.context-highlights article { padding: 24px; border: 1px solid var(--line); border-radius: 13px; background: white; }
+.context-highlights p { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+.context-highlights strong { display: block; color: var(--navy); font-size: 34px; letter-spacing: -1px; }
+.context-highlights small { display: block; color: var(--muted); font-size: 11px; margin-top: 8px; }
+.context-explorer { padding: 30px; margin-bottom: 25px; background: white; border: 1px solid var(--line); border-radius: 15px; }
+.context-explorer .select-label { max-width: 630px; }
+.context-explorer select { width: 100%; max-width: 100%; }
+#context-comparison h3 { font-size: 25px; color: var(--navy); margin: 28px 0 8px; }
+.context-chart-meta { font-size: 12px; color: var(--muted); }
+.context-bars { display: grid; gap: 21px; margin: 28px 0; }
+.context-bar-row { display: grid; grid-template-columns: 95px minmax(0,1fr) 80px; gap: 14px; align-items: center; font-size: 13px; }
+.context-country { color: var(--muted); }
+.context-value { text-align: right; color: var(--navy); }
+.context-bar-track { height: 30px; position: relative; background: #f3f6fc; }
+.context-bar { display: block; position: absolute; top: 3px; height: 24px; border-radius: 3px; }
+.context-zero { position: absolute; height: 34px; top: -2px; width: 1px; background: #bac4d7; }
+.context-chart-definition, .context-chart-reading { font-size: 14px; line-height: 1.8; color: var(--muted); }
+.context-reading-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; margin: 28px 0; }
+.context-reading-grid article { padding: 25px; background: #f7f9ff; border: 1px solid var(--line); border-radius: 12px; }
+.context-reading-grid h3 { font-size: 21px; color: var(--navy); }
+.context-reading-grid p { font-size: 13px; color: var(--muted); }
+.context-table { border-collapse: collapse; width: 100%; min-width: 630px; font-size: 13px; }
+.context-table caption { padding: 15px 20px; text-align: left; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.context-table th, .context-table td { padding: 15px 18px; border-top: 1px solid var(--line); text-align: right; }
+.context-table thead th { color: var(--navy); background: #f3f6fc; }
+.context-table th:first-child { text-align: left; }
+.context-table tbody th { color: var(--navy); font-weight: 650; }
+.context-table th small { display: block; color: var(--muted); font-weight: 400; font-size: 10px; margin-top: 6px; }
+.context-table .france-column { background: #edf2ff; font-weight: 700; color: var(--blue); }
+.context-table-wrap { margin-bottom: 24px; }
+.data-flag { font-size: 10px; color: var(--muted); font-weight: 400; }
+.context-definitions { margin-top: 24px; }
+.context-definitions details { padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.context-definitions summary { cursor: pointer; font-weight: 650; color: var(--navy); }
+.context-definitions details p { margin: 16px 0 0; color: var(--muted); }
+.context-trend { margin: 30px 0; padding: 25px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.context-trend figcaption { font-size: 14px; font-weight: 700; color: var(--navy); }
+.context-trend svg { width: 100%; display: block; }
+.context-trend svg text { fill: #63718a; font-family: inherit; font-size: 12px; }
+.context-legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 11px; color: var(--muted); }
+.context-legend i { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 50%; }
+.formula-box { padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: white; margin: 25px 0; font-size: 14px; }
+@media(max-width: 900px) { .context-highlights { grid-template-columns: repeat(2,minmax(0,1fr)); } .context-reading-grid { grid-template-columns: 1fr; } }
+@media(max-width: 600px) {
+  header nav { gap: 10px; flex-wrap: wrap; }
+  .context-highlights { gap: 10px; }
+  .context-highlights article { padding: 17px; }
+  .context-highlights strong { font-size: 28px; }
+  .context-explorer { padding: 20px 16px; }
+  .context-bar-row { grid-template-columns: 70px minmax(0,1fr) 58px; gap: 8px; font-size: 11px; }
+  .context-trend { padding: 17px 10px; }
+}
+.international-box { margin: 35px 0; padding: 28px; background: #f5f8ff; border: 1px solid #cdd8ed; border-radius: 15px; }
+.international-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.international-card { padding: 24px; background: white; border: 1px solid var(--line); border-radius: 12px; }
+.international-card h3 { font-size: 19px; line-height: 1.4; color: var(--navy); margin-bottom: 12px; }
+.international-card.is-pending { background: #f8faff; border-style: dashed; }
+.international-card.is-pending h3 { font-size: 15px; color: var(--muted); }
+.international-card.is-pending p:last-child { font-size: 12px; color: var(--muted); margin: 0; }
+.international-date, .international-coverage { color: var(--muted); font-size: 11px; }
+.international-coverage { margin-bottom: 22px; }
+.international-card details { font-size: 13px; color: var(--muted); }
+.international-card summary, .international-method summary { cursor: pointer; color: var(--blue); font-size: 13px; font-weight: 650; }
+.international-card details p { margin: 15px 0; line-height: 1.8; }
+.international-method { margin-top: 22px; font-size: 13px; color: var(--muted); }
+.international-method > p { margin-top: 16px; }
+.international-sources { padding-left: 18px; font-size: 12px; overflow-wrap: anywhere; }
+.international-sources li { margin: 14px 0; }
+.international-sources span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; }
+.international-gateway p:not(.policy-topic) { font-size: 13px; color: var(--muted); }
+@media(max-width:600px) { .international-grid { grid-template-columns: 1fr; } .international-box { padding: 18px; } .international-card { padding: 20px; } }
+.international-grid { align-items: start; }
+.international-card.is-pending { padding: 18px 22px; }
+.international-card.is-pending h3 { margin: 0; }

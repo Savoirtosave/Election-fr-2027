@@ -1,3 +1,4 @@
+import { renderContextPage } from './render-context.mjs';
 import { renderCandidatePages } from './render-candidates.mjs';
 import { partyLogos } from '../public/party-logos.js';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -12,7 +13,7 @@ const e = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<
 const arrow = '<svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg>';
 const external = (url, text) => `<a href="${e(url)}" target="_blank" rel="noopener noreferrer">${e(text)} ${arrow}</a>`;
 const pages = new Map();
-const navigation = [['candidats.html', 'Candidats'], ['partis.html', 'Partis'], ['familles.html', 'Familles politiques'], ['election.html', 'L’élection'], ['sources.html', 'Sources']];
+const navigation = [['candidats.html', 'Candidats'], ['partis.html', 'Partis'], ['familles.html', 'Familles politiques'], ['election.html', 'L’élection'], ['contexte.html', 'Contexte'], ['sources.html', 'Sources']];
 
 function layout(file, title, description, content, active = file, script = '') {
   const links = navigation.map(([href, label]) => `<a href="./${href}"${active === href ? ` aria-current="${file === href ? 'page' : 'location'}"` : ''}>${label}</a>`).join('');
@@ -46,8 +47,9 @@ const quickEnd = home.indexOf('</section>', home.indexOf('class="quick-links"'))
 if (quickEnd < 0) throw new Error('Navigation d’accueil introuvable');
 home = home.slice(0, quickEnd) + `<a href="./election.html"><span class="quick-icon mint" aria-hidden="true">04</span><span><strong>Comment se déroule le vote ?</strong><small>Parrainages, deux tours, résultats</small></span>${arrow}</a>` + home.slice(quickEnd);
 pages.set('index.html', layout('index.html', 'Comprendre avant de choisir', 'Candidatures, familles politiques et règles de l’élection présidentielle française : des repères indépendants et sourcés.', home, 'index.html', 'navigation.js'));
+const contextGateway = `<section class="party-home-link context-home-link"><div><p class="eyebrow">LE PAYS À LA VEILLE DU SCRUTIN</p><h2>Dette, emploi, école : les repères du débat.</h2><p>Des données officielles pour comparer la France, l’Allemagne, l’Espagne et l’Italie, avec leurs définitions et leurs sources.</p></div><a class="button" href="./contexte.html">Comprendre le contexte ${arrow}</a></section>`;
 const partyGateway = `<section class="party-home-link"><div><p class="eyebrow">DERRIÈRE LES CANDIDATURES</p><h2>Des partis, des histoires et des idées.</h2><p>${parties.length} formations à explorer, des positions par sujet à comparer et des repères sur leur représentation à l’Assemblée nationale.</p></div><a class="button" href="./partis.html">Découvrir les partis ${arrow}</a></section>`;
-pages.set('index.html', pages.get('index.html').replace('<aside class="next-step">', partyGateway + '<aside class="next-step">'));
+pages.set('index.html', pages.get('index.html').replace('<aside class="next-step">', partyGateway + contextGateway + '<aside class="next-step">'));
 
 const data = JSON.parse(await read('public/data.json'));
 const candidatesIntro = intro('LES VISAGES DE L’ÉLECTION', 'Qui se présente en 2027 ?', `${data.candidates.length} candidatures déclarées sont documentées ici, avec leurs portraits et leurs sources. Ce suivi reste non exhaustif : une déclaration ne vaut pas validation officielle. Ouvrez un profil pour découvrir son parcours et l’ébauche de ses orientations ; son classement reste expliqué sur la fiche.`, '<p class="intro-links"><a href="./election.html#parrainages">Comprendre les 500 présentations</a><a href="./sources.html">Notre méthode de vérification</a></p>');
@@ -86,12 +88,16 @@ const sourcesPage = intro('UNE MÉTHODE VISIBLE', 'Des sources, et ce qu’on en
   `<section class="section references section-soft" id="regles-officielles"><p class="eyebrow">LE DROIT ET LES INSTITUTIONS</p><h2>Les sources des règles électorales</h2><p class="section-intro">Les textes en vigueur priment sur les archives pédagogiques. Les anciens calendriers de 2022 ne sont pas transposés à 2027.</p><div class="bibliography-grid">${institutions}</div></section>` +
   `<section class="section reading-section"><h2>Sources de presse et portraits</h2><p>Chaque fiche de candidature conserve les articles qui documentent l’annonce, la biographie et le classement. Les sources sont accessibles dans « Sources et crédits des visuels » ; les crédits et les conditions de réutilisation des portraits y sont également indiqués.</p><a class="text-link" href="./candidats.html">Consulter les fiches et leurs sources →</a></section>`;
 const logoSources = `<section class="section references" id="logos"><h2>Logos des partis et mouvements</h2><p>Visuels reproduits à des fins d’identification, sans modification de leur dessin. Les marques restent la propriété de leurs titulaires ; leur présence ne vaut pas soutien au site. Les fichiers sont conservés localement. Sources consultées le 2 novembre 2026.</p><ul>${Object.values(partyLogos).map(l=>`<li>${external(l.source,e(l.name))}${l.asset ? ' · '+external(l.asset,'Fichier original') : ' · SVG extrait de la page officielle'}</li>`).join('')}</ul></section>`;
-pages.set('sources.html', layout('sources.html', 'Méthode et bibliographie', 'La méthode de classement, une bibliographie scientifique élargie et les textes officiels sur l’élection présidentielle.', sourcesPage + logoSources));
+pages.set('sources.html', layout('sources.html', 'Méthode et bibliographie', 'La méthode de classement, une bibliographie scientifique élargie et les textes officiels sur l’élection présidentielle.', sourcesPage + `<section class="section"><h2>Les données du contexte économique et social</h2><p>Eurostat, Insee et OCDE : les définitions, périodes, tableaux de comparaison et liens vers les séries figurent sur la page Contexte.</p><a class="text-link" href="./contexte.html#sources-contexte">Consulter les sources statistiques →</a></section>` + logoSources));
 
+const international = JSON.parse(await read('public/international-data.json'));
 const parliament = JSON.parse(await read('public/parliament.json'));
-for (const [file, content] of renderPartyPages({ layout, intro, e, external, referenceLinks, parliament, candidates: data.candidates })) pages.set(file, content);
+for (const [file, content] of renderPartyPages({ layout, intro, e, external, referenceLinks, parliament, international, candidates: data.candidates })) pages.set(file, content);
 
-for (const [file, content] of renderCandidatePages({candidates: data.candidates, layout, intro, e, external})) pages.set(file, content);
+for (const [file, content] of renderCandidatePages({candidates: data.candidates, layout, intro, e, external, international})) pages.set(file, content);
+
+const context = JSON.parse(await read('public/context-data.json'));
+pages.set('contexte.html', renderContextPage({context,layout,intro,e,external}));
 
 let stale = false;
 for (const [file, content] of pages) {

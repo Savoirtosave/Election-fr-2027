@@ -1,0 +1,3685 @@
+{
+  "asOf": "2026-11-02",
+  "countries": [
+    {
+      "id": "FR",
+      "name": "France",
+      "color": "#244de7"
+    },
+    {
+      "id": "DE",
+      "name": "Allemagne",
+      "color": "#7750a0"
+    },
+    {
+      "id": "ES",
+      "name": "Espagne",
+      "color": "#bf6728"
+    },
+    {
+      "id": "IT",
+      "name": "Italie",
+      "color": "#208365"
+    }
+  ],
+  "sources": {
+    "public-finance": {
+      "publisher": "Eurostat",
+      "title": "Déficit/surplus, dette et données associées du gouvernement",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=GD&na_item=B9&sinceTimePeriod=2015",
+      "updated": "2026-10-21T11:00:00+0200",
+      "dataset": "gov_10dd_edpt1"
+    },
+    "debt-quarterly": {
+      "publisher": "Eurostat",
+      "title": "Dette publique trimestrielle",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10q_ggdebt?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&unit=MIO_EUR&na_item=GD&sinceTimePeriod=2025-Q1",
+      "updated": "2026-10-21T11:00:00+0200",
+      "dataset": "gov_10q_ggdebt"
+    },
+    "interest": {
+      "publisher": "Eurostat",
+      "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D41PAY&sinceTimePeriod=2015",
+      "updated": "2026-10-21T11:00:00+0200",
+      "dataset": "gov_10a_main"
+    },
+    "interest-eur": {
+      "publisher": "Eurostat",
+      "title": "Principaux agrégats des administrations publiques, y compris recettes et dépenses",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=MIO_EUR&na_item=D41PAY&sinceTimePeriod=2025",
+      "updated": "2026-10-21T11:00:00+0200",
+      "dataset": "gov_10a_main"
+    },
+    "gdp": {
+      "publisher": "Eurostat",
+      "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données annuelles",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&sinceTimePeriod=2015",
+      "updated": "2026-10-22T23:00:00+0200",
+      "dataset": "nama_10_gdp"
+    },
+    "gdp-quarterly": {
+      "publisher": "Eurostat",
+      "title": "Produit intérieur brut (PIB) et principales composantes (production, dépenses et revenu) - données trimestrielles",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&sinceTimePeriod=2025-Q1",
+      "updated": "2026-10-30T23:00:00+0100",
+      "dataset": "namq_10_gdp"
+    },
+    "unemployment": {
+      "publisher": "Eurostat",
+      "title": "Chômage par sexe et âge - données mensuelles",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sex=T&s_adj=SA&unit=PC_ACT&sinceTimePeriod=2025-01",
+      "updated": "2026-10-30T11:00:00+0100",
+      "dataset": "une_rt_m"
+    },
+    "activity": {
+      "publisher": "Eurostat",
+      "title": "Taux de participation aux forces de travail par nationalité",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_argan?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&age=Y15-64&sex=T&citizen=TOTAL&sinceTimePeriod=2024",
+      "updated": "2026-10-30T11:00:00+0100",
+      "dataset": "lfsa_argan"
+    },
+    "ageing": {
+      "publisher": "Eurostat",
+      "title": "Indicateurs de structure de la population au niveau national",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjanind?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&indic_de=PC_Y65_MAX&sinceTimePeriod=2015",
+      "updated": "2026-09-25T23:00:00+0200",
+      "dataset": "demo_pjanind"
+    },
+    "levies": {
+      "publisher": "Eurostat",
+      "title": "Principaux agrégats fiscaux de la comptabilité nationale",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_taxag?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S13&unit=PC_GDP&na_item=D2_D5_D91_D61_M_D995&sinceTimePeriod=2015",
+      "updated": "2026-10-28T11:00:00+0100",
+      "dataset": "gov_10a_taxag"
+    },
+    "corporations": {
+      "publisher": "Eurostat",
+      "title": "Opérations non financières - données annuelles",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nasa_10_nf_tr?lang=FR&geo=FR&geo=DE&geo=ES&geo=IT&sector=S11&sector=S12&unit=CP_MEUR&na_item=D1&na_item=B1N&sinceTimePeriod=2024",
+      "updated": "2026-10-29T23:00:00+0100",
+      "dataset": "nasa_10_nf_tr"
+    },
+    "pisa-FR": {
+      "publisher": "OCDE",
+      "title": "Education GPS — FR — Student performance (PISA 2025)",
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=FRA&treshold=10&topic=PI",
+      "excerpt": "In 2025, the average score of 15-year-old students in science in France was 483 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was -6 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 25.8% of students in France (OECD average: 25.7%), while 6.7% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 272 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in France changed by -4 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -12 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in France scored 458 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 13 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -16 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 456 PISA score points score points in France (OECD average: 461 PISA score points). The difference between boys and girls was -32 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -18 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in France scored 497 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 53.8% performed better than expected based on their science perfor"
+    },
+    "pisa-DE": {
+      "publisher": "OCDE",
+      "title": "Education GPS — DE — Student performance (PISA 2025)",
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=DEU&treshold=10&topic=PI",
+      "excerpt": "In 2025, the average score of 15-year-old students in science in Germany was 486 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 3 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 26.8% of students in Germany (OECD average: 25.7%), while 9.4% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 289 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Germany changed by -7 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -24 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Germany scored 464 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 11 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -11 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 465 PISA score points score points in Germany (OECD average: 461 PISA score points). The difference between boys and girls was -25 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -15 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Germany scored 498 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 53% performed better than expected based on their science per"
+    },
+    "pisa-ES": {
+      "publisher": "OCDE",
+      "title": "Education GPS — ES — Student performance (PISA 2025)",
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=ESP&treshold=10&topic=PI",
+      "excerpt": "In 2025, the average score of 15-year-old students in science in Spain was 477 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 0 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 24.4% of students in Spain (OECD average: 25.7%), while 4.2% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 244 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Spain changed by -7 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was -15 PISA score points (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Spain scored 457 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 14 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -16 PISA score points between 2022 and 2025 (OECD average: -9 PISA score points). Reading performance averaged 451 PISA score points score points in Spain (OECD average: 461 PISA score points). The difference between boys and girls was -26 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -23 PISA score points between 2022 and 2025 (OECD average: -14 PISA score points). Students in Spain scored 499 PISA score points on average in computational problem solving (OECD average: 500 PISA score points), while 57.5% performed better than expected based on their science performance ("
+    },
+    "pisa-IT": {
+      "publisher": "OCDE",
+      "title": "Education GPS — IT — Student performance (PISA 2025)",
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=ITA&treshold=10&topic=PI",
+      "excerpt": "In 2025, the average score of 15-year-old students in science in Italy was 483 PISA score points (OECD average: 482 PISA score points), and the score difference between boys and girls was 3 PISA score points, a difference that was not statistically significant (OECD average: -1 PISA score points). Low performers in science accounted for 22.3% of students in Italy (OECD average: 25.7%), while 4.4% were top performers, scoring at Level 5 or 6 (OECD average: 7.2%). The performance difference between students at the 90th and 10th percentiles was 240 PISA score points (OECD average: 258 PISA score points). Between 2022 and 2025, science performance in Italy changed by 6 PISA score points, a change that was not statistically significant (OECD average: -3 PISA score points). Over its longer period of participation in PISA, the average decennial rate of change in science performance was 5 PISA score points, a trend that was not statistically significant (OECD average: -7 PISA score points). In mathematics, 15-year-old students in Italy scored 468 PISA score points on average (OECD average: 463 PISA score points). The score difference between boys and girls was 17 PISA score points (OECD average: 13 PISA score points), while mathematics performance changed by -3 PISA score points between 2022 and 2025, a change that was not statistically significant, (OECD average: -9 PISA score points). Reading performance averaged 474 PISA score points score points in Italy (OECD average: 461 PISA score points). The difference between boys and girls was -28 PISA score points (OECD average: -30 PISA score points), and reading performance changed by -7 PISA score points between 2022 and 2025, a change that was not statistically significant (OECD average: -14 PISA score points). Students in Italy scored 490 PISA score points on average in comput"
+    },
+    "insee-unemployment": {
+      "publisher": "Insee",
+      "title": "Chômage et indicateurs du marché du travail, deuxième trimestre 2026 (7 août 2026)",
+      "url": "https://www.insee.fr/fr/statistiques/9032359"
+    },
+    "insee-gdp": {
+      "publisher": "Insee",
+      "title": "Première estimation du PIB au troisième trimestre 2026 (30 octobre 2026)",
+      "url": "https://www.insee.fr/fr/statistiques/9111036"
+    },
+    "dor": {
+      "publisher": "Eric Dor / IÉSEG",
+      "title": "Compte @ericdor_econo et capture transmise du message du 28 octobre 2026",
+      "url": "https://x.com/ericdor_econo",
+      "role": "Piste de recherche et lecture économique ; les chiffres de la comparaison sont recalculés à partir d’Eurostat. Le message de la capture n’a pas été retrouvé dans les publications visibles du compte."
+    }
+  },
+  "metrics": [
+    {
+      "id": "debt",
+      "group": "finances",
+      "title": "Dette publique",
+      "period": "2026-Q2",
+      "unit": "% du PIB",
+      "decimals": 1,
+      "definition": "Stock de dette brute consolidée des administrations publiques au sens de Maastricht. Le ratio trimestriel rapporte ce stock au PIB des quatre derniers trimestres.",
+      "reading": "La France est plus endettée que l’Allemagne et l’Espagne dans ce panel, mais moins que l’Italie. Le ratio dépend aussi du niveau du PIB.",
+      "sourceIds": [
+        "debt-quarterly"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2026-Q2",
+          "value": 119.1,
+          "flag": "p"
+        },
+        {
+          "country": "DE",
+          "period": "2026-Q2",
+          "value": 63.4,
+          "flag": "p"
+        },
+        {
+          "country": "ES",
+          "period": "2026-Q2",
+          "value": 101.4,
+          "flag": "p"
+        },
+        {
+          "country": "IT",
+          "period": "2026-Q2",
+          "value": 139.9,
+          "flag": "p"
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025-Q1",
+            "value": 113.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 115.4,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 117.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 115.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 117.7,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 119.1,
+            "flag": "p"
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025-Q1",
+            "value": 61.2,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q2",
+            "value": 61.4,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q3",
+            "value": 62.2,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 62.8,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q1",
+            "value": 63.5,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 63.4,
+            "flag": "p"
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025-Q1",
+            "value": 103.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 103.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 103,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 100.5,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 101.4,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 101.4,
+            "flag": "p"
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025-Q1",
+            "value": 136.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 137.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 137.1,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 136.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 138.6,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 139.9,
+            "flag": "p"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debt-amount",
+      "group": "finances",
+      "title": "Dette publique en euros",
+      "period": "2026-Q2",
+      "unit": "Md€",
+      "decimals": 1,
+      "definition": "Même dette publique, exprimée en milliards d’euros courants (millions Eurostat divisés par 1 000).",
+      "reading": "Un montant absolu dépend de la taille de l’économie ; le ratio au PIB est plus pertinent pour comparer les pays.",
+      "sourceIds": [
+        "debt-quarterly"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2026-Q2",
+          "value": 3595.5249,
+          "flag": "p"
+        },
+        {
+          "country": "DE",
+          "period": "2026-Q2",
+          "value": 2924.6742000000004,
+          "flag": "p"
+        },
+        {
+          "country": "ES",
+          "period": "2026-Q2",
+          "value": 1762.936,
+          "flag": "p"
+        },
+        {
+          "country": "IT",
+          "period": "2026-Q2",
+          "value": 3208.5238,
+          "flag": "p"
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025-Q1",
+            "value": 3346.2808,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 3417.1622,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 3484.1256000000003,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 3460.111,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 3535.9286,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 3595.5249,
+            "flag": "p"
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025-Q1",
+            "value": 2701.7199,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q2",
+            "value": 2734.0131,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q3",
+            "value": 2792.0474,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 2845.9701,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q1",
+            "value": 2902.2625,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 2924.6742000000004,
+            "flag": "p"
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025-Q1",
+            "value": 1667.381,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 1690.911,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 1709.354,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 1698.355,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 1739.641,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 1762.936,
+            "flag": "p"
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025-Q1",
+            "value": 3034.404,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 3072.1966,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 3081.8617999999997,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 3097.0933,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 3159.4535,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 3208.5238,
+            "flag": "p"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debt-annual",
+      "group": "finances",
+      "title": "Dette publique annuelle",
+      "period": "2025",
+      "unit": "% du PIB",
+      "decimals": 1,
+      "definition": "Dette brute consolidée en fin d’année. Série annuelle permettant de suivre l’évolution depuis 2015.",
+      "reading": "Dette et déficit ne sont pas interchangeables : la dette est un stock, le déficit un flux annuel.",
+      "sourceIds": [
+        "public-finance"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 115.7,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 62.8,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 100.5,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 136.7,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": 97,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 98.1,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 98.8,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 98.5,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 98.2,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 114.9,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 112.8,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 111.4,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 109.5,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 112.6,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 115.7,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 71,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 68.1,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 63.7,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 60.5,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 58.3,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 67.5,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 67.4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 64.1,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 61.8,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 61.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 62.8,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": 102.5,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 102,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 101.2,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 99.8,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 97.7,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 119.3,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 115.7,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 109.3,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 105.3,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 101.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 100.5,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": 135,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 134.5,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 134,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 134.5,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 134.2,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 154.7,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 146.1,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 138.4,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 134,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 134.3,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 136.7,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "balance",
+      "group": "finances",
+      "title": "Solde public",
+      "period": "2025",
+      "unit": "% du PIB",
+      "decimals": 1,
+      "definition": "Recettes moins dépenses de l’ensemble des administrations publiques. Un chiffre négatif indique un déficit.",
+      "reading": "Le déficit français atteint 5,1 % du PIB en 2025. Il comprend les intérêts ; il n’explique pas à lui seul toute la variation du stock de dette.",
+      "sourceIds": [
+        "public-finance"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": -5.1,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": -2.9,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": -2.4,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": -3.1,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": -3.9,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": -3.8,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": -3.4,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": -2.3,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": -2.4,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -8.9,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": -6.6,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": -4.7,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": -5.4,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": -5.8,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": -5.1,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 0.9,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 1.1,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 1.3,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 1.9,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 1.3,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -4.3,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": -3.2,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": -1.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": -2.2,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": -2.7,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": -2.9,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": -5.3,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": -4.2,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": -3.1,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": -2.6,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": -3.1,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -9.9,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": -6.7,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": -4.6,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": -3.3,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": -3.2,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": -2.4,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": -2.5,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": -2.4,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": -2.5,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": -2.2,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": -1.5,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -9.4,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": -8.9,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": -8.1,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": -7.1,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": -3.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": -3.1,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "interest",
+      "group": "finances",
+      "title": "Intérêts de la dette publique",
+      "period": "2025",
+      "unit": "% du PIB",
+      "decimals": 1,
+      "definition": "Intérêts payés par l’ensemble des administrations publiques en comptabilité nationale (D41). Hors remboursement du principal.",
+      "reading": "Le coût dépend des taux, de l’inflation, des maturités et du refinancement. Ce périmètre dépasse le seul budget de l’État.",
+      "sourceIds": [
+        "interest"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 2.2,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 1.1,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 2.4,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 3.8,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": 2,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 1.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 1.8,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 1.8,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 1.5,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 1.3,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 1.4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 1.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 1.9,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 2,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 2.2,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 1.4,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 1.2,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 1,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 0.9,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 0.8,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 0.6,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 0.6,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 0.7,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 0.9,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 1,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 1.1,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": 3.1,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 2.8,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 2.5,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 2.4,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 2.3,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 2.2,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 2.1,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 2.3,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 2.4,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 2.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 2.4,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": 4.1,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 3.8,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 3.6,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 3.3,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 3.4,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 3.4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 4.1,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 3.6,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 3.8,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "interest-amount",
+      "group": "finances",
+      "title": "Intérêts en euros",
+      "period": "2025",
+      "unit": "Md€",
+      "decimals": 1,
+      "definition": "Intérêts de toutes les administrations publiques, en milliards d’euros courants.",
+      "reading": "À comparer au PIB et aux recettes : le montant ne mesure ni le principal à rembourser ni les seules émissions de l’année.",
+      "sourceIds": [
+        "interest-eur"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 65.7209,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 49.022,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 40.432,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 87.158,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025",
+            "value": 65.7209,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025",
+            "value": 49.022,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025",
+            "value": 40.432,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025",
+            "value": 87.158,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "levies",
+      "group": "finances",
+      "title": "Impôts et cotisations sociales",
+      "period": "2025",
+      "unit": "% du PIB",
+      "decimals": 1,
+      "definition": "Recettes fiscales et cotisations sociales nettes, y compris cotisations sociales imputées, déduction faite des montants non recouvrables.",
+      "reading": "Ce périmètre Eurostat n’est pas strictement celui des « prélèvements obligatoires » de l’Insee ni celui de toutes les séries OCDE. Il ne mesure pas le taux d’impôt d’un ménage.",
+      "sourceIds": [
+        "levies"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 45.9,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 41.3,
+          "flag": "p"
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 38,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 42.9,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": 47.5,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 47.5,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 48.3,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 48.1,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 47.1,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 47.1,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 46.7,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 47.4,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 45.3,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 45,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 45.9,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 39.7,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 40.2,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 40.3,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 40.7,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 41,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 40.7,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 41.4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 40.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 39.6,
+            "flag": "p"
+          },
+          {
+            "period": "2024",
+            "value": 40.2,
+            "flag": "p"
+          },
+          {
+            "period": "2025",
+            "value": 41.3,
+            "flag": "p"
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": 34.2,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 33.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 34.2,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 34.9,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 35,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 37.1,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 37.9,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 37.1,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 36.9,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 37,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 38,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": 43,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 42.2,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 41.9,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 41.7,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 42.4,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 42.8,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 42.4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 41.6,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 41.2,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 42.2,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 42.9,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "growth",
+      "group": "economy",
+      "title": "Croissance annuelle du PIB réel",
+      "period": "2025",
+      "unit": "%",
+      "decimals": 1,
+      "definition": "Variation annuelle du PIB en volume, corrigée de l’effet des prix.",
+      "reading": "L’Espagne croît plus vite dans ce panel en 2025. Une croissance du PIB n’est pas une mesure complète du niveau de vie ni du PIB par habitant.",
+      "sourceIds": [
+        "gdp"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 0.8,
+          "flag": "p"
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 0.2,
+          "flag": "p"
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 2.6,
+          "flag": "p"
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 0.6,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": 1.1,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 0.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 2.1,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 1.6,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 2,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -7.4,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 6.9,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 2.7,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 1.6,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 1.5,
+            "flag": "p"
+          },
+          {
+            "period": "2025",
+            "value": 0.8,
+            "flag": "p"
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 1.8,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 2.3,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 2.9,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 1.2,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 1.1,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -4,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 4,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 1.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": -1,
+            "flag": "p"
+          },
+          {
+            "period": "2024",
+            "value": 0,
+            "flag": "p"
+          },
+          {
+            "period": "2025",
+            "value": 0.2,
+            "flag": "p"
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": 4.1,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 2.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 2.9,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 2.4,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 2,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -10.9,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 6.7,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 6.4,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 2.4,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 3.7,
+            "flag": "p"
+          },
+          {
+            "period": "2025",
+            "value": 2.6,
+            "flag": "p"
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": 1,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 1.5,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 1.7,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 1,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 0.6,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": -8.7,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 9.2,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 4.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 1,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 1.1,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 0.6,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "growth-quarterly",
+      "group": "economy",
+      "title": "Croissance trimestrielle du PIB réel",
+      "period": "2026-Q3",
+      "unit": "%",
+      "decimals": 1,
+      "definition": "Variation par rapport au trimestre précédent, en volume, corrigée des variations saisonnières et calendaires.",
+      "reading": "La première estimation française indique −0,1 % au troisième trimestre 2026. Ce taux trimestriel ne doit pas être confondu avec une croissance annuelle.",
+      "sourceIds": [
+        "gdp-quarterly"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2026-Q3",
+          "value": -0.1,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2026-Q3",
+          "value": 0.2,
+          "flag": "p"
+        },
+        {
+          "country": "ES",
+          "period": "2026-Q3",
+          "value": 0.6,
+          "flag": "p"
+        },
+        {
+          "country": "IT",
+          "period": "2026-Q3",
+          "value": 0,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025-Q1",
+            "value": 0.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 0.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 0.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 0.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": -0.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q2",
+            "value": 0,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q3",
+            "value": -0.1,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025-Q1",
+            "value": 0.1,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q2",
+            "value": 0,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q3",
+            "value": 0,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 0.3,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q1",
+            "value": 0.4,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 0.3,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q3",
+            "value": 0.2,
+            "flag": "p"
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025-Q1",
+            "value": 0.5,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q2",
+            "value": 0.7,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q3",
+            "value": 0.6,
+            "flag": "p"
+          },
+          {
+            "period": "2025-Q4",
+            "value": 0.7,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q1",
+            "value": 0.6,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q2",
+            "value": 0.7,
+            "flag": "p"
+          },
+          {
+            "period": "2026-Q3",
+            "value": 0.6,
+            "flag": "p"
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025-Q1",
+            "value": 0.4,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q2",
+            "value": 0,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q3",
+            "value": 0.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-Q4",
+            "value": 0.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q1",
+            "value": 0.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q2",
+            "value": 0.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-Q3",
+            "value": 0,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "unemployment",
+      "group": "work",
+      "title": "Taux de chômage",
+      "period": "2026-09",
+      "unit": "% des actifs",
+      "decimals": 1,
+      "definition": "Personnes de 15 à 74 ans sans emploi, disponibles et en recherche active, en proportion de la population active. Série harmonisée, corrigée des variations saisonnières.",
+      "reading": "L’Italie a un chômage plus faible que la France, mais aussi un taux d’activité nettement plus bas : il faut lire les deux indicateurs ensemble.",
+      "sourceIds": [
+        "unemployment"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2026-09",
+          "value": 8.5,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2026-09",
+          "value": 4.1,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2026-09",
+          "value": 10.3,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2026-09",
+          "value": 6.3,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025-01",
+            "value": 7.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 7.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 7.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 7.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 7.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 7.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 7.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 8,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 7.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 8,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 8,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 8.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 8.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 8.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 8.4,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 8.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 8.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 8.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 8.5,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025-01",
+            "value": 3.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 3.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 3.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 3.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 3.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 3.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 3.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 3.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 3.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 3.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 3.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 4,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 4,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 4.1,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 4.1,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025-01",
+            "value": 10.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 10.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 10.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 10.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 10.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 10.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 10.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 10.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 10.4,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 10.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 10.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 10.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 10.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 10.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 10.3,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025-01",
+            "value": 6.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 6.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 6.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 6.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 6.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 5.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 5.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 5.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 5.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 5.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 5.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 5.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 5.5,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 5.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 5.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 5.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 5.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 6.1,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 6.1,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 6.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 6.3,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "youth-unemployment",
+      "group": "work",
+      "title": "Chômage des moins de 25 ans",
+      "period": "2026-09",
+      "unit": "% des actifs de 15–24 ans",
+      "decimals": 1,
+      "definition": "Chômeurs de 15 à 24 ans rapportés aux jeunes actifs, et non à tous les jeunes. Les étudiants sans emploi qui ne cherchent pas de travail ne sont pas au dénominateur.",
+      "reading": "Un taux de 21,9 % ne signifie pas que 21,9 % de tous les jeunes Français sont au chômage.",
+      "sourceIds": [
+        "unemployment"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2026-09",
+          "value": 21.9,
+          "flag": ""
+        },
+        {
+          "country": "DE",
+          "period": "2026-09",
+          "value": 7.5,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2026-09",
+          "value": 22.8,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2026-09",
+          "value": 19.9,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2025-01",
+            "value": 18.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 20.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 18.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 18.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 19.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 19.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 19.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 19.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 20.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 21.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 21.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 21.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 21,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 21,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 21.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 21.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 21.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 21.4,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 21,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 20.8,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 21.9,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2025-01",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 6.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 6.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 7,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 7.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 7.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 7.3,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 7.4,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 7.5,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 7.5,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 7.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 7.5,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 7.5,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2025-01",
+            "value": 26.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 26.2,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 26,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 24.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 24.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 24.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 25.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 25.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 24.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 24.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 23.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 23.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 24,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 24.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 24.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 24,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 24,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 23.4,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 22.8,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 22.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 22.8,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2025-01",
+            "value": 20.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-02",
+            "value": 19.7,
+            "flag": ""
+          },
+          {
+            "period": "2025-03",
+            "value": 20.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-04",
+            "value": 21.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-05",
+            "value": 21.6,
+            "flag": ""
+          },
+          {
+            "period": "2025-06",
+            "value": 20.1,
+            "flag": ""
+          },
+          {
+            "period": "2025-07",
+            "value": 19.4,
+            "flag": ""
+          },
+          {
+            "period": "2025-08",
+            "value": 19.9,
+            "flag": ""
+          },
+          {
+            "period": "2025-09",
+            "value": 20.5,
+            "flag": ""
+          },
+          {
+            "period": "2025-10",
+            "value": 19.8,
+            "flag": ""
+          },
+          {
+            "period": "2025-11",
+            "value": 19,
+            "flag": ""
+          },
+          {
+            "period": "2025-12",
+            "value": 19.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-01",
+            "value": 18.7,
+            "flag": ""
+          },
+          {
+            "period": "2026-02",
+            "value": 18.1,
+            "flag": ""
+          },
+          {
+            "period": "2026-03",
+            "value": 19,
+            "flag": ""
+          },
+          {
+            "period": "2026-04",
+            "value": 18.2,
+            "flag": ""
+          },
+          {
+            "period": "2026-05",
+            "value": 17.9,
+            "flag": ""
+          },
+          {
+            "period": "2026-06",
+            "value": 19.6,
+            "flag": ""
+          },
+          {
+            "period": "2026-07",
+            "value": 19.8,
+            "flag": ""
+          },
+          {
+            "period": "2026-08",
+            "value": 20.3,
+            "flag": ""
+          },
+          {
+            "period": "2026-09",
+            "value": 19.9,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "activity",
+      "group": "work",
+      "title": "Taux d’activité des 15–64 ans",
+      "period": "2025",
+      "unit": "% de la population de 15–64 ans",
+      "decimals": 1,
+      "definition": "Personnes en emploi ou au chômage, rapportées à toute la population de 15 à 64 ans. Moyenne annuelle ; les inactifs ne sont ni en emploi ni au chômage.",
+      "reading": "Un faible chômage peut coexister avec une faible participation au marché du travail. Le taux d’activité n’est pas le taux d’emploi.",
+      "sourceIds": [
+        "activity"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 75.1,
+          "flag": "d"
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 80.3,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 74.9,
+          "flag": "d"
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 66.7,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2024",
+            "value": 74.4,
+            "flag": "bd"
+          },
+          {
+            "period": "2025",
+            "value": 75.1,
+            "flag": "d"
+          }
+        ],
+        "DE": [
+          {
+            "period": "2024",
+            "value": 80.1,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 80.3,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2024",
+            "value": 74.6,
+            "flag": "d"
+          },
+          {
+            "period": "2025",
+            "value": 74.9,
+            "flag": "d"
+          }
+        ],
+        "IT": [
+          {
+            "period": "2024",
+            "value": 66.6,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 66.7,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "ageing",
+      "group": "population",
+      "title": "Population de 65 ans ou plus",
+      "period": "2025",
+      "unit": "% de la population",
+      "decimals": 1,
+      "definition": "Part des résidents âgés de 65 ans ou plus au 1er janvier de l’année.",
+      "reading": "Le vieillissement touche les quatre pays, davantage l’Italie dans ce panel. Son effet sur les retraites et les soins dépend aussi de l’emploi, de la productivité et des règles collectives.",
+      "sourceIds": [
+        "ageing"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 21.9,
+          "flag": "p"
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 22.7,
+          "flag": ""
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 20.7,
+          "flag": ""
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 24.7,
+          "flag": ""
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2015",
+            "value": 18.4,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 18.9,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 19.3,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 19.7,
+            "flag": "p"
+          },
+          {
+            "period": "2019",
+            "value": 20,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 20.4,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 20.6,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 20.9,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 21.1,
+            "flag": "p"
+          },
+          {
+            "period": "2024",
+            "value": 21.5,
+            "flag": "p"
+          },
+          {
+            "period": "2025",
+            "value": 21.9,
+            "flag": "p"
+          }
+        ],
+        "DE": [
+          {
+            "period": "2015",
+            "value": 21,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 21.1,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 21.2,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 21.4,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 21.5,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 21.8,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 22,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 22.1,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 22.2,
+            "flag": "b"
+          },
+          {
+            "period": "2024",
+            "value": 22.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 22.7,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2015",
+            "value": 18.4,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 18.7,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 18.9,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 19.1,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 19.3,
+            "flag": ""
+          },
+          {
+            "period": "2020",
+            "value": 19.5,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 19.6,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 20,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 20.1,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 20.4,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 20.7,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2015",
+            "value": 21.9,
+            "flag": ""
+          },
+          {
+            "period": "2016",
+            "value": 22.1,
+            "flag": ""
+          },
+          {
+            "period": "2017",
+            "value": 22.4,
+            "flag": ""
+          },
+          {
+            "period": "2018",
+            "value": 22.6,
+            "flag": ""
+          },
+          {
+            "period": "2019",
+            "value": 22.9,
+            "flag": "b"
+          },
+          {
+            "period": "2020",
+            "value": 23.2,
+            "flag": ""
+          },
+          {
+            "period": "2021",
+            "value": 23.5,
+            "flag": ""
+          },
+          {
+            "period": "2022",
+            "value": 23.8,
+            "flag": ""
+          },
+          {
+            "period": "2023",
+            "value": 24,
+            "flag": ""
+          },
+          {
+            "period": "2024",
+            "value": 24.3,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 24.7,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "labour-share",
+      "group": "sharing",
+      "title": "Rémunération des salariés / valeur ajoutée nette des sociétés",
+      "period": "2025",
+      "unit": "% de la valeur ajoutée nette",
+      "decimals": 1,
+      "definition": "Calcul : 100 × (D1 payé par S11 + D1 payé par S12) / (B1N de S11 + B1N de S12). S11 désigne les sociétés non financières et S12 les sociétés financières. D1 inclut salaires et cotisations sociales patronales ; B1N exclut la consommation de capital fixe.",
+      "reading": "La France est en tête des quatre pays comparés sur ce ratio, autour de 81,6 %, comme dans la capture. Ce calcul ne suffit pas à établir son rang dans toute l’UE ; il ne représente ni la part des salaires nets dans le PIB ni le pouvoir d’achat.",
+      "sourceIds": [
+        "corporations",
+        "dor"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 81.64707842126471,
+          "flag": "p",
+          "numerator": 1088100,
+          "denominator": 1332687,
+          "components": [
+            {
+              "sector": "S11",
+              "compensation": 1012411,
+              "netValueAdded": 1244350
+            },
+            {
+              "sector": "S12",
+              "compensation": 75689,
+              "netValueAdded": 88337
+            }
+          ]
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 80.15851269119534,
+          "flag": "p",
+          "numerator": 1787417,
+          "denominator": 2229853,
+          "components": [
+            {
+              "sector": "S11",
+              "compensation": 1684762,
+              "netValueAdded": 2097443
+            },
+            {
+              "sector": "S12",
+              "compensation": 102655,
+              "netValueAdded": 132410
+            }
+          ]
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 71.5103939269283,
+          "flag": "",
+          "numerator": 566707,
+          "denominator": 792482,
+          "components": [
+            {
+              "sector": "S11",
+              "compensation": 542706,
+              "netValueAdded": 722624
+            },
+            {
+              "sector": "S12",
+              "compensation": 24001,
+              "netValueAdded": 69858
+            }
+          ]
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 67.05685187040041,
+          "flag": "",
+          "numerator": 649398,
+          "denominator": 968429,
+          "components": [
+            {
+              "sector": "S11",
+              "compensation": 610299,
+              "netValueAdded": 876766
+            },
+            {
+              "sector": "S12",
+              "compensation": 39099,
+              "netValueAdded": 91663
+            }
+          ]
+        }
+      ],
+      "series": {}
+    },
+    {
+      "id": "pisa-maths",
+      "group": "education",
+      "title": "PISA · Mathématiques",
+      "period": "2025",
+      "unit": "points PISA",
+      "decimals": 0,
+      "oecdAverage": 463,
+      "definition": "Score moyen des élèves de 15 ans dans le domaine évalué. Ce ne sont ni des pourcentages de réussite ni un classement global du système éducatif.",
+      "reading": "Les petits écarts doivent être lus avec l’incertitude d’échantillonnage. Le rang affiché est calculé parmi les quatre pays de ce comparatif, pas parmi tous les participants à PISA.",
+      "sourceIds": [
+        "pisa-FR",
+        "pisa-DE",
+        "pisa-ES",
+        "pisa-IT"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 458,
+          "flag": "",
+          "panelRank": 3
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 464,
+          "flag": "",
+          "panelRank": 2
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 457,
+          "flag": "",
+          "panelRank": 4
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 468,
+          "flag": "",
+          "panelRank": 1
+        }
+      ],
+      "series": {
+        "FR": [
+          {
+            "period": "2022",
+            "value": 474,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 458,
+            "flag": ""
+          }
+        ],
+        "DE": [
+          {
+            "period": "2022",
+            "value": 475,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 464,
+            "flag": ""
+          }
+        ],
+        "ES": [
+          {
+            "period": "2022",
+            "value": 473,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 457,
+            "flag": ""
+          }
+        ],
+        "IT": [
+          {
+            "period": "2022",
+            "value": 471,
+            "flag": ""
+          },
+          {
+            "period": "2025",
+            "value": 468,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "pisa-reading",
+      "group": "education",
+      "title": "PISA · Compréhension de l’écrit",
+      "period": "2025",
+      "unit": "points PISA",
+      "decimals": 0,
+      "oecdAverage": 461,
+      "definition": "Score moyen des élèves de 15 ans dans le domaine évalué. Ce ne sont ni des pourcentages de réussite ni un classement global du système éducatif.",
+      "reading": "Les petits écarts doivent être lus avec l’incertitude d’échantillonnage. Le rang affiché est calculé parmi les quatre pays de ce comparatif, pas parmi tous les participants à PISA.",
+      "sourceIds": [
+        "pisa-FR",
+        "pisa-DE",
+        "pisa-ES",
+        "pisa-IT"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 456,
+          "flag": "",
+          "panelRank": 3
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 465,
+          "flag": "",
+          "panelRank": 2
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 451,
+          "flag": "",
+          "panelRank": 4
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 474,
+          "flag": "",
+          "panelRank": 1
+        }
+      ],
+      "series": {}
+    },
+    {
+      "id": "pisa-science",
+      "group": "education",
+      "title": "PISA · Sciences",
+      "period": "2025",
+      "unit": "points PISA",
+      "decimals": 0,
+      "oecdAverage": 482,
+      "definition": "Score moyen des élèves de 15 ans dans le domaine évalué. Ce ne sont ni des pourcentages de réussite ni un classement global du système éducatif.",
+      "reading": "Les petits écarts doivent être lus avec l’incertitude d’échantillonnage. Le rang affiché est calculé parmi les quatre pays de ce comparatif, pas parmi tous les participants à PISA.",
+      "sourceIds": [
+        "pisa-FR",
+        "pisa-DE",
+        "pisa-ES",
+        "pisa-IT"
+      ],
+      "observations": [
+        {
+          "country": "FR",
+          "period": "2025",
+          "value": 483,
+          "flag": "",
+          "panelRank": 2
+        },
+        {
+          "country": "DE",
+          "period": "2025",
+          "value": 486,
+          "flag": "",
+          "panelRank": 1
+        },
+        {
+          "country": "ES",
+          "period": "2025",
+          "value": 477,
+          "flag": "",
+          "panelRank": 4
+        },
+        {
+          "country": "IT",
+          "period": "2025",
+          "value": 483,
+          "flag": "",
+          "panelRank": 2
+        }
+      ],
+      "series": {}
+    }
+  ],
+  "franceNotes": {
+    "unemployment": {
+      "value": 8.3,
+      "period": "2026-Q2",
+      "sourceId": "insee-unemployment"
+    },
+    "activity": {
+      "value": 75.4,
+      "period": "2026-Q2",
+      "sourceId": "insee-unemployment"
+    }
+  }
+}

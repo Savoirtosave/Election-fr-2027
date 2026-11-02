@@ -1,0 +1,1384 @@
+{
+  "reviewedAt": "2026-11-02",
+  "topics": {
+    "nato": "OTAN et alliances militaires",
+    "ukraine": "Aide à l’Ukraine",
+    "russia": "Relations avec la Russie",
+    "china": "Chine et Indo-Pacifique",
+    "middleEast": "Israël / Palestine",
+    "doctrine": "Europe et doctrine diplomatique"
+  },
+  "sources": {
+    "base-lfi": {
+      "title": "L’Avenir en commun — présentation officielle du programme",
+      "url": "https://melenchon2027.fr/programme/decouvrir/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-pcf": {
+      "title": "PCF — orientations et dossiers politiques",
+      "url": "https://www.pcf.fr/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-ps": {
+      "title": "PS — déclaration de valeurs",
+      "url": "https://parti-socialiste.fr/nos-valeurs/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-ecologistes": {
+      "title": "Les Écologistes — programme 2027",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-place-publique": {
+      "title": "Place publique — vision pour la France, Acte I",
+      "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-renaissance": {
+      "title": "Renaissance — Une nouvelle donne économique et sociale",
+      "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-modem": {
+      "title": "MoDem — Qui sommes-nous ?",
+      "url": "https://www.mouvementdemocrate.fr/qui-sommes-nous-7915",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-horizons": {
+      "title": "Horizons — le manifeste",
+      "url": "https://horizonsleparti.fr/le-manifeste/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-lr": {
+      "title": "LR — propositions et notes thématiques",
+      "url": "https://republicains.fr/nos-propositions/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-rn": {
+      "title": "RN — programme législatif de juin 2024",
+      "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-udr": {
+      "title": "UDR — présentation et orientations",
+      "url": "https://www.udr.fr/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-udi": {
+      "title": "UDI — les grands thèmes du projet",
+      "url": "https://parti-udi.fr/nos-idees",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-prg": {
+      "title": "PRG — Réinventer la République, 150 propositions (2026)",
+      "url": "https://www.partiradicaldegauche.fr/nos-150-propositions/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-parti-radical": {
+      "title": "Parti radical — fondamentaux",
+      "url": "https://parti-radical.fr/nos-fondamentaux/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-reconquete": {
+      "title": "Reconquête — présentation et plateforme de travail programmatique",
+      "url": "https://www.parti-reconquete.fr/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-dlf": {
+      "title": "DLF — projet et rubriques actualisées pour 2027",
+      "url": "https://www.debout-la-france.fr/notre-projet/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-upr": {
+      "title": "UPR — fondamentaux",
+      "url": "https://upr.fr/nos-fondamentaux",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-lo": {
+      "title": "RTL — portrait et orientation de Nathalie Arthaud, 9 décembre 2025",
+      "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Article journalistique"
+    },
+    "base-npa-a": {
+      "title": "NPA-A — principes fondateurs",
+      "url": "https://npa-lanticapitaliste.org/principes-fondateurs",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-npa-r": {
+      "title": "NPA-R — actualités, textes et candidature",
+      "url": "https://npa-revolutionnaires.org/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-generation-ecologie": {
+      "title": "Génération écologie — Notre projet",
+      "url": "https://www.generationecologie.fr/a-propos/generation-ecologie/notre-projet/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-nouvelle-energie": {
+      "title": "Nouvelle Énergie — programme de David Lisnard",
+      "url": "https://www.unenouvelleenergie.fr/notre-programme/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-debout": {
+      "title": "Debout ! — manifeste",
+      "url": "https://debout.fr/notre-manifeste/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-parti-animaliste": {
+      "title": "Parti animaliste — programmes national 2022 et européen 2024",
+      "url": "https://parti-animaliste.fr/programme",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "base-revolution-permanente": {
+      "title": "Révolution permanente — textes et positions",
+      "url": "https://www.revolutionpermanente.fr/",
+      "date": "consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "annonce-nathalie-arthaud": {
+      "title": "RTL, 9 décembre 2025 — Présidentielle 2027 : qui est vraiment Nathalie Arthaud, la porte-parole de Lutte ouvrière ?",
+      "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-francois-asselineau": {
+      "title": "20 Minutes, 19 mai 2026 — Présidentielle 2027: Candidat à l'élection, François Asselineau bientôt jugé pour agression et harcèlement sexuels",
+      "url": "https://www.20minutes.fr/justice/4224280-20260519-candidat-presidentielle-2027-francois-asselineau-bientot-juge-agressions-harcelement-sexuels",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-gabriel-attal": {
+      "title": "RTL, 22 mai 2026 — Présidentielle 2027 : Gabriel Attal officialise sa candidature à l'élection",
+      "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-gabriel-attal-officialise-sa-candidature-a-l-election-presidentielle-7900637844",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-delphine-batho": {
+      "title": "Le HuffPost avec AFP, 26 novembre 2025 — Delphine Batho se porte candidate et critique la primaire",
+      "url": "https://www.huffingtonpost.fr/politique/article/delphine-batho-deputee-ecolo-se-porte-candidate-a-la-presidentielle-et-fustige-la-primaire_257544.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-olivier-becht": {
+      "title": "Le JDD, consulté le 2 novembre 2026 — Présidentielle 2027 : l'ancien ministre Olivier Becht annonce sa candidature",
+      "url": "https://www.lejdd.fr/politique/quand-on-na-aucune-chance-il-faut-la-saisir-lancien-ministre-olivier-becht-annonce-sa-candidature-a-la-presidentielle-184281",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-xavier-bertrand": {
+      "title": "La Dépêche du Midi, 3 février 2024 — Xavier Bertrand déclare avoir bien l’intention d’être candidat",
+      "url": "https://www.ladepeche.fr/2024/02/03/presidentielle-2027-xavier-bertrand-le-president-lr-des-hauts-de-france-declare-avoir-bien-lintention-detre-candidat-11742325.php",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-karim-bouamrane": {
+      "title": "Le Figaro, 9 juin 2026 — Présidentielle 2027 : «Je suis candidat», annonce le maire socialiste de Saint-Ouen Karim Bouamrane",
+      "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-bernard-cazeneuve": {
+      "title": "Le Figaro, entretien du 28 avril 2026, mis à jour le 29 — Bernard Cazeneuve : « Je suis prêt à être candidat en 2027 » (extrait accessible)",
+      "url": "https://www.lefigaro.fr/politique/bernard-cazeneuve-au-figaro-je-suis-pret-a-etre-candidat-en-2027-20260428",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-nicolas-dupont-aignan": {
+      "title": "franceinfo, 8 mars 2025 — Présidentielle 2027 : le souverainiste Nicolas Dupont-Aignan se lance pour la 4e fois dans la course à l'Elysée – franceinfo",
+      "url": "https://www.francetvinfo.fr/politique/nicolas-dupont-aignan/le-souverainiste-nicolas-dupont-aignan-se-lance-pour-la-4e-fois-dans-la-course-a-l-elysee_7118136.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-sylvain-durif": {
+      "title": "Le Figaro, 25 août 2026 — «Grand monarque» et doux cinglé complotiste : Sylvain Durif annonce sa candidature à la présidentielle 2027",
+      "url": "https://www.lefigaro.fr/politique/grand-monarque-et-doux-cingle-complotiste-sylvain-durif-annonce-sa-candidature-a-la-presidentielle-2027-20260825",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-clara-egger": {
+      "title": "Le Dauphiné libéré, 21 mai 2026 — Politique. L'Ardéchoise Clara Egger est candidate à l’élection présidentielle pour « rétablir un équilibre démocratique »",
+      "url": "https://www.ledauphine.com/politique/2026/05/21/l-ardechoise-clara-egger-est-candidate-a-l-election-presidentielle-pour-retablir-un-equilibre-democratique",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-raphael-glucksmann": {
+      "title": "Le HuffPost, 23 août 2026 — Présidentielle 2027 : Raphaël Glucksmann annonce sa candidature, via la primaire du Parti socialiste",
+      "url": "https://www.huffingtonpost.fr/politique/article/presidentielle-2027-raphael-glucksmann-annonce-sa-candidature-via-la-primaire-du-parti-socialiste_308981.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-anasse-kazib": {
+      "title": "franceinfo, 1er juin 2026 — Le cheminot Anasse Kazib annonce sa candidature à la présidentielle 2027 – franceinfo",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-selma-labib": {
+      "title": "BFMTV, 17 juin 2026 — Présidentielle 2027: le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+      "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-francis-lalanne": {
+      "title": "franceinfo, 19 août 2026 — Présidentielle 2027 : le chanteur Francis Lalanne annonce être candidat, premier meeting vendredi à Paris – franceinfo",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-chanteur-francis-lalanne-officiellement-candidat-premier-meeting-vendredi-a-paris_8153588.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-marine-le-pen": {
+      "title": "Euronews, 7 juillet 2026 — \"Je suis candidate à l'élection présidentielle\", annonce Marine Le Pen sur TF1 | Euronews",
+      "url": "https://fr.euronews.com/my-europe/2026/07/07/je-suis-candidate-a-lelection-presidentielle-annonce-marine-le-pen-sur-tf1",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-david-lisnard": {
+      "title": "franceinfo, 31 mars 2026 — Le maire de Cannes, David Lisnard, annonce sa candidature à l'élection présidentielle et officialise son départ des Républicains – franceinfo",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-mira-markovic": {
+      "title": "Le Point, 3 octobre 2026 — Mira Markovic : qui est la candidate du Parti animaliste à la présidentielle 2027 ?",
+      "url": "https://www.lepoint.fr/politique/mira-douchka-markovic-qui-est-la-candidate-du-parti-animaliste-a-la-presidentielle-2027-ISVTAH26T5FENCCMCZ5AEONBVU/",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-benoit-mathieu": {
+      "title": "RMC, 3 mai 2026 — Présidentielle 2027: à 27 ans, il sillonne la France à vélo en quête des 500 parrainages",
+      "url": "https://rmc.bfmtv.com/actualites/politique/presidentielle-2027-a-27-ans-il-sillonne-la-france-a-velo-en-quete-des-500-parrainages_AV-202605030128.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-jean-luc-melenchon": {
+      "title": "Le HuffPost, 3 mai 2026 — Jean-Luc Mélenchon officiellement candidat à la présidentielle 2027, sa quatrième tentative",
+      "url": "https://www.huffingtonpost.fr/politique/article/jean-luc-melenchon-officiellement-candidat-a-la-presidentielle-2027-sa-quatrieme-tentative_263337.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-antoine-mikolajczak": {
+      "title": "Équinoxe — Présentation officielle : sobriété, long terme et candidature d’Antoine Mikolajczak (consulté le 2 novembre 2026)",
+      "url": "https://parti-equinoxe.fr/",
+      "date": "source de l’annonce de candidature",
+      "scope": "Site du mouvement"
+    },
+    "annonce-manolo-mlekuz": {
+      "title": "RMC, 3 juillet 2026 — \"Si j'arrive à l'Elysée...\": ce candidat pour 2027, âgé de 20 ans, veut être un président \"sans pouvoir\"",
+      "url": "https://rmc.bfmtv.com/actualites/politique/si-j-arrive-a-l-elysee-ce-candidat-pour-2027-age-de-20-ans-veut-etre-un-president-sans-pouvoir_AV-202607030571.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-edouard-philippe": {
+      "title": "Le Point, 3 septembre 2024 — EXCLUSIF. Édouard Philippe : « Je serai candidat à la prochaine élection présidentielle »",
+      "url": "https://www.lepoint.fr/politique/exclusif-edouard-philippe-je-serai-candidat-a-la-prochaine-election-presidentielle-03-09-2024-2569359_20.php",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-florian-philippot": {
+      "title": "franceinfo, 9 mai 2026 — Le souverainiste Florian Philippot annonce sa candidature à l'élection présidentielle de 2027 – franceinfo",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-gilles-platret": {
+      "title": "BFMTV, 9 octobre 2026 — Présidentielle 2027: le maire divers droite de Chalon-sur-Saône Gilles Platret annonce sa candidature",
+      "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-maire-divers-droite-de-chalon-sur-saone-gilles-platret-annonce-sa-candidature_AN-202610090630.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-natacha-polony": {
+      "title": "Le Figaro, 14 octobre 2026 — Présidentielle 2027 : «Je suis candidate», annonce la journaliste Natacha Polony",
+      "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-je-suis-candidate-annonce-la-journaliste-natacha-polony-20261014",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-bruno-retailleau": {
+      "title": "franceinfo, 19 avril 2026 — Présidentielle 2027 : Bruno Retailleau largement désigné candidat par les adhérents du parti Les Républicains – franceinfo",
+      "url": "https://www.franceinfo.fr/politique/les-republicains/presidentielle-2027-bruno-retailleau-largement-designe-candidat-par-les-adherents-du-parti-les-republicains_7949957.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-fabien-roussel": {
+      "title": "Le Figaro, 6 septembre 2026 — Présidentielle 2027 : adoubé par ses militants, le communiste Fabien Roussel officialise sa candidature en solitaire",
+      "url": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-adoube-par-ses-militants-le-communiste-fabien-roussel-officialise-sa-candidature-en-solitaire-20260906",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-francois-ruffin": {
+      "title": "Le HuffPost, 2 avril 2025 — Présidentielle 2027 : François Ruffin lance sa campagne avec un meeting contre « les trop mous et les trop fous »",
+      "url": "https://www.huffingtonpost.fr/politique/article/presidentielle-2027-francois-ruffin-lance-sa-campagne-avec-un-meeting-contre-les-trop-mous-et-les-trop-fous_248275.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-marine-tondelier": {
+      "title": "franceinfo, 22 octobre 2025 — La patronne des Ecologistes, Marine Tondelier, se déclare candidate à l'élection présidentielle de 2027 – franceinfo",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "annonce-eric-zemmour": {
+      "title": "BFMTV, 17 septembre 2026 — \"Je serai candidat\": Éric Zemmour annonce sur BFMTV qu'il se présentera à l'élection présidentielle",
+      "url": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html",
+      "date": "source de l’annonce de candidature",
+      "scope": "Article de presse"
+    },
+    "nfp-2024": {
+      "title": "Nouveau Front populaire — contrat de législature, volet international (p. 7–8)",
+      "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+      "date": "juin 2024",
+      "scope": "Programme de coalition de 2024, pas programme présidentiel 2027"
+    },
+    "lfi-nato": {
+      "title": "LFI — proposition de sortie de l’OTAN",
+      "url": "https://lafranceinsoumise.fr/2026/01/19/le-groupe-parlementaire-de-la-france-insoumise-propose-de-sortir-de-lotan/",
+      "date": "19 janvier 2026",
+      "scope": "Texte de la formation"
+    },
+    "lfi-palestine": {
+      "title": "LFI — suspension de l’accord d’association UE–Israël",
+      "url": "https://lafranceinsoumise.fr/2026/01/13/pour-la-suspension-de-laccord-dassociation-ue-israel-et-la-fin-de-la-complicite-de-leurope-dans-le-genocide-en-palestine/",
+      "date": "13 janvier 2026",
+      "scope": "Texte de la formation"
+    },
+    "pcf-palestine": {
+      "title": "PCF — reconnaissance de l’État de Palestine",
+      "url": "https://www.pcf.fr/petition_reconnaissance_palestine",
+      "date": "texte consulté le 2 novembre 2026",
+      "scope": "Texte de la formation"
+    },
+    "lr-defense": {
+      "title": "Bruno Retailleau — L’unité nationale, première de nos armes",
+      "url": "https://republicains.fr/actualites/2026/07/14/lunite-nationale-premiere-de-nos-armes/",
+      "date": "14 juillet 2026",
+      "scope": "Tribune personnelle publiée sur le site LR"
+    },
+    "dlf-defense": {
+      "title": "Debout la France — Défense nationale",
+      "url": "https://www.debout-la-france.fr/projet/defense/",
+      "date": "page actualisée le 8 octobre 2026",
+      "scope": "Texte de la formation"
+    },
+    "npar-palestine": {
+      "title": "NPA–Révolutionnaires — Flottilles et Palestine",
+      "url": "https://npa-revolutionnaires.org/articles/liberation-des-militantes-et-militants-des-flottilles-de-la-liberte-stop-au-genocide-et-a-loccupation-de-la-palestine",
+      "date": "21 mai 2026",
+      "scope": "Texte de la formation"
+    },
+    "gluck-ukraine": {
+      "title": "Le Figaro — Glucksmann et l’aide à l’Ukraine",
+      "url": "https://www.lefigaro.fr/politique/guerre-en-ukraine-il-y-a-un-decalage-entre-les-mots-et-les-actes-de-macron-denonce-glucksmann-20240426",
+      "date": "26 avril 2024",
+      "scope": "Déclaration personnelle rapportée par la presse"
+    },
+    "gluck-taiwan": {
+      "title": "Franceinfo/AFP — une délégation européenne à Taïwan",
+      "url": "https://www.francetvinfo.fr/monde/chine/l-europe-est-aux-cotes-de-taiwan-assure-une-delegation-du-parlement-europeen-a-taipei_4832473.html",
+      "date": "4 novembre 2021",
+      "scope": "Déclaration personnelle rapportée par la presse"
+    },
+    "lepen-israel": {
+      "title": "Le HuffPost — Marine Le Pen et l’action d’Israël à Gaza",
+      "url": "https://www.huffingtonpost.fr/politique/article/marine-le-pen-soutient-sans-reserve-ce-que-fait-israel-a-gaza_250113.html",
+      "date": "16 mai 2025",
+      "scope": "Déclaration personnelle rapportée par la presse"
+    },
+    "rous-change": {
+      "title": "Mediapart — Roussel met entre parenthèses la sortie de l’OTAN",
+      "url": "https://www.mediapart.fr/journal/france/110322/au-cirque-d-hiver-roussel-celebre-sa-dynamique-coco-et-cocorico",
+      "date": "11 mars 2022",
+      "scope": "Repère d’évolution de position, campagne 2022"
+    },
+    "melenchon-peace": {
+      "title": "Jean-Luc Mélenchon — La France doit négocier la paix en Ukraine",
+      "url": "https://melenchon.fr/2024/02/28/la-france-doit-negocier-la-paix-en-ukraine/",
+      "date": "28 février 2024",
+      "scope": "Compte rendu d’une déclaration personnelle sur son site"
+    },
+    "melenchon-2022": {
+      "title": "Jean-Luc Mélenchon — entretien Élysée 2022",
+      "url": "https://melenchon.fr/2022/03/24/ukraine-retraites-ecole-elysee-2022-le-replay/",
+      "date": "24 mars 2022",
+      "scope": "Repère personnel daté, campagne 2022"
+    },
+    "assemblee-3461": {
+      "title": "Assemblée nationale — scrutin n°3461 sur la déclaration relative à l’accord de sécurité franco-ukrainien",
+      "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461",
+      "date": "12 mars 2024",
+      "scope": "Scrutin nominatif sur une déclaration gouvernementale (article 50-1), pas vote de chaque mesure d’aide"
+    },
+    "rp-palestine": {
+      "title": "Révolution permanente — Gaza, trois ans de génocide",
+      "url": "https://www.revolutionpermanente.fr/Gaza-trois-ans-de-genocide",
+      "date": "9 octobre 2026",
+      "scope": "Article éditorial de l’organisation"
+    },
+    "kazib-palestine": {
+      "title": "Le Figaro — prises de position après l’attaque du 7 octobre 2023",
+      "url": "https://www.lefigaro.fr/international/le-parti-des-indigenes-adresse-au-hamas-sa-fraternite-militante-le-npa-appelle-a-l-intifada-20231009",
+      "date": "9 octobre 2023",
+      "scope": "Déclaration personnelle rapportée par la presse"
+    }
+  },
+  "parties": {
+    "lfi": {
+      "positions": {
+        "ukraine": {
+          "summary": "Aide à la souveraineté et à la défense ukrainiennes",
+          "text": "Le contrat commun du NFP de 2024 prévoit de défendre la souveraineté et les frontières ukrainiennes par la livraison d’armes nécessaires. C’est un engagement de coalition daté, pas le détail d’un programme présidentiel 2027.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "Condamnation de l’agression et sanctions",
+          "text": "Le texte de 2024 vise à faire échec à la guerre d’agression de Vladimir Poutine et propose la saisie d’avoirs d’oligarques contribuant à l’effort de guerre russe. La position personnelle de chaque candidat est traitée séparément.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "middleEast": {
+          "summary": "Suspendre l’accord d’association UE–Israël",
+          "text": "Le mouvement demande la suspension de l’accord d’association entre l’Union européenne et Israël et met en avant les droits des Palestiniens. Cette position de 2026 complète le contrat de coalition de 2024.",
+          "sourceIds": [
+            "lfi-palestine",
+            "nfp-2024"
+          ],
+          "status": "published"
+        },
+        "nato": {
+          "summary": "Sortir de l’OTAN, en commençant par le commandement intégré",
+          "text": "Le communiqué du groupe LFI propose de quitter l’Alliance, avec une première étape concernant le commandement intégré. Ces deux niveaux ne sont pas confondus.",
+          "sourceIds": [
+            "lfi-nato"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Une diplomatie indépendante et non alignée",
+          "text": "La sortie de l’OTAN est défendue comme une condition de l’indépendance diplomatique et militaire de la France, sans que le non-alignement signifie automatiquement une neutralité devant chaque agression.",
+          "sourceIds": [
+            "lfi-nato"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-lfi",
+        "nfp-2024",
+        "lfi-nato",
+        "lfi-palestine"
+      ]
+    },
+    "pcf": {
+      "positions": {
+        "ukraine": {
+          "summary": "Aide à la souveraineté et à la défense ukrainiennes",
+          "text": "Le contrat commun du NFP de 2024 prévoit de défendre la souveraineté et les frontières ukrainiennes par la livraison d’armes nécessaires. C’est un engagement de coalition daté, pas le détail d’un programme présidentiel 2027.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "Condamnation de l’agression et sanctions",
+          "text": "Le texte de 2024 vise à faire échec à la guerre d’agression de Vladimir Poutine et propose la saisie d’avoirs d’oligarques contribuant à l’effort de guerre russe. La position personnelle de chaque candidat est traitée séparément.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "middleEast": {
+          "summary": "Reconnaître l’État de Palestine aux côtés d’Israël",
+          "text": "La pétition du PCF demande la reconnaissance de la Palestine sur la base des frontières de 1967 et défend une solution à deux États. Le texte ne vaut pas à lui seul une doctrine détaillée sur toutes les modalités du conflit.",
+          "sourceIds": [
+            "pcf-palestine"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-pcf",
+        "nfp-2024",
+        "pcf-palestine"
+      ]
+    },
+    "ps": {
+      "positions": {
+        "ukraine": {
+          "summary": "Aide à la souveraineté et à la défense ukrainiennes",
+          "text": "Le contrat commun du NFP de 2024 prévoit de défendre la souveraineté et les frontières ukrainiennes par la livraison d’armes nécessaires. C’est un engagement de coalition daté, pas le détail d’un programme présidentiel 2027.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "Condamnation de l’agression et sanctions",
+          "text": "Le texte de 2024 vise à faire échec à la guerre d’agression de Vladimir Poutine et propose la saisie d’avoirs d’oligarques contribuant à l’effort de guerre russe. La position personnelle de chaque candidat est traitée séparément.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        },
+        "middleEast": {
+          "summary": "Deux États, cessez-le-feu et embargo sur les armes",
+          "text": "Le texte de coalition de 2024 propose la reconnaissance de l’État palestinien aux côtés d’Israël, un cessez-le-feu, la libération des otages, un embargo sur les livraisons d’armes à Israël et le soutien aux procédures de la CPI. Il condamne les massacres terroristes du Hamas.",
+          "sourceIds": [
+            "nfp-2024"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-ps",
+        "nfp-2024"
+      ]
+    },
+    "ecologistes": {
+      "positions": {
+        "nato": {
+          "summary": "Un pilier européen capable d’agir sans les États-Unis",
+          "text": "Le programme prépare un renforcement des capacités européennes et mentionne un pilier européen de l’OTAN capable d’opérer sans le concours américain ; il ne propose pas ici une simple sortie de l’Alliance.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        },
+        "ukraine": {
+          "summary": "Renforcer l’aide militaire à l’Ukraine",
+          "text": "Le chapitre 62 prévoit de fournir du matériel militaire, y compris des moyens de défense aérienne et de frappe à longue portée, ainsi qu’un soutien humanitaire et à la reconstruction.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "Sanctions et justice internationale",
+          "text": "Le texte soutient les procédures internationales contre les responsables russes et propose de renforcer l’application des sanctions et la lutte contre leur contournement.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        },
+        "china": {
+          "summary": "Sanctionner le contournement des sanctions russes",
+          "text": "Le passage vérifié vise notamment les entreprises chinoises qui contournent les sanctions par l’achat d’hydrocarbures russes. Ce point précis ne résume pas une politique générale sur la Chine ou Taïwan.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        },
+        "middleEast": {
+          "summary": "Paix, droit international et justice pénale",
+          "text": "Le chapitre consacré au Moyen-Orient défend l’application du droit international, une politique de paix et le soutien aux poursuites de la CPI contre les responsables du conflit. Les garanties de sécurité sont envisagées pour les États de la région, y compris Israël.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Défense européenne et diplomatie de la paix",
+          "text": "Le texte de préparation à 2027 articule une défense européenne plus autonome, le soutien aux pays agressés et une diplomatie fondée sur les droits humains.",
+          "sourceIds": [
+            "base-ecologistes"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-ecologistes"
+      ]
+    },
+    "place-publique": {
+      "positions": {
+        "ukraine": {
+          "summary": "Augmenter fortement l’aide militaire",
+          "text": "L’acte 1 du projet demande une augmentation de l’aide militaire à l’Ukraine, présentée comme une première ligne de défense des démocraties européennes.",
+          "sourceIds": [
+            "base-place-publique"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "Résister aux menaces du pouvoir russe",
+          "text": "Le projet relie la défense européenne à la guerre en Ukraine et aux ingérences et menaces hybrides attribuées au pouvoir russe. Il ne s’agit pas d’une hostilité de principe envers toute la population russe.",
+          "sourceIds": [
+            "base-place-publique"
+          ],
+          "status": "published"
+        },
+        "china": {
+          "summary": "Réduire les dépendances technologiques",
+          "text": "Le texte traite notamment de la dépendance européenne face aux puissances américaine et chinoise dans le numérique et l’IA. Cette souveraineté technologique ne permet pas d’inférer une doctrine militaire complète sur Taïwan.",
+          "sourceIds": [
+            "base-place-publique"
+          ],
+          "status": "published"
+        },
+        "middleEast": {
+          "summary": "Reconnaître un État palestinien aux côtés d’Israël",
+          "text": "Le projet propose explicitement la reconnaissance de l’État palestinien aux côtés d’Israël, dans son volet de défense des droits et de la paix.",
+          "sourceIds": [
+            "base-place-publique"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Une Europe capable de se défendre",
+          "text": "Le projet fait de l’autonomie stratégique et des capacités européennes des leviers de sécurité, d’indépendance et de soutien aux partenaires européens.",
+          "sourceIds": [
+            "base-place-publique"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-place-publique"
+      ]
+    },
+    "renaissance": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-renaissance"
+      ]
+    },
+    "modem": {
+      "positions": {
+        "doctrine": {
+          "summary": "Construction européenne et coopération",
+          "text": "Le texte de présentation inscrit le mouvement dans l’héritage de la construction européenne. Il ne fixe pas à lui seul des positions opérationnelles sur les cinq dossiers stratégiques détaillés ici.",
+          "sourceIds": [
+            "base-modem"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-modem"
+      ]
+    },
+    "horizons": {
+      "positions": {
+        "doctrine": {
+          "summary": "Souveraineté française et destin européen",
+          "text": "Le manifeste articule la souveraineté de la France à un destin collectif européen et au principe de subsidiarité. Il ne permet pas de déduire toutes les modalités de la politique militaire ou des sanctions.",
+          "sourceIds": [
+            "base-horizons"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-horizons"
+      ]
+    },
+    "lr": {
+      "positions": {
+        "nato": {
+          "summary": "Rester dans l’OTAN et renforcer sa dimension européenne",
+          "text": "La tribune rejette une sortie de l’OTAN et défend son européanisation ainsi que des alliances bilatérales de défense entre partenaires européens, y compris le Royaume-Uni.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "ukraine": {
+          "summary": "Soutien à la résistance ukrainienne",
+          "text": "Le texte rend hommage à la résistance ukrainienne face à l’agression russe. Il ne chiffre pas, à lui seul, un futur volume d’aide militaire française.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "La Russie décrite comme puissance d’agression",
+          "text": "La tribune oppose la nation ukrainienne à l’agression et à l’ingérence russes et appelle à une architecture européenne de sécurité plus autonome.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Dissuasion indépendante et capacités européennes",
+          "text": "Maintien de la dissuasion nucléaire nationale, renforcement des forces conventionnelles, munitions, innovation et partenariats industriels européens : les axes proposés dans la tribune du président de LR.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-lr",
+        "lr-defense"
+      ]
+    },
+    "rn": {
+      "positions": {
+        "doctrine": {
+          "summary": "Souveraineté de la défense et de la dissuasion",
+          "text": "Le programme législatif de 2024 insiste sur le renforcement de l’outil militaire et sur la souveraineté française en matière de dissuasion. Il ne permet pas, à lui seul, d’attribuer une décision de sortie de l’OTAN ou un montant d’aide à l’Ukraine.",
+          "sourceIds": [
+            "base-rn"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "La guerre en Ukraine comme menace pour la sécurité",
+          "text": "Le document de 2024 cite la guerre en Ukraine comme une illustration du retour des politiques de puissance. Il n’établit pas dans le passage retenu une doctrine exhaustive sur les sanctions ou les relations avec Moscou.",
+          "sourceIds": [
+            "base-rn"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-rn"
+      ]
+    },
+    "udr": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-udr"
+      ]
+    },
+    "udi": {
+      "positions": {
+        "doctrine": {
+          "summary": "Une Europe politique et souveraine",
+          "text": "La page « Nos idées » revendique une France forte dans une Europe politique et souveraine, et une voix française dans un monde multipolaire. Les dispositifs précis restent à documenter.",
+          "sourceIds": [
+            "base-udi"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-udi"
+      ]
+    },
+    "prg": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-prg"
+      ]
+    },
+    "parti-radical": {
+      "positions": {
+        "doctrine": {
+          "summary": "Europe et solidarité internationale",
+          "text": "Les fondamentaux défendent la construction européenne, l’aide au développement et la dignité des réfugiés, dans le prolongement du solidarisme.",
+          "sourceIds": [
+            "base-parti-radical"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-parti-radical"
+      ]
+    },
+    "reconquete": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-reconquete"
+      ]
+    },
+    "dlf": {
+      "positions": {
+        "nato": {
+          "summary": "Quitter le commandement intégré",
+          "text": "Le projet propose de quitter le commandement intégré de l’OTAN pour recouvrer une indépendance militaire et stratégique. Ce n’est pas une proposition identique à la sortie complète de l’Alliance.",
+          "sourceIds": [
+            "dlf-defense"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "Une appréciation distincte de la menace russe",
+          "text": "Le texte de défense affirme que la Russie n’aurait pas l’intention d’agresser l’Europe de l’Ouest, en invoquant notamment la dissuasion nucléaire. Il s’agit de l’analyse du parti, pas d’un fait établi par cette fiche.",
+          "sourceIds": [
+            "dlf-defense"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Indépendance stratégique et dissuasion nationale",
+          "text": "Dissuasion, défense maritime, outre-mer, cyber et espace structurent le projet. Le texte décrit un monde multipolaire dans lequel l’Occident ne peut imposer seul ses choix.",
+          "sourceIds": [
+            "dlf-defense"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-dlf",
+        "dlf-defense"
+      ]
+    },
+    "upr": {
+      "positions": {
+        "nato": {
+          "summary": "Sortir de l’OTAN",
+          "text": "La « triple libération » des fondamentaux associe la sortie de l’Union européenne, de l’euro et de l’OTAN. Il s’agit d’une sortie de l’Alliance, pas seulement de son commandement intégré.",
+          "sourceIds": [
+            "base-upr"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Retrouver l’indépendance de décision nationale",
+          "text": "Les fondamentaux défendent le maintien de l’arme nucléaire et du siège français permanent au Conseil de sécurité de l’ONU, en liant la souveraineté à la triple sortie.",
+          "sourceIds": [
+            "base-upr"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-upr"
+      ]
+    },
+    "lo": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-lo"
+      ]
+    },
+    "npa-a": {
+      "positions": {
+        "nato": {
+          "summary": "Rompre avec l’OTAN et les institutions impérialistes",
+          "text": "Les principes fondateurs placent l’OTAN parmi les institutions internationales avec lesquelles le mouvement entend rompre. Ce texte doctrinal ne vaut pas plan diplomatique chiffré de 2027.",
+          "sourceIds": [
+            "base-npa-a"
+          ],
+          "status": "dated"
+        },
+        "china": {
+          "summary": "Critique des dictatures se réclamant du socialisme",
+          "text": "Les principes fondateurs critiquent notamment le régime chinois comme une dictature bureaucratique reproduisant des mécanismes d’exploitation. Cette position doctrinale ne décrit pas à elle seule une politique commerciale ou militaire.",
+          "sourceIds": [
+            "base-npa-a"
+          ],
+          "status": "dated"
+        },
+        "doctrine": {
+          "summary": "Internationalisme anticapitaliste",
+          "text": "Le texte articule l’émancipation des peuples à une rupture avec les institutions et les rapports de domination qualifiés d’impérialistes.",
+          "sourceIds": [
+            "base-npa-a"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-npa-a"
+      ]
+    },
+    "npa-r": {
+      "positions": {
+        "middleEast": {
+          "summary": "Mobilisation pour les Palestiniens et contre l’occupation",
+          "text": "Le communiqué réclame la libération des militants des flottilles et la fin de l’occupation et de la colonisation. Il qualifie les actes à Gaza de génocide ; la formulation est celle de l’organisation.",
+          "sourceIds": [
+            "npar-palestine"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-npa-r",
+        "npar-palestine"
+      ]
+    },
+    "generation-ecologie": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-generation-ecologie"
+      ]
+    },
+    "nouvelle-energie": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "base-nouvelle-energie"
+      ]
+    },
+    "debout": {
+      "positions": {
+        "nato": {
+          "summary": "Une voix française hors de la logique de l’OTAN",
+          "text": "Le manifeste défend une voix indépendante de la France, en dehors d’une logique de bloc occidental et de l’OTAN. Le texte ne détaille pas ici le calendrier institutionnel d’une sortie.",
+          "sourceIds": [
+            "base-debout"
+          ],
+          "status": "published"
+        },
+        "ukraine": {
+          "summary": "Condamner l’invasion et défendre une diplomatie de paix",
+          "text": "Le manifeste condamne l’invasion russe en Ukraine et défend le rôle de l’ONU. Il ne fournit pas à lui seul un barème d’aide militaire.",
+          "sourceIds": [
+            "base-debout"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "Condamner l’invasion russe",
+          "text": "La condamnation explicite de l’invasion est articulée à une exigence de cohérence de la politique française face aux violations du droit international.",
+          "sourceIds": [
+            "base-debout"
+          ],
+          "status": "published"
+        },
+        "middleEast": {
+          "summary": "Sanctions cohérentes et droits des Palestiniens",
+          "text": "Le manifeste condamne les actes du gouvernement israélien à Gaza, qu’il qualifie de génocide, ainsi que la colonisation en Cisjordanie, et réclame une cohérence des sanctions.",
+          "sourceIds": [
+            "base-debout"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "ONU et coopération entre les peuples",
+          "text": "Le manifeste présente l’ONU comme le cadre légitime de règlement des conflits et défend une coopération sociale entre les nations.",
+          "sourceIds": [
+            "base-debout"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-debout"
+      ]
+    },
+    "parti-animaliste": {
+      "positions": {
+        "doctrine": {
+          "summary": "Coopération internationale pour les animaux",
+          "text": "Le programme européen de 2024 développe la coopération pour protéger les animaux et lutter contre les trafics. Cette priorité ne vaut pas prise de position sur l’OTAN ou les conflits armés.",
+          "sourceIds": [
+            "base-parti-animaliste"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-parti-animaliste"
+      ]
+    },
+    "revolution-permanente": {
+      "positions": {
+        "middleEast": {
+          "summary": "Mobilisation pour la Palestine et contre les opérations israéliennes",
+          "text": "L’article éditorial de l’organisation dénonce les opérations israéliennes à Gaza, qu’il qualifie de génocide, et appelle à poursuivre la mobilisation pour les Palestiniens. Cette qualification est attribuée au texte cité ; elle ne constitue pas ici une décision de justice.",
+          "sourceIds": [
+            "rp-palestine"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "base-revolution-permanente",
+        "rp-palestine"
+      ]
+    }
+  },
+  "candidates": {
+    "nathalie-arthaud": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-nathalie-arthaud"
+      ]
+    },
+    "francois-asselineau": {
+      "positions": {
+        "nato": {
+          "summary": "Sortie de l’OTAN",
+          "text": "La source de candidature rappelle son projet de sortie de l’Union européenne, de l’euro et de l’OTAN. Les autres volets diplomatiques ne sont pas déduits de cette priorité.",
+          "sourceIds": [
+            "annonce-francois-asselineau"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-francois-asselineau"
+      ]
+    },
+    "gabriel-attal": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-gabriel-attal"
+      ]
+    },
+    "delphine-batho": {
+      "positions": {
+        "ukraine": {
+          "summary": "Vote pour sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre un vote pour sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-delphine-batho",
+        "assemblee-3461"
+      ]
+    },
+    "olivier-becht": {
+      "positions": {
+        "ukraine": {
+          "summary": "Vote pour sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre un vote pour sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-olivier-becht",
+        "assemblee-3461"
+      ]
+    },
+    "xavier-bertrand": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-xavier-bertrand"
+      ]
+    },
+    "karim-bouamrane": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-karim-bouamrane"
+      ]
+    },
+    "bernard-cazeneuve": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-bernard-cazeneuve"
+      ]
+    },
+    "nicolas-dupont-aignan": {
+      "positions": {
+        "ukraine": {
+          "summary": "Vote contre sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre un vote contre sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-nicolas-dupont-aignan",
+        "assemblee-3461"
+      ]
+    },
+    "sylvain-durif": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-sylvain-durif"
+      ]
+    },
+    "clara-egger": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-clara-egger"
+      ]
+    },
+    "raphael-glucksmann": {
+      "positions": {
+        "ukraine": {
+          "summary": "Accroître l’aide et financer une défense européenne",
+          "text": "Il défend en 2024 davantage d’aide à l’Ukraine et un emprunt commun européen de 100 milliards d’euros pour la défense. Ce montant daté ne doit pas être présenté comme un nouveau chiffrage de 2027.",
+          "sourceIds": [
+            "gluck-ukraine"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "Faire échec à l’agression russe",
+          "text": "L’entretien présente la résistance ukrainienne comme une condition de la sécurité européenne et critique l’insuffisance des actes français face à l’agression russe.",
+          "sourceIds": [
+            "gluck-ukraine"
+          ],
+          "status": "dated"
+        },
+        "china": {
+          "summary": "Un signal de soutien à Taïwan",
+          "text": "Lors d’une visite parlementaire en 2021, il affirme que l’Europe est aux côtés de Taïwan. Ce repère daté ne suffit pas à décrire une position présidentielle complète sur les relations avec Pékin.",
+          "sourceIds": [
+            "gluck-taiwan"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-raphael-glucksmann",
+        "gluck-ukraine",
+        "gluck-taiwan"
+      ]
+    },
+    "anasse-kazib": {
+      "positions": {
+        "middleEast": {
+          "summary": "Soutien au peuple palestinien exprimé en octobre 2023",
+          "text": "L’article rapporte qu’après l’attaque du Hamas du 7 octobre 2023, il relaie des images du franchissement de la frontière et publie un message de soutien au peuple palestinien et de condamnation de l’État israélien. Ce repère polémique daté ne fournit pas un projet diplomatique détaillé sur les frontières ou la reconnaissance des États.",
+          "sourceIds": [
+            "kazib-palestine"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-anasse-kazib",
+        "kazib-palestine"
+      ]
+    },
+    "selma-labib": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-selma-labib"
+      ]
+    },
+    "francis-lalanne": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-francis-lalanne"
+      ]
+    },
+    "marine-le-pen": {
+      "positions": {
+        "middleEast": {
+          "summary": "Soutien à la stratégie israélienne déclaré en 2025",
+          "text": "Le HuffPost rapporte son soutien à l’action d’Israël à Gaza lors d’un entretien à i24NEWS. La fiche conserve la date de cette déclaration et n’en déduit pas une doctrine complète sur la reconnaissance d’un État palestinien.",
+          "sourceIds": [
+            "lepen-israel"
+          ],
+          "status": "dated"
+        },
+        "ukraine": {
+          "summary": "Abstention sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre une abstention sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-marine-le-pen",
+        "lepen-israel",
+        "assemblee-3461"
+      ]
+    },
+    "david-lisnard": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-david-lisnard"
+      ]
+    },
+    "mira-markovic": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-mira-markovic"
+      ]
+    },
+    "benoit-mathieu": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-benoit-mathieu"
+      ]
+    },
+    "jean-luc-melenchon": {
+      "positions": {
+        "ukraine": {
+          "summary": "Négocier la paix et refuser l’envoi de troupes",
+          "text": "Le compte rendu de son entretien à TF1 refuse le possible envoi de troupes françaises et appelle à une négociation de paix. L’aide matérielle, les sanctions et l’envoi de soldats sont des choix distincts.",
+          "sourceIds": [
+            "melenchon-peace"
+          ],
+          "status": "dated"
+        },
+        "russia": {
+          "summary": "Condamnation de l’agression russe, non-alignement",
+          "text": "Le compte rendu de l’entretien de 2022 qualifie l’agression de Vladimir Poutine d’inacceptable et distingue non-alignement et neutralité. La formulation est conservée avec sa date.",
+          "sourceIds": [
+            "melenchon-2022"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-jean-luc-melenchon",
+        "melenchon-peace",
+        "melenchon-2022"
+      ]
+    },
+    "antoine-mikolajczak": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-antoine-mikolajczak"
+      ]
+    },
+    "manolo-mlekuz": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-manolo-mlekuz"
+      ]
+    },
+    "edouard-philippe": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-edouard-philippe"
+      ]
+    },
+    "florian-philippot": {
+      "positions": {
+        "nato": {
+          "summary": "Sortie de l’OTAN",
+          "text": "L’annonce de candidature rapportée par Franceinfo met en avant la sortie de l’Union européenne et de l’OTAN. Elle ne précise pas à elle seule l’ensemble des arbitrages militaires.",
+          "sourceIds": [
+            "annonce-florian-philippot"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-florian-philippot"
+      ]
+    },
+    "gilles-platret": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-gilles-platret"
+      ]
+    },
+    "natacha-polony": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-natacha-polony"
+      ]
+    },
+    "bruno-retailleau": {
+      "positions": {
+        "nato": {
+          "summary": "Rester dans l’OTAN et renforcer sa dimension européenne",
+          "text": "La tribune rejette une sortie de l’OTAN et défend son européanisation ainsi que des alliances bilatérales de défense entre partenaires européens, y compris le Royaume-Uni.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "ukraine": {
+          "summary": "Soutien à la résistance ukrainienne",
+          "text": "Le texte rend hommage à la résistance ukrainienne face à l’agression russe. Il ne chiffre pas, à lui seul, un futur volume d’aide militaire française.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "russia": {
+          "summary": "La Russie décrite comme puissance d’agression",
+          "text": "La tribune oppose la nation ukrainienne à l’agression et à l’ingérence russes et appelle à une architecture européenne de sécurité plus autonome.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        },
+        "doctrine": {
+          "summary": "Dissuasion indépendante et capacités européennes",
+          "text": "Maintien de la dissuasion nucléaire nationale, renforcement des forces conventionnelles, munitions, innovation et partenariats industriels européens : les axes proposés dans la tribune du président de LR.",
+          "sourceIds": [
+            "lr-defense"
+          ],
+          "status": "published"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-bruno-retailleau",
+        "lr-defense"
+      ]
+    },
+    "fabien-roussel": {
+      "positions": {
+        "nato": {
+          "summary": "Une position qui a évolué en 2022",
+          "text": "Après avoir défendu une sortie du commandement intégré, il met entre parenthèses ses velléités de sortie de l’OTAN lors de la campagne de 2022, selon Mediapart. Ce repère n’est pas transformé en engagement définitif pour 2027.",
+          "sourceIds": [
+            "rous-change"
+          ],
+          "status": "dated"
+        },
+        "ukraine": {
+          "summary": "Vote contre sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre un vote contre sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-fabien-roussel",
+        "rous-change",
+        "assemblee-3461"
+      ]
+    },
+    "francois-ruffin": {
+      "positions": {
+        "ukraine": {
+          "summary": "Vote contre sur la déclaration de mars 2024",
+          "text": "Le scrutin nominatif du 12 mars 2024 enregistre un vote contre sur la déclaration gouvernementale relative à l’accord de sécurité franco-ukrainien et à la situation en Ukraine. Ce vote porte sur l’ensemble d’un texte : il ne permet pas de déduire une opposition ou un soutien à chaque forme d’aide, ni un engagement identique pour 2027.",
+          "sourceIds": [
+            "assemblee-3461"
+          ],
+          "status": "dated"
+        }
+      },
+      "reviewedSourceIds": [
+        "annonce-francois-ruffin",
+        "assemblee-3461"
+      ]
+    },
+    "marine-tondelier": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-marine-tondelier"
+      ]
+    },
+    "eric-zemmour": {
+      "positions": {},
+      "reviewedSourceIds": [
+        "annonce-eric-zemmour"
+      ]
+    }
+  }
+}
