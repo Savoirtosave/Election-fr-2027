@@ -408,7 +408,7 @@ test('les symboles sont légendés et la diversité bibliographique est mise en 
   for(const file of ['sources.html','familles.html',...Object.keys(families).map(key=>`famille-${key}.html`)]){
     const html=await(await fetch(base+'/'+file)).text();
     assert.match(html,/class="bibliography-scope/);
-    assert.ok(html.includes('Nemo, Julliard et Rémond ne sont qu’une partie des auteurs mobilisés.'));
+    assert.ok(html.includes('Rémond, Nemo, Julliard, et beaucoup d’autres...'));
   }
 });
 
