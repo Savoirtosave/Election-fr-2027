@@ -768,3 +768,22 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
 .pension-systems h4 { margin-top: 0; font-size: 1.2rem; }
 .context-legend { flex-wrap: wrap; }
 @media(max-width:600px) { .context-bar-row { grid-template-columns: 85px minmax(35px,1fr) 75px; gap: .4rem; } }
+
+/* Les familles restent le point d’entrée ; les lectures accompagnent la fin du parcours. */
+.bibliography-scope.is-secondary {
+  margin-top: 18px;
+  margin-bottom: 0;
+  padding: 20px 26px;
+  border: 1px solid var(--line, #dce3ef);
+  border-left: 3px solid #b4bed0;
+  background: #f6f7fa;
+  color: var(--navy);
+  border-radius: 8px;
+}
+.bibliography-scope.is-secondary h2 { color: var(--navy); font-size: 19px; letter-spacing: 0; margin-bottom: 8px; }
+.bibliography-scope.is-secondary p { color: var(--muted, #59677e); font-size: 14px; line-height: 1.65; }
+.bibliography-scope.is-secondary .eyebrow { color: #59677e; font-size: 10px; }
+.bibliography-scope.is-secondary a { color: var(--navy); font-size: 13px; }
+.family-further-reading { padding-top: 22px; }
+.family-further-reading summary { cursor: pointer; font-size: 16px; font-weight: 650; padding: 12px 0; }
+.family-further-reading details > p:first-of-type { margin-top: 16px; }
