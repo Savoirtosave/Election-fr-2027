@@ -332,3 +332,41 @@ test('les repères parlementaires individuels décrivent le scrutin et sa porté
   assert.ok(international.candidates['marine-le-pen'].positions.ukraine.summary.includes('Abstention'));
   assert.ok(international.candidates['francois-ruffin'].positions.ukraine.summary.includes('Vote contre'));
 });
+
+test('les familles disposent de repères visuels, de dossiers reliés et de sources explicites',async()=>{
+  const { familyVisuals }=await import('./public/family-visuals.js');
+  const directory=await(await fetch(base+'/familles.html')).text();
+  assert.equal((directory.match(/class="family-browser-card"/g)||[]).length,10);
+  assert.ok(directory.includes('families-app.js'));
+  for(const id of ['family-search','family-kind','family-sort','family-grid-view','family-list-view'])assert.ok(directory.includes(`id="${id}"`));
+  for(const [key,f]of Object.entries(families)){
+    assert.ok(familyVisuals[key]?.paths && familyVisuals[key]?.motif);
+    const html=await(await fetch(base+`/famille-${key}.html`)).text();
+    for(const anchor of ['idees','histoire','penseurs','partis','candidatures','sources-famille'])assert.ok(html.includes(`id="${anchor}"`));
+    for(const p of parties.filter(p=>p.family===key))assert.ok(html.includes(`./parti-${p.id}.html`));
+    for(const c of candidateData.candidates.filter(c=>c.family===key))assert.ok(html.includes(`./candidat-${c.id}.html`));
+  }
+  assert.ok(directory.includes('pas des emblèmes officiels'));
+});
+
+test('Nemo est cité lorsque ses repères sont utilisés, sans attribution automatique aux partis',async()=>{
+  const { nemoReadings,nemoChapters }=await import('./public/nemo-readings.js');
+  const ref=academicReferences['nemo-modern'];
+  assert.match(ref.title,/Histoire des idées politiques aux Temps modernes et contemporains/);
+  assert.match(ref.publication,/978-2-13-062733-3/);
+  assert.match(ref.consultation,/accès conditionnel/);
+  for(const [key,reading]of Object.entries(nemoReadings)){
+    assert.ok(families[key].references.includes('nemo-modern'));
+    for(const chapter of reading.chapters)assert.ok(nemoChapters[chapter]);
+    const html=await(await fetch(base+`/famille-${key}.html`)).text();
+    assert.ok(html.includes('id="lecture-nemo"'));
+    assert.ok(html.includes('./sources.html#ref-nemo-modern'));
+  }
+  for(const p of parties.filter(p=>nemoReadings[p.family])){
+    assert.ok(p.academicRefs.includes('nemo-modern'));
+    const html=await(await fetch(base+`/parti-${p.id}.html`)).text();
+    assert.ok(html.includes('./sources.html#ref-nemo-modern'));
+    assert.ok(html.includes('ne prouvent pas une filiation revendiquée'));
+  }
+  assert.ok(!nemoReadings.personal && !nemoReadings.animalist && !nemoReadings.green);
+});

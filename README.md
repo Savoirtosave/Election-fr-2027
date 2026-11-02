@@ -96,3 +96,14 @@ Les réponses Eurostat archivées sont dans `data/context/eurostat/`, les notes 
 Le partage de valeur évoqué dans la capture d’Eric Dor est recalculé : 100 × rémunération D1 versée par les sociétés S11 + S12 / leur valeur ajoutée nette B1N. Il inclut les cotisations patronales, exclut l’usure du capital du dénominateur et ne se confond ni avec le salaire net, ni avec le PIB, ni avec le pouvoir d’achat. Le rang est présenté uniquement parmi les quatre pays étudiés. Le compte X a été consulté, sans retrouver le message précis dans les publications visibles.
 
 Le classement PISA est également limité explicitement au panel de quatre pays. Les profils OCDE accessibles présentent le cycle 2025 ; les scores mathématiques 2022 sont reconstruits à partir des scores 2025 et des variations publiées dans ces profils. Les valeurs arrondies et les intervalles d’incertitude limitent la portée des rangs et de cette reconstruction.
+
+
+## Familles politiques et Philippe Nemo
+
+L’annuaire `public/familles.html` reprend les outils de celui des partis : recherche par famille, penseur, idée, parti ou candidat ; filtre par type de dossier ; tri ; vues en cartes et en liste. Les six familles, trois courants transversaux et la limite du classement personnel restent explicitement distingués. Les symboles originaux de `public/family-visuals.js` sont éditoriaux, sans valeur d’emblèmes officiels.
+
+Les dix dossiers relient trois dimensions d’analyse à l’histoire, aux penseurs, aux partis (avec logos), aux candidats et aux sources. `scripts/render-families.mjs` génère ces pages ; `public/families-app.js` améliore les filtres sans empêcher la lecture statique avec Go Live ou sans JavaScript.
+
+Philippe Nemo, *Histoire des idées politiques aux Temps modernes et contemporains*, PUF, « Quadrige », édition 2013 [première édition 2002], ISBN 9782130627333, DOI 10.3917/puf.nemo.2013.01, figure dans `public/references.js`. `public/nemo-readings.js` indique les chapitres pertinents et leur pagination vérifiée dans le sommaire. La notice, la présentation, le sommaire et les extraits accessibles de huit chapitres ont été consultés ; cela ne constitue pas une lecture intégrale de l’ouvrage en accès conditionnel. Les autres liens de chapitres sont des pistes de lecture identifiées dans le sommaire.
+
+La perspective libérale de Nemo est mise en regard des autres historiens et des travaux contemporains. Elle éclaire notamment souveraineté, État de droit, libertés, socialismes et justice ; elle n’est pas une grille automatique de classement des partis. Ses repères sont ajoutés aux familles et aux fiches partisanes pertinentes. L’écologie, l’animalisme et le repère personnel conservent leurs sources spécifiques ; une filiation avec Nemo n’est pas inventée pour remplir une rubrique.

@@ -1,3 +1,4 @@
+import { nemoReadings } from './nemo-readings.js';
 export const families = {
   radical: {
     label: 'Gauche radicale / révolutionnaire',
@@ -308,3 +309,14 @@ for (const [key, philosophy] of Object.entries(philosophies)) {
   families[key].philosophy = philosophy;
   families[key].references = [...new Set([...philosophy.references, ...families[key].references])];
 }
+
+
+// Nemo complements the other historians; no affiliation is inferred from a chapter title.
+for (const [key, reading] of Object.entries(nemoReadings)) {
+  families[key].nemoReading = reading;
+  families[key].references = [...new Set([...families[key].references, 'nemo-modern'])];
+  families[key].philosophy.references = [...new Set([...families[key].philosophy.references, 'nemo-modern'])];
+}
+families.centre.philosophy.thinkers.push(['John Locke', 'Consentement, droits et gouvernement soumis à la loi : Nemo lui consacre un chapitre sur la rule of law. Ce repère libéral traverse plusieurs familles politiques.']);
+families.left.philosophy.thinkers.push(['John Rawls', 'Articuler la priorité des libertés de base à une réflexion sur la justice sociale. L’extrait du chapitre de Nemo souligne la protection des libertés face aux objectifs de redistribution ; cette lecture ne fait pas de Rawls un auteur propre à un seul parti.']);
+families.sovereign.philosophy.thinkers.push(['Thomas Hobbes', 'La paix et la sécurité comme justification d’une autorité commune : une problématique distincte de la souveraineté populaire. Le chapitre de Nemo sur Hobbes fournit un repère de lecture, sans assimiler les souverainismes actuels à son modèle d’État.']);

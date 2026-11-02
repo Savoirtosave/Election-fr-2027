@@ -1,5 +1,13 @@
 // Les références éclairent des concepts ; elles ne classent pas les candidats de 2027.
 export const academicReferences = {
+  'nemo-modern': {
+    authors: 'Philippe Nemo', year: '2013 [première édition : 2002]',
+    title: 'Histoire des idées politiques aux Temps modernes et contemporains',
+    publication: 'Presses Universitaires de France, « Quadrige ». ISBN 978-2-13-062733-3. DOI : 10.3917/puf.nemo.2013.01.',
+    url: 'https://shs.cairn.info/histoire-des-idees-politiques-aux-temps-modernes-et-contemporains--9782130627333?lang=fr',
+    contribution: 'Une histoire des débats sur la souveraineté, l’État de droit, les libertés, le socialisme et la justice. Les dossiers mobilisent des chapitres précis pour distinguer ces questions et les interprétations des penseurs. La perspective libérale de cette synthèse est croisée avec d’autres travaux ; ses catégories ne sont pas appliquées automatiquement aux partis actuels.',
+    consultation: 'Notice bibliographique BnF, présentation et sommaire de l’édition 2013, ainsi que les extraits accessibles de l’introduction et des chapitres sur Bodin, Locke, les libéraux français du XIXe siècle, Marx, la social-démocratie, Montesquieu et Rawls. L’intégralité de l’ouvrage est en accès conditionnel ; les renvois aux autres chapitres sont des repères de lecture tirés du sommaire.',
+  },
   'julliard-gauches': {
     authors: 'Jacques Julliard', year: '2012',
     title: 'Les Gauches françaises, 1762–2012. Histoire, politique et imaginaire',

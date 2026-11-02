@@ -1,0 +1,13 @@
+// Original editorial navigation icons. These are not official political emblems.
+export const familyVisuals = {
+  radical: {color:'#963b68', motif:'Chaîne ouverte', meaning:'La rupture avec les rapports de domination.', paths:'<path d="m25 39-6 6a9 9 0 0 1-13-13l10-10a9 9 0 0 1 13 0m10 3 6-6a9 9 0 0 0-13-13L22 16a9 9 0 0 0 0 13"/><path d="m25 25 4 4m6 6 4 4M32 9v7M9 32h7m32 0h7M32 48v7"/>'},
+  left: {color:'#b34d70', motif:'Mains solidaires', meaning:'La solidarité et la réduction des inégalités.', paths:'<path d="m6 36 12-9 10 6c3 2 7-2 4-4l-5-4 4-3 15 8 12 8M7 38l10 13 17-2 14-9M18 27l-7-5m35 8 8-9M21 11h22M25 7v8m14-8v8"/>'},
+  green: {color:'#257354', motif:'Feuille', meaning:'Les limites écologiques et la protection du vivant.', paths:'<path d="M15 48C-1 22 30 8 53 9c1 26-8 49-34 39M11 55 42 22M23 42l-2-12m11 3 11 1"/>'},
+  centre: {color:'#777023', motif:'Pont', meaning:'Le compromis entre plusieurs traditions politiques.', paths:'<path d="M7 49h50M13 49V20m38 29V20M13 25c8 20 30 20 38 0M6 22h14m24 0h14M23 37v12m18-12v12M32 40v9"/>'},
+  right: {color:'#3767a1', motif:'Colonne', meaning:'Les institutions, leur continuité et leurs limites.', paths:'<path d="m8 20 24-11 24 11H8Zm4 7h40M17 27v23m10-23v23m10-23v23m10-23v23M11 51h42M8 57h48"/>'},
+  'far-right': {color:'#555e91', motif:'Bouclier', meaning:'La nation, les frontières et l’autorité comme objets d’analyse.', paths:'<path d="M32 7 52 15v17c0 12-10 20-20 26C22 52 12 44 12 32V15L32 7Z"/><path d="M23 21h18M23 29h18M23 37h11"/>'},
+  sovereign: {color:'#586b85', motif:'Globe et drapeau', meaning:'La maîtrise des décisions dans un monde interdépendant.', paths:'<circle cx="29" cy="34" r="20"/><path d="M9 34h40M29 14c-13 12-13 28 0 40m0-40c13 12 13 28 0 40M44 7v20m0-20h13l-4 5 4 5H44"/>'},
+  democracy: {color:'#447d83', motif:'Urne', meaning:'La participation et les règles de la décision collective.', paths:'<path d="M12 33h40v23H12V33Zm-4 0 7-9h10m19 0h5l7 9M24 39h16M27 6l18 9-9 18-18-9L27 6Z"/><path d="m26 20 4 4 7-7"/>'},
+  animalist: {color:'#90673c', motif:'Empreinte', meaning:'Les intérêts et le statut politique des animaux.', paths:'<ellipse cx="14" cy="24" rx="6" ry="8"/><ellipse cx="27" cy="15" rx="6" ry="8"/><ellipse cx="41" cy="17" rx="6" ry="8"/><ellipse cx="52" cy="28" rx="5" ry="7"/><path d="M19 44c-4-8 3-10 6-16 3-6 10-6 14 0 3 6 12 10 8 18-4 9-11 1-15 2s-10 6-13-4Z"/>'},
+  personal: {color:'#6b7488', motif:'Point d’interrogation', meaning:'La limite d’un classement politique fondé sur les sources.', paths:'<circle cx="32" cy="32" r="24"/><path d="M24 24c0-11 18-11 18 0 0 8-10 7-10 15m0 8v1"/>'},
+};

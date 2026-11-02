@@ -1,3 +1,4 @@
+import { nemoReadings } from './nemo-readings.js';
 import { issueSummaries, additionalPositions } from './party-positions.js';
 export const partyTopics = { economy: 'Économie et travail', security: 'Sécurité et justice', immigration: 'Immigration et citoyenneté', ecology: 'Écologie et énergie', tax: 'Fiscalité', housing: 'Logement', international: 'Europe et international', secularism: 'Laïcité et libertés' };
 const coreTopics = ['economy', 'security', 'immigration', 'ecology'];
@@ -5,7 +6,7 @@ export const partyReviewDate = '2026-11-02';
 
 // Les chiffres de groupes sont dans parliament.json. Aucun total de groupe
 // n’est réétiqueté ici comme un effectif propre au parti.
-const make = p => ({ ...p, aliases: p.aliases || [], academicRefs: p.academicRefs || ['remond', 'julliard-gauches'],
+const make = p => ({ ...p, aliases: p.aliases || [], academicRefs: [...new Set([...(p.academicRefs || ['remond', 'julliard-gauches']), ...(nemoReadings[p.family] ? ['nemo-modern'] : [])])],
   issues: Object.fromEntries(Object.keys(partyTopics).map(key => {
     const i = coreTopics.indexOf(key);
     return [key, i >= 0 ? { summary: issueSummaries[p.id][i], text: p.positions[i], sourceIds: p.topicSources?.[key] || ['programme'], status: 'documented' }
