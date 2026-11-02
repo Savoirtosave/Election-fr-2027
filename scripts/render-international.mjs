@@ -3,6 +3,15 @@ export function renderInternational({ data, kind, id, name, e, external, embedde
   if(!entity)throw new Error(`Fiche internationale manquante : ${kind}/${id}`);
   const personal=kind==='candidates';
   const known=Object.keys(entity.positions).length;
+  if(embedded && personal){
+    const topics=Object.entries(data.topics).map(([key,label])=>{
+      const position=entity.positions[key];
+      if(!position)return `<section class="candidate-international-topic" id="intl-${key}"><h4>${e(label)}</h4><p>Position personnelle à documenter.</p></section>`;
+      const refs=position.sourceIds.map(sid=>{const source=data.sources[sid];return `<li>${external(source.url,source.title)}<span>${e(source.date)} · ${e(source.scope)}</span></li>`;}).join('');
+      return `<section class="candidate-international-topic" id="intl-${key}"><h4>${e(label)}</h4><p><strong>${e(position.summary)}</strong></p><p>${e(position.text)}</p><ul class="international-sources">${refs}</ul></section>`;
+    }).join('');
+    return `<article class="policy-card candidate-international" id="international"><p class="policy-topic">Europe et international</p><h3>${known?'Des positions personnelles à préciser avec le programme':'Orientations personnelles à documenter'}</h3><details><summary>Détails et sources</summary><p>Positions personnelles de ${e(name)} : les orientations du parti ne lui sont pas automatiquement attribuées. Ces repères datés seront complétés avec le programme de 2027.</p>${topics}<details class="international-method"><summary>Limites et documents consultés</summary><p>Une sortie du commandement intégré de l’OTAN n’est pas une sortie de l’Alliance. Une déclaration ancienne ou un texte collectif ne vaut pas programme personnel pour 2027. Une position non renseignée indique une limite documentaire.</p><ul class="international-sources">${entity.reviewedSourceIds.map(sid=>{const source=data.sources[sid];return `<li>${external(source.url,source.title)}<span>${e(source.date)} · ${e(source.scope)}</span></li>`;}).join('')}</ul></details></details></article>`;
+  }
   return `<section class="${embedded?'international-box':'section international-section'}" id="international"><p class="eyebrow">DIPLOMATIE, ALLIANCES ET CONFLITS</p><h2>La politique internationale${personal?' de '+e(name):''}</h2><p class="section-intro">${personal?'Positions personnelles documentées : les orientations du parti ne sont pas automatiquement attribuées au candidat.':'Positions de la formation : les textes de coalition, propositions et principes sont distingués des engagements personnels des candidats.'} Les dates restent visibles ; ces repères seront complétés avec les programmes de 2027.</p><p class="international-coverage">${known} dossier${known>1?'s':''} documenté${known>1?'s':''} sur ${Object.keys(data.topics).length}</p><div class="international-grid">${Object.entries(data.topics).map(([key,label])=>{
     const position=entity.positions[key];
     if(!position)return `<article class="international-card is-pending" id="intl-${key}"><p class="policy-topic">${e(label)}</p><h3>Position ${personal?'personnelle ':''}à documenter</h3></article>`;
