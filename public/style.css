@@ -805,3 +805,24 @@ button:focus-visible { outline: 3px solid #bc451a; outline-offset: 4px; }
 .candidate-international-topic { margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
 .candidate-international-topic h4 { margin: 0 0 8px; color: var(--navy); font-size: 14px; }
 .candidate-international-topic .international-sources { font-size: 11px; }
+
+/* Centrage dans le cadre, en neutralisant les marges internes des visuels d’origine. */
+.party-mark, .candidate-party-logo, .family-party-link > span:first-child { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+.party-mark img, .candidate-party-logo img, .family-party-link img { display: block; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; object-view-box: var(--logo-view, inset(0)); }
+img[src$="logos/pcf.png"] { --logo-view: inset(7.012% 9.594% 8.054% 4.756%); }
+img[src$="logos/lr.svg"] { --logo-view: inset(7.626% 6.718% 6.611% 9.479%); }
+img[src$="logos/upr.svg"] { --logo-view: inset(13.313% 4.997% 5.652% 4.997%); }
+img[src$="logos/npa-a.png"] { --logo-view: inset(5.200% 0.625% 1.200% 0.863%); }
+img[src$="logos/parti-animaliste.png"] { --logo-view: inset(13.351% 0.000% 0.000% 0.000%); }
+img[src$="logos/udr.svg"] { --logo-view: inset(9.319% 5.549% 9.319% 5.549%); }
+img[src$="logos/convention.png"] { --logo-view: inset(23.225% 31.375% 14.546% 11.550%); }
+img[src$="logos/solution-democratique.webp"] { --logo-view: inset(3.367% 4.028% 0.000% 3.338%); }
+img[src$="logos/equinoxe.png"] { --logo-view: inset(0.000% 0.000% 10.675% 0.000%); }
+img[src$="logos/trajectoire.svg"] { --logo-view: inset(54.938% 0.533% 21.331% 17.533%); }
+
+.party-mark, .candidate-party-logo, .family-party-link > span:first-child { position: relative; container-type: size; overflow: hidden; }
+/* Les SVG gardent leur fichier original et sont placés selon les limites de leur dessin visible. */
+img[src$="logos/lr.svg"] { --logo-image-width: min(calc(100cqw / 0.8380226), calc(100cqh * 1.7792036)); position: absolute; width: var(--logo-image-width); height: calc(var(--logo-image-width) / 1.5258883); max-width: none; max-height: none; left: 50%; top: 50%; transform: translate(-51.38057%, -50.50761%); object-view-box: none; }
+img[src$="logos/upr.svg"] { --logo-image-width: min(calc(100cqw / 0.9000580), calc(100cqh * 1.0300147)); position: absolute; width: var(--logo-image-width); height: calc(var(--logo-image-width) / 0.8346774); max-width: none; max-height: none; left: 50%; top: 50%; transform: translate(-50.00000%, -53.83065%); object-view-box: none; }
+img[src$="logos/udr.svg"] { --logo-image-width: min(calc(100cqw / 0.8890159), calc(100cqh * 1.8436147)); position: absolute; width: var(--logo-image-width); height: calc(var(--logo-image-width) / 1.5000000); max-width: none; max-height: none; left: 50%; top: 50%; transform: translate(-50.00000%, -50.00000%); object-view-box: none; }
+img[src$="logos/trajectoire.svg"] { --logo-image-width: min(calc(100cqw / 0.8193333), calc(100cqh * 10.3619784)); position: absolute; width: var(--logo-image-width); height: calc(var(--logo-image-width) / 2.4590164); max-width: none; max-height: none; left: 50%; top: 50%; transform: translate(-58.50000%, -66.80328%); object-view-box: none; }
